@@ -1,0 +1,154 @@
+html {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #EBF3FA;
+}
+
+/* navigation */
+
+.topnav {
+    background-color: #EBF3FA;
+    overflow: hidden;
+    font-size: 16px;
+    box-shadow: 5px 2px 6px #888888a6;
+}
+
+#logo {
+    margin-left: 50px;
+    margin-top: 5px;
+}
+
+.topnav a {
+    float: right;
+    color: #F1A34F;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 18px;
+    margin-top: 5px;
+    padding-right: 60px;
+}
+
+.topnav a:hover {
+    color: #F1A34F;
+    border-radius: 7px;
+}
+
+.topnav a.active {
+    color: #203F7E;
+}
+
+.topnav .icon {
+    display: none;
+}
+
+.buttonStyle1 {
+    background-color: #F1A34F;
+    color: white;
+    border: none;
+    padding-bottom: 15px 25px;
+    cursor: pointer;
+    border-radius: 7px;
+    box-shadow: 0 5px rgba(0, 0, 0, 0.123);
+    outline: none;
+}
+
+.buttonStyle1:active {
+    box-shadow: 0 2px white;
+    transform: translateY(4px);
+    outline: none;
+}
+
+.buttonStyle1:hover {
+    outline: none;
+}
+
+@media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {
+        display: none;
+    }
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+    .topnav.responsive {
+        position: relative;
+    }
+    .topnav.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .topnav.responsive a {
+        float: none;
+        color: #203F7E;
+        display: block;
+        text-align: center;
+    }
+}
+
+/* main page ------------------- */
+
+.img-grid {
+    display: grid;
+    box-sizing: border-box;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.2fr 0.2fr 0.2fr;
+    column-gap: 2rem;
+    row-gap: 2rem;
+}
+
+.img-grid img {
+    width: 100%;
+    margin-top: -15%;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.headline {
+    font-size: 14px;
+    color: #F1A34F;
+    text-align: left;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.headline h1 {
+    margin-top: 19%;
+    margin-left: 25%;
+}
+
+.headline-paragraph {
+    text-align: left;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.headline-paragraph p {
+    font-size: 17px;
+    margin-top: 28%;
+    margin-left: 25%;
+}
+
+.contact-button {
+    text-align: left;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    font-size: 23px;
+    margin-top: 45%;
+    margin-left: 25%;
+}
