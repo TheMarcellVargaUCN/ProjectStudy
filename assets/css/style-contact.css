@@ -119,6 +119,9 @@ body {
     outline: none;
 }
 
+.contact-button{
+    margin-top: 7%;
+}
 
 
 /*   .......................... Contact us page ..........................  */
@@ -141,9 +144,9 @@ body {
 
 .contact-intro{
     margin-left: 35%;
-    margin-top: 32%;
-    font-size: 23px;
-    width: 62%;
+    margin-top: 30%;
+    font-size: 22px;
+    width: 58%;
     color: #434343;
     grid-column-start: 1;
     grid-column-end: 2;
