@@ -193,44 +193,41 @@ body {
 .process {
     margin-top: 50px;
     display: grid;
-    grid-template-rows: 100px 1fr;
-    grid-template-columns: 500px 1fr;
-    margin-left: 13%;
-    margin-right: 10%;
+    grid-template-rows: 100px;
+    grid-template-columns: 55vw 45vw;
+    width: 100vw;
 }
-.steps img{
-    width: 35px;
-    align-self: center;
-    grid-column: 1;
-}
+
 .showcase {
     grid-column-start: 2;
-    width: 40vw;
-    margin-left: 100px;
+    width: 35vw;
     float: right;
-}
-.process h2 {
-    display: block;
+    place-self: center;
 }
 .steps {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 10% 90%;
     grid-template-rows: repeat(8,80px);
+    width: 30vw;
+    place-self: center;
+}
+.steps img{
+    width: 7%;
+    grid-column: 1;
+    align-self: center;
 }
 .steps p {
-    position: relative;
-    margin-top: -40px;
-    margin-left: 50px;
+    grid-column: 2;
 }
 
 .comparison {
     margin-top: 50px;
     display: grid;
-    grid-template-columns: 40vw 40vw;
-    grid-template-rows: 100px 40vh;
+    grid-template-columns: 55vw 45vw;
+    grid-template-rows: 50px 40vh;
 }
 .comparison img {
-    width: 25vw;
+    width: 30vw;
     place-self: center;
 }
 .comparison p {
@@ -238,42 +235,107 @@ body {
     width: 400px;
     place-self: center;
 }
+.uni_grid {
+    display: grid;
+    width: 100vw;
+}
 .universities {
     display: grid;
-    grid-template-columns: repeat(5, 200px);
-    grid-template-rows: 100px 150px 100px;
-    margin-left: 23%;
-    margin-top: 100px;
+    grid-template-columns: repeat(5, 15vw);
+    grid-template-rows: auto auto 100px;
+    margin-top: 50px;
+    place-self: center;
 }
 .headline_uni {
-    grid-column-start:3;
+    grid-column-start:2;
     grid-column-end: 5;
+    place-self: center;
     color: #203F7E;
 }
 .universities img {
-    height: 100px;
+    height: 7vw;
     grid-row: 2;
     transition: transform .2s;
     place-self: center;
 }
 .universities img:hover {
-    transform: scale(1.6);
+    transform: scale(1.3);
 }
 .universities a {
     grid-row: 3;
     grid-column-start: 3;
     place-self: center;
 }
+.prices {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows:  auto auto;
+    margin-top: 50px;
+}
 .prices img{
     display: block;
     width: 70vw;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: -100px;
+    place-self: center;
 }
 .prices h2 {
-    margin-top: 100px;
+    place-self: center;
+}
+.reviews {
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1/3 1/3 1/3;
+    grid-template-rows: auto auto;
+    margin-top: 50px;
+}
+.headline_reviews {
+    grid-column: 2;
+    place-self: center;
+    color: #203F7E;
+}
+.review {
+    width: 80%;
+    place-self: center;
+    background-color: white;
+    border-radius: 10px;
+    grid-row: 2;
+    display: grid;
+    grid-template-rows: 40% 10% 50%;
+}
+.review img {
+    width: 25%;
+    place-self: center;
+}
+.review h3 {
+    place-self: center;
+    color: #F1A34F;
+}
+.review p {
+    width: 80%;
+    place-self: center;
     text-align: center;
+}
+.FAQ {
+    display: grid;
+    margin-top: 50px;
+}
+.question {
+    background-color: white;
+    border-radius: 7px;
+    display: grid;
+    grid-template-columns: 10% 90%;
+    grid-template-rows: auto;
+    width: 70%;
+    place-self: center;
+    row-gap: 20px;
+
+}
+.question img {
+    width: 80%;
+    height: 80%;
+    place-self: center;
+}
+.question p {
+    width: 80%;
 }
 /* ---------------------Services-------------------- */
 .img-grid {
