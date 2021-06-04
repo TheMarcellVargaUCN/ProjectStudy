@@ -196,12 +196,25 @@ body {
 
 /* ------------------Main content -----------------*/
 
+.service-tab {
+    display: grid;
+    width: 100%;
+    margin-top: 5%;
+    grid-template-rows: 0.1fr 0.1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 2rem;
+}
+
 .tab {
-    margin-left: 120px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    margin-left: 150px;
     margin-top: 120px;
     float: left;
     background-color: white;
-    width: 29%;
+    width: 80%;
     height: 540px;
     border-radius: 7px;
 }
@@ -229,12 +242,16 @@ body {
 } */
 
 .tabcontent {
-    margin-left: 20px;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    margin-left: 80px;
     margin-top: 120px;
     float: left;
     padding: 0px 12px;
     background-color: white;
-    width: 55%;
+    width: 80%;
     border-left: none;
     height: 660px;
     border-radius: 7px;
@@ -260,8 +277,8 @@ h4 {
 }
 
 #price-img {
-    margin-left: 130px;
     margin-top: 30px;
+    width: 50%;
 }
 
 img {

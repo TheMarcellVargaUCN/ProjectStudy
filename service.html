@@ -9,7 +9,7 @@
     <script src="https://kit.fontawesome.com/5d734a0479.js" crossorigin="anonymous"></script>
     <link href="assets/css/service.css" rel=" stylesheet">
     <script src="https://kit.fontawesome.com/5d734a0479.js" crossorigin="anonymous"></script>
-    <script src="assets/js/Service.js" defer></script>
+    <script src="assets/js/Java.js" defer></script>
     <title>ESS</title>
 </head>
 
@@ -54,238 +54,249 @@
 
     <!----------------------Service Information----------------------- -->
 
-    <div class="tab">
-        <button class="tablinks" onclick="openCity(event, 'About-Company')" id="defaultOpen">About the Company</button>
-        <hr>
-        <button class="tablinks" onclick="openCity(event, 'Guidance ')">Guidance and Counselling</button>
-        <hr>
-        <button class="tablinks" onclick="openCity(event, 'Service Price')">Service Price</button>
-        <hr>
-        <button class="tablinks" onclick="openCity(event, 'Visa')">Visa Application</button>
-        <hr>
-        <button class="tablinks" onclick="openCity(event, 'Application')">Filling out the Application</button>
-        <hr>
-        <button class="tablinks" onclick="openCity(event, 'Communication')">Communication with university </button>
-        <hr>
-        <button class="tablinks" onclick="openCity(event, 'Meetings')">Personal Meetings</button>
-        <hr>
-        <button class="tablinks" onclick="openCity(event, 'Accomodation')">Search of Accommodation</button>
-        <hr>
-    </div>
-
-    <div id="About-Company" class="tabcontent">
-        <h3>About the Company</h3>
-        <p>European Study Solution- ESS, is a newly start up organization registered in Ukraine,
-            whose purpose is to help American students with the application process and preparation for life abroad.
-            ESS would like to provide a payable service for Americans to help with application submission to European
-            educational programs. Company’s main service feature is a unique approach to their client, where the main
-            focus would lay on helping to find professional orientation, accompaniment with all the documentary work,
-            preparation for life abroad, etc.</p>
-        <img src="assets/images/service-6.jpg" width="450px" id="price-img">
-
-
-    </div>
-
-    <div id="Guidance " class="tabcontent">
-        <h3>Guidance and Counselling</h3>
-        <p>Making the decision to study abroad takes guts. It shows your somebody who isn’t afraid to take
-            on new frontiers.We certainly understand the excitement of studying overseas but we also know it can be
-            nerve-wracking.
-            At ESS, we’ve been a trusted advisor to parents and students because we provide full detailed pre-departure
-            counselling.Unlike
-            other student-recruitment agencies, we can even book your flights in-house.
-
-            <br> <br> <strong> We’ll help</strong> ensure every detail is taken care of for
-            your arrival in your new country. If you require it, we’ll arrange for you to be picked up from the airport
-            and check in with you
-            to make sure you arrive safely at your hotel.Our job is to set you and your family’s mind at ease by
-            providing you accurate, detailed
-            information about what you can expect upon arrival.We are world-leaders in student service and the trusted
-            partner of many top education
-            providers because of the extra care we take of our students.
-
-            <br><br>Our pre-departure counselling will also help you address foreign exchange and travel
-            arrangements. Any questions you have about life and study in Australia can be answered before you arrive.
-            And we have a wealth of information specially
-            tailored for international students.
-        </p>
-
-        <img src="assets/images/service-10.jpg" width="250px">
-
-
-        <h4>Do you have more questions related to Guidance?</h4>
-
-        <div class="contact-button">
-            <a href="#"><button class="buttonStyle1">Contac Us</button></a>
-        </div>
-    </div>
-
-    <div id="Service Price" class="tabcontent">
-        <h3>Service Price</h3>
-        <p>Before you can leave the country, you’re going to need to make sure you have an International Student
-            Visa.
-            <strong> Don’t worry,</strong> this is something ESS can arrange on your behalf from start to finish. So
-            your application has been approved,
-            you’ve got your offer and you’re ready to go overseas. <br> <br>But wait! Before you can leave the
-            country,
-            you’re going to need to
-            make sure you have an International Student Visa. Don’t worry, this is something ESS can arrange on your
-            behalf from start to finish.
-            Not only do we provide up-to-date advice regarding the visa requirements of your destination country but
-            we
-            can process the visas in-house.<br><br>
-            This means you don’t need to go outside ESS to complete this part of the process. And because we know
-            the
-            details of your application already, we can help get you quicker outcomes.
-        <p>
-
-            <img src="assets/images/price.png" width="450px" id="price-img">
-        <h4>Do you have more questions related to Service Price?</h4>
-        <div class="contact-button">
-            <a href="#"><button class="buttonStyle1">Contac Us</button></a>
+    <div class="service-tab">
+        <div class="tab">
+            <button class="tablinks" onclick="openCity(event, 'About-Company')" id="defaultOpen">About the
+                Company</button>
+            <hr>
+            <button class="tablinks" onclick="openCity(event, 'Guidance ')">Guidance and Counselling</button>
+            <hr>
+            <button class="tablinks" onclick="openCity(event, 'Service Price')">Service Price</button>
+            <hr>
+            <button class="tablinks" onclick="openCity(event, 'Visa')">Visa Application</button>
+            <hr>
+            <button class="tablinks" onclick="openCity(event, 'Application')">Filling out the Application</button>
+            <hr>
+            <button class="tablinks" onclick="openCity(event, 'Communication')">Communication with university </button>
+            <hr>
+            <button class="tablinks" onclick="openCity(event, 'Meetings')">Personal Meetings</button>
+            <hr>
+            <button class="tablinks" onclick="openCity(event, 'Accomodation')">Search of Accommodation</button>
+            <hr>
         </div>
 
-    </div>
 
-    <div id="Visa" class="tabcontent">
-        <h3>Visa Application</h3>
-        <p>Before you can leave the country, you’re going to need to make sure you have an International Student
-            Visa.
-            Don’t worry, this is something ESS can arrange on your behalf from start to finish.<br><br>
+        <div id="About-Company" class="tabcontent">
+            <h3>About the Company</h3>
+            <p>European Study Solution- ESS, is a newly start up organization registered in Ukraine,
+                whose purpose is to help American students with the application process and preparation for life abroad.
+                ESS would like to provide a payable service for Americans to help with application submission to
+                European
+                educational programs. Company’s main service feature is a unique approach to their client, where the
+                main
+                focus would lay on helping to find professional orientation, accompaniment with all the documentary
+                work,
+                preparation for life abroad, etc.</p>
+            <img src="assets/images/service-6.jpg" id="price-img">
 
-            Great! So your application has been approved, you’ve got your offer and you’re ready to go overseas. But
-            wait! Before you can leave the country, you’re going to need to make sure you have an International
-            Student
-            Visa.
-            Don’t worry, this is something ESS can arrange on your behalf from start to finish. Not only do we
-            provide
-            up-to-date advice regarding the visa requirements of your destination country but we can process the
-            visas
-            in-house.
-            This means you don’t need to go outside ESS to complete this part of the process. And because we know
-            the
-            details of your application already, we can help get you quicker outcomes.</p>
-        <img src="assets/images/visa1.png" width="250px">
 
-        <h4>Do you have more questions related to Visa Application?</h4>
-
-        <div class="contact-button">
-            <a href="#"><button class="buttonStyle1">Contac Us</button></a>
         </div>
-    </div>
 
-    <div id="Application" class="tabcontent">
-        <h3>Filling out the Application</h3>
-        <p>Wishing for an offer from the University of your dreams? Or just need advice on course requirements?
-            At Studyco we can help you kick-start your journey to study abroad. We’ll be right there with you from
-            application to enrolment, making sure you get to where you need to go.
-            Representing hundreds of top Universities worldwide, we'll take on all the heavy lifting in your
-            application
-            process. Filling in forms, chasing documents and helping you overcome any bumps in the road along the
-            way.
-            Our job is to maximise your chances of getting the best possible education.
-            <br><br>
+        <div id="Guidance " class="tabcontent">
+            <h3>Guidance and Counselling</h3>
+            <p>Making the decision to study abroad takes guts. It shows your somebody who isn’t afraid to take
+                on new frontiers.We certainly understand the excitement of studying overseas but we also know it can be
+                nerve-wracking.
+                At ESS, we’ve been a trusted advisor to parents and students because we provide full detailed
+                pre-departure
+                counselling.Unlike
+                other student-recruitment agencies, we can even book your flights in-house.
 
-            How to Apply, Step-By-Step
-            The application process can be daunting for any student. Especially when studying abroad. That’s why at
-            Studyco we make the process as streamlined as possible.
-            Simply click here for a step-by-step guide on How to Apply or click here to speak to a counsellor today.
-        </p>
-        <img src="assets/images/service-5.jpg" width="250px">
-        <h4>Do you have more questions related to Filling out Application?</h4>
-        <div class="contact-button">
-            <a href="#"><button class="buttonStyle1">Contac Us</button></a>
+                <br> <br> <strong> We’ll help</strong> ensure every detail is taken care of for
+                your arrival in your new country. If you require it, we’ll arrange for you to be picked up from the
+                airport
+                and check in with you
+                to make sure you arrive safely at your hotel.Our job is to set you and your family’s mind at ease by
+                providing you accurate, detailed
+                information about what you can expect upon arrival.We are world-leaders in student service and the
+                trusted
+                partner of many top education
+                providers because of the extra care we take of our students.
+
+                <br><br>Our pre-departure counselling will also help you address foreign exchange and travel
+                arrangements. Any questions you have about life and study in Australia can be answered before you
+                arrive.
+                And we have a wealth of information specially
+                tailored for international students.
+            </p>
+
+            <img src="assets/images/service-10.jpg" width="250px">
+
+
+            <h4>Do you have more questions related to Guidance?</h4>
+
+            <div class="contact-button">
+                <a href="#"><button class="buttonStyle1">Contac Us</button></a>
+            </div>
         </div>
-    </div>
 
-    <div id="Communication" class="tabcontent">
-        <h3>Communication with university </h3>
-        <p>Study Group works with a large network of agents that are carefully chosen to represent our collaborating
-            universities to students all around the world. Together we share a vision for creating the best outcomes
-            for
-            our students and the universities we work with.<br><br>
+        <div id="Service Price" class="tabcontent">
+            <h3>Service Price</h3>
+            <p>Before you can leave the country, you’re going to need to make sure you have an International Student
+                Visa.
+                <strong> Don’t worry,</strong> this is something ESS can arrange on your behalf from start to finish. So
+                your application has been approved,
+                you’ve got your offer and you’re ready to go overseas. <br> <br>But wait! Before you can leave the
+                country,
+                you’re going to need to
+                make sure you have an International Student Visa. Don’t worry, this is something ESS can arrange on your
+                behalf from start to finish.
+                Not only do we provide up-to-date advice regarding the visa requirements of your destination country but
+                we
+                can process the visas in-house.<br><br>
+                This means you don’t need to go outside ESS to complete this part of the process. And because we know
+                the
+                details of your application already, we can help get you quicker outcomes.
+            <p>
 
-            Study Group works with a large network of agents that are carefully chosen to represent our
-            collaborating
-            universities to students all around the world. Together we share a vision for creating the best outcomes
-            for
-            our students and the universities we work with. We understand that our agents play a big part in a
-            student’s
-            decision-making and application process, so we provide all of the tools and resources needed to help
-            students make the right choice about their education.<br><br>
+                <img src="assets/images/price.png" width="450px" id="price-img">
+            <h4>Do you have more questions related to Service Price?</h4>
+            <div class="contact-button">
+                <a href="#"><button class="buttonStyle1">Contac Us</button></a>
+            </div>
 
-            We are ensure fully communication with universities, especially during Covid-19 situation, to keep you
-            updated about different deadlines, updates, fees, with applications and new opportunities to be enrolled
-            in
-            the different university activities, sports teams. </p>
-        <img src="assets/images/service-9.jpg" width="250px">
-        <h4>Do you have more questions related to Universities?</h4>
-
-        <div class="contact-button">
-            <a href="#"><button class="buttonStyle1">Contac Us</button></a>
         </div>
-    </div>
 
-    <div id="Meetings" class="tabcontent">
-        <h3>Personal Meetings</h3>
-        <p>Making the decision to study abroad takes guts. It shows your somebody who isn’t afraid to take on new
-            frontiers.
+        <div id="Visa" class="tabcontent">
+            <h3>Visa Application</h3>
+            <p>Before you can leave the country, you’re going to need to make sure you have an International Student
+                Visa.
+                Don’t worry, this is something ESS can arrange on your behalf from start to finish.<br><br>
 
-            We certainly understand the excitement of studying overseas but we also know it can be nerve-wracking.
-            At Studyco, we’ve been a trusted advisor to parents and students because we provide full detailed
-            pre-departure counselling.
-            Unlike other student-recruitment agencies, we can even book your flights in-house.<br><br>
+                Great! So your application has been approved, you’ve got your offer and you’re ready to go overseas. But
+                wait! Before you can leave the country, you’re going to need to make sure you have an International
+                Student
+                Visa.
+                Don’t worry, this is something ESS can arrange on your behalf from start to finish. Not only do we
+                provide
+                up-to-date advice regarding the visa requirements of your destination country but we can process the
+                visas
+                in-house.
+                This means you don’t need to go outside ESS to complete this part of the process. And because we know
+                the
+                details of your application already, we can help get you quicker outcomes.</p>
+            <img src="assets/images/visa1.png" width="250px">
 
-            We’ll help ensure every detail is taken care of for your arrival in your new country. If you require it,
-            we’ll arrange for you to be picked up from the airport and check in with you to make sure you arrive
-            safely
-            at your hotel.
+            <h4>Do you have more questions related to Visa Application?</h4>
 
-            Our job is to set you and your family’s mind at ease by providing you accurate, detailed information
-            about
-            what you can expect upon arrival.<br><br>
-            We are world-leaders in student service and the trusted partner of many top education providers because
-            of
-            the extra care we take of our students.
-            Our pre-departure counselling will also help you address foreign exchange and travel arrangements. Any
-            questions you have about life and study in Australia can be answered before you arrive. And we have a
-            wealth
-            of information specially tailored for international students.</p>
-        <img src="assets/images/service-6.jpg" width="250px">
-        <h4>Do you have more questions related to Individual Meetings?</h4>
-
-        <div class="contact-button">
-            <a href="#"><button class="buttonStyle1">Contac Us</button></a>
+            <div class="contact-button">
+                <a href="#"><button class="buttonStyle1">Contac Us</button></a>
+            </div>
         </div>
-    </div>
 
-    <div id="Accomodation" class="tabcontent">
-        <h3>Search of Accommodation</h3>
-        <p>Choosing the right place to stay in your new country can be daunting. That’s why it helps to have the
-            best
-            local knowledge. At ESS we place thousands of students annually in accommodation and we know where
-            students
-            feel safest and happiest.<br><br>
+        <div id="Application" class="tabcontent">
+            <h3>Filling out the Application</h3>
+            <p>Wishing for an offer from the University of your dreams? Or just need advice on course requirements?
+                At Studyco we can help you kick-start your journey to study abroad. We’ll be right there with you from
+                application to enrolment, making sure you get to where you need to go.
+                Representing hundreds of top Universities worldwide, we'll take on all the heavy lifting in your
+                application
+                process. Filling in forms, chasing documents and helping you overcome any bumps in the road along the
+                way.
+                Our job is to maximise your chances of getting the best possible education.
+                <br><br>
 
-            Our extensive selection of accommodation partners means we can help you browse for the right choice
-            based on
-            your needs. Every student has different preferences, some choose to stay in groups, others like to be
-            alone.
-            Whatever the request we can make sure you feel safe in knowing the accommodation provider you’ve chosen
-            has
-            a quality track-record.
-            Students in France have several different accommodation options available to them. ESS can help you
-            find:<br><br>
+                How to Apply, Step-By-Step
+                The application process can be daunting for any student. Especially when studying abroad. That’s why at
+                Studyco we make the process as streamlined as possible.
+                Simply click here for a step-by-step guide on How to Apply or click here to speak to a counsellor today.
+            </p>
+            <img src="assets/images/service-5.jpg" width="250px">
+            <h4>Do you have more questions related to Filling out Application?</h4>
+            <div class="contact-button">
+                <a href="#"><button class="buttonStyle1">Contac Us</button></a>
+            </div>
+        </div>
 
-            1. Homestay arrangements<br><br>
-            2. Hotel accommodation until you find permanent housing<br><br>
-            3. Temporary housing with international student groups<br><br>
-            4. On-campus housing in halls of residence or small apartments<br><br>
+        <div id="Communication" class="tabcontent">
+            <h3>Communication with university </h3>
+            <p>Study Group works with a large network of agents that are carefully chosen to represent our collaborating
+                universities to students all around the world. Together we share a vision for creating the best outcomes
+                for
+                our students and the universities we work with.<br><br>
 
-        </p>
-        <h4>Do you have more questions related to Accomodation?</h4>
-        <div class="contact-button">
-            <a href="#"><button class="buttonStyle1">Contac Us</button></a>
+                Study Group works with a large network of agents that are carefully chosen to represent our
+                collaborating
+                universities to students all around the world. Together we share a vision for creating the best outcomes
+                for
+                our students and the universities we work with. We understand that our agents play a big part in a
+                student’s
+                decision-making and application process, so we provide all of the tools and resources needed to help
+                students make the right choice about their education.<br><br>
+
+                We are ensure fully communication with universities, especially during Covid-19 situation, to keep you
+                updated about different deadlines, updates, fees, with applications and new opportunities to be enrolled
+                in
+                the different university activities, sports teams. </p>
+            <img src="assets/images/service-9.jpg" width="250px">
+            <h4>Do you have more questions related to Universities?</h4>
+
+            <div class="contact-button">
+                <a href="#"><button class="buttonStyle1">Contac Us</button></a>
+            </div>
+        </div>
+
+        <div id="Meetings" class="tabcontent">
+            <h3>Personal Meetings</h3>
+            <p>Making the decision to study abroad takes guts. It shows your somebody who isn’t afraid to take on new
+                frontiers.
+
+                We certainly understand the excitement of studying overseas but we also know it can be nerve-wracking.
+                At Studyco, we’ve been a trusted advisor to parents and students because we provide full detailed
+                pre-departure counselling.
+                Unlike other student-recruitment agencies, we can even book your flights in-house.<br><br>
+
+                We’ll help ensure every detail is taken care of for your arrival in your new country. If you require it,
+                we’ll arrange for you to be picked up from the airport and check in with you to make sure you arrive
+                safely
+                at your hotel.
+
+                Our job is to set you and your family’s mind at ease by providing you accurate, detailed information
+                about
+                what you can expect upon arrival.<br><br>
+                We are world-leaders in student service and the trusted partner of many top education providers because
+                of
+                the extra care we take of our students.
+                Our pre-departure counselling will also help you address foreign exchange and travel arrangements. Any
+                questions you have about life and study in Australia can be answered before you arrive. And we have a
+                wealth
+                of information specially tailored for international students.</p>
+            <img src="assets/images/service-6.jpg" width="250px">
+            <h4>Do you have more questions related to Individual Meetings?</h4>
+
+            <div class="contact-button">
+                <a href="#"><button class="buttonStyle1">Contac Us</button></a>
+            </div>
+        </div>
+
+        <div id="Accomodation" class="tabcontent">
+            <h3>Search of Accommodation</h3>
+            <p>Choosing the right place to stay in your new country can be daunting. That’s why it helps to have the
+                best
+                local knowledge. At ESS we place thousands of students annually in accommodation and we know where
+                students
+                feel safest and happiest.<br><br>
+
+                Our extensive selection of accommodation partners means we can help you browse for the right choice
+                based on
+                your needs. Every student has different preferences, some choose to stay in groups, others like to be
+                alone.
+                Whatever the request we can make sure you feel safe in knowing the accommodation provider you’ve chosen
+                has
+                a quality track-record.
+                Students in France have several different accommodation options available to them. ESS can help you
+                find:<br><br>
+
+                1. Homestay arrangements<br><br>
+                2. Hotel accommodation until you find permanent housing<br><br>
+                3. Temporary housing with international student groups<br><br>
+                4. On-campus housing in halls of residence or small apartments<br><br>
+
+            </p>
+            <h4>Do you have more questions related to Accomodation?</h4>
+            <div class="contact-button">
+                <a href="#"><button class="buttonStyle1">Contac Us</button></a>
+            </div>
         </div>
     </div>
 
