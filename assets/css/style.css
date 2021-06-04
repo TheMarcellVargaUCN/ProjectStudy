@@ -151,7 +151,129 @@ body {
     background-size: contain;
 }
 
+.chooseus {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px 1fr;
+    column-gap: 40px;
+}
 
+.headline2 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    grid-column-start: 1;
+    grid-column-end:3 ;
+    color: #203F7E;
+}
+.chooseus p {
+    grid-column: 1;
+    grid-row: 2;
+    margin-left: 25%
+}
+.points {
+    grid-row: 2;
+    margin-left: 100px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 80px 80px 80px 80px 80px;
+}
+.points img{
+    width: 60px;
+    grid-column: 1;
+}
+.points p {
+    position: relative;
+    margin-top: -60px;
+    margin-left: 80px;
+}
+
+.process {
+    margin-top: 50px;
+    display: grid;
+    grid-template-rows: 100px 1fr;
+    grid-template-columns: 500px 1fr;
+    margin-left: 13%;
+    margin-right: 10%;
+}
+.steps img{
+    width: 35px;
+    align-self: center;
+    grid-column: 1;
+}
+.showcase {
+    grid-column-start: 2;
+    width: 40vw;
+    margin-left: 100px;
+    float: right;
+}
+.process h2 {
+    display: block;
+}
+.steps {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8,80px);
+}
+.steps p {
+    position: relative;
+    margin-top: -40px;
+    margin-left: 50px;
+}
+
+.comparison {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 40vw 40vw;
+    grid-template-rows: 100px 40vh;
+}
+.comparison img {
+    width: 25vw;
+    place-self: center;
+}
+.comparison p {
+    grid-column-start: 2;
+    width: 400px;
+    place-self: center;
+}
+.universities {
+    display: grid;
+    grid-template-columns: repeat(5, 200px);
+    grid-template-rows: 100px 150px 100px;
+    margin-left: 23%;
+    margin-top: 100px;
+}
+.headline_uni {
+    grid-column-start:3;
+    grid-column-end: 5;
+    color: #203F7E;
+}
+.universities img {
+    height: 100px;
+    grid-row: 2;
+    transition: transform .2s;
+    place-self: center;
+}
+.universities img:hover {
+    transform: scale(1.6);
+}
+.universities a {
+    grid-row: 3;
+    grid-column-start: 3;
+    place-self: center;
+}
+.prices img{
+    display: block;
+    width: 70vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -100px;
+}
+.prices h2 {
+    margin-top: 100px;
+    text-align: center;
+}
 /* ---------------------Services-------------------- */
 .img-grid {
     display: grid;
