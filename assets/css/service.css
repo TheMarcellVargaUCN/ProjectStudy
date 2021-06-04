@@ -1,0 +1,269 @@
+* {
+    box-sizing: border-box
+}
+
+html {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #EBF3FA;
+    font-family: 'Lato', sans-serif;
+}
+
+/* navigation */
+
+.topnav {
+    height: 55px;
+    position: fixed;
+    width: 100%;
+    margin-top: -5%;
+    background-color: #EBF3FA;
+    overflow: hidden;
+    font-size: 16px;
+    box-shadow: 5px 2px 6px #888888a6;
+    z-index: 6;
+}
+
+#logo {
+    margin-left: 50px;
+}
+
+.logo {
+    float: left;
+}
+
+.topnav a {
+    float: right;
+    color: #F1A34F;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 18px;
+    padding-right: 60px;
+}
+
+.topnav a:hover {
+    color: #F1A34F;
+    border-radius: 7px;
+}
+
+.topnav a.active {
+    color: #203F7E;
+}
+
+.topnav .icon {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {
+        display: none;
+    }
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+    .topnav.responsive {
+        position: relative;
+    }
+    .topnav.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .topnav.responsive a {
+        float: none;
+        color: #203F7E;
+        display: block;
+        text-align: center;
+    }
+}
+
+/*----------------- Contact Us btn -----------------*/
+
+.buttonStyle1-act {
+    background-color: #F1A34F;
+    color: #203F7E;
+    border: none;
+    padding-bottom: 15px 5px;
+    cursor: pointer;
+    border-radius: 7px;
+    box-shadow: 0 5px rgba(48, 48, 48, 0.23);
+    outline: none;
+}
+
+.buttonStyle1 {
+    background-color: #F1A34F;
+    color: #ffffff;
+    border: none;
+    padding-bottom: 15px 5px;
+    cursor: pointer;
+    border-radius: 7px;
+    box-shadow: 0 5px rgba(48, 48, 48, 0.23);
+    outline: none;
+}
+
+.buttonStyle1:active {
+    box-shadow: 0 2px white;
+    transform: translateY(4px);
+    outline: none;
+}
+
+.buttonStyle1:hover {
+    outline: none;
+}
+
+.contact-button {
+    margin-top: 7%;
+}
+
+/* ------------------Arrow style------------- */
+
+.arrow {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 5%;
+    width: 30px;
+    height: 30px;
+    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgaGVpZ2h0PSI1MTIiIGlkPSJzdmcyIiB2ZXJzaW9uPSIxLjEiIHdpZHRoPSI1MTIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6Y2M9Imh0dHA6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL25zIyIgeG1sbnM6ZGM9Imh0dHA6Ly9wdXJsLm9yZy9kYy9lbGVtZW50cy8xLjEvIiB4bWxuczppbmtzY2FwZT0iaHR0cDovL3d3dy5pbmtzY2FwZS5vcmcvbmFtZXNwYWNlcy9pbmtzY2FwZSIgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIiB4bWxuczpzb2RpcG9kaT0iaHR0cDovL3NvZGlwb2RpLnNvdXJjZWZvcmdlLm5ldC9EVEQvc29kaXBvZGktMC5kdGQiIHhtbG5zOnN2Zz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxkZWZzIGlkPSJkZWZzNCIvPjxnIGlkPSJsYXllcjEiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAsLTU0MC4zNjIyKSI+PHBhdGggZD0ibSAxMjcuNDA2MjUsNjU3Ljc4MTI1IGMgLTQuOTg1MywwLjA3ODQgLTkuOTEwNzcsMi4xNjMwOCAtMTMuNDM3NSw1LjY4NzUgbCAtNTUsNTUgYyAtMy42MDA1NjUsMy41OTkyNyAtNS42OTY4ODMsOC42NTg5NSAtNS42OTY4ODMsMTMuNzUgMCw1LjA5MTA1IDIuMDk2MzE4LDEwLjE1MDczIDUuNjk2ODgzLDEzLjc1IEwgMjQyLjI1LDkyOS4yNSBjIDMuNTk5MjcsMy42MDA1NiA4LjY1ODk1LDUuNjk2ODggMTMuNzUsNS42OTY4OCA1LjA5MTA1LDAgMTAuMTUwNzMsLTIuMDk2MzIgMTMuNzUsLTUuNjk2ODggTCA0NTMuMDMxMjUsNzQ1Ljk2ODc1IGMgMy42MDA1NiwtMy41OTkyNyA1LjY5Njg4LC04LjY1ODk1IDUuNjk2ODgsLTEzLjc1IDAsLTUuMDkxMDUgLTIuMDk2MzIsLTEwLjE1MDczIC01LjY5Njg4LC0xMy43NSBsIC01NSwtNTUgYyAtMy41OTgxNSwtMy41OTEyNyAtOC42NTA2OCwtNS42ODEyNyAtMTMuNzM0MzgsLTUuNjgxMjcgLTUuMDgzNjksMCAtMTAuMTM2MjIsMi4wOSAtMTMuNzM0MzcsNS42ODEyNyBMIDI1Niw3NzguMDMxMjUgMTQxLjQzNzUsNjYzLjQ2ODc1IGMgLTMuNjY2NzgsLTMuNjY0MjMgLTguODQ4MDEsLTUuNzY0NDIgLTE0LjAzMTI1LC01LjY4NzUgeiIgaWQ9InBhdGgzNzY2LTEiIHN0eWxlPSJmb250LXNpemU6bWVkaXVtO2ZvbnQtc3R5bGU6bm9ybWFsO2ZvbnQtdmFyaWFudDpub3JtYWw7Zm9udC13ZWlnaHQ6bm9ybWFsO2ZvbnQtc3RyZXRjaDpub3JtYWw7dGV4dC1pbmRlbnQ6MDt0ZXh0LWFsaWduOnN0YXJ0O3RleHQtZGVjb3JhdGlvbjpub25lO2xpbmUtaGVpZ2h0Om5vcm1hbDtsZXR0ZXItc3BhY2luZzpub3JtYWw7d29yZC1zcGFjaW5nOm5vcm1hbDt0ZXh0LXRyYW5zZm9ybTpub25lO2RpcmVjdGlvbjpsdHI7YmxvY2stcHJvZ3Jlc3Npb246dGI7d3JpdGluZy1tb2RlOmxyLXRiO3RleHQtYW5jaG9yOnN0YXJ0O2Jhc2VsaW5lLXNoaWZ0OmJhc2VsaW5lO2NvbG9yOiMwMDAwMDA7ZmlsbDojMjIyMjIyO2ZpbGwtb3BhY2l0eToxO2ZpbGwtcnVsZTpub256ZXJvO3N0cm9rZTpub25lO3N0cm9rZS13aWR0aDozOC44ODAwMDEwNzttYXJrZXI6bm9uZTt2aXNpYmlsaXR5OnZpc2libGU7ZGlzcGxheTppbmxpbmU7b3ZlcmZsb3c6dmlzaWJsZTtlbmFibGUtYmFja2dyb3VuZDphY2N1bXVsYXRlO2ZvbnQtZmFtaWx5OlNhbnM7LWlua3NjYXBlLWZvbnQtc3BlY2lmaWNhdGlvbjpTYW5zIi8+PC9nPjwvc3ZnPg==);
+    background-size: contain;
+}
+
+.bounce {
+    animation: bounce 3s infinite;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-30px);
+    }
+    60% {
+        transform: translateY(-15px);
+    }
+}
+
+/* ------------------------Service page Intro ------------------- */
+
+.grid-service-intro {
+    display: grid;
+    width: 100%;
+    margin-top: 5%;
+    /* background-color: lawngreen; */
+    background-image: url("../images/ESS-BG.png");
+    background-repeat: no-repeat;
+    background-size: 95%;
+    background-position: top;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+}
+
+.service-intro {
+    width: 60%;
+    height: 40vh;
+    margin-top: 25%;
+    margin-left: 40%;
+    font-size: 1.5vw;
+    color: #434343;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+.service-intro-img {
+    margin-top: 16%;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+.service-intro-img img {
+    width: 35vw;
+}
+
+/* ------------------Main content -----------------*/
+
+.tab {
+    margin-left: 120px;
+    margin-top: 120px;
+    float: left;
+    background-color: white;
+    width: 29%;
+    height: 540px;
+    border-radius: 7px;
+}
+
+.tab button {
+    display: block;
+    background-color: inherit;
+    color: black;
+    padding: 15px 20px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.tab button:hover {
+    background-color: #203F7E;
+    color: white;
+}
+
+/* .tab button.active {
+    background-color: rgb(100, 219, 45);
+} */
+
+.tabcontent {
+    margin-left: 20px;
+    margin-top: 120px;
+    float: left;
+    padding: 0px 12px;
+    background-color: white;
+    width: 55%;
+    border-left: none;
+    height: 660px;
+    border-radius: 7px;
+}
+
+h3 {
+    font-size: 23px;
+    color: #F1A34F;
+    margin-top: 40px;
+}
+
+p {
+    margin-top: 10px;
+}
+
+hr {
+    background-color: #203F7E;
+}
+
+h4 {
+    margin-top: 70px;
+    margin-bottom: -40px;
+}
+
+#price-img {
+    margin-left: 130px;
+    margin-top: 30px;
+}
+
+img {
+    border-radius: 7px;
+}
