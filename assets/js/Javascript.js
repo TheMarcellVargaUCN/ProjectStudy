@@ -12,7 +12,7 @@ let plane = document.getElementById('plane');
 let car = document.getElementById('car');
 
 function onScrollChecks(){
-	//console.log(window.pageYOffset);
+	console.log(window.pageYOffset);
     if(window.pageYOffset < 1000){
        car.style.display = "block";
    }
