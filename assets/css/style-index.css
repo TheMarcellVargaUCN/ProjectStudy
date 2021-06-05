@@ -107,7 +107,7 @@ body {
     height: 100vh;
     width: 100vw;
     grid-template-columns: 55% 45%;
-    grid-template-rows: 30% 15% 10%;
+    grid-template-rows: 15vw 10vw 10%;
     column-gap: 2rem;
 }
 .mainimg {
@@ -142,7 +142,7 @@ body {
     display: block;
 }
 .landing-headline {
-    font-size: 14px;
+    font-size: 1vw;
     color: #203F7E;
     text-align: left;
     grid-column: 2;
@@ -156,7 +156,7 @@ body {
     grid-column-end: 3;
     grid-row-start: 2;
     grid-row-end: 3;
-    max-width: 400px;
+    font-size: 1vw;
 }
 .landing-contact-button {
     text-align: left;
@@ -178,14 +178,16 @@ body {
 }
 
 .chooseus {
+    font-size: 1vw;
     margin-top: 50px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 100px 1fr;
+    grid-template-rows: auto 1fr;
     column-gap: 40px;
 }
 
 .headline2 {
+    font-size: 1vw;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -193,26 +195,33 @@ body {
     grid-column-end:3 ;
     color: #203F7E;
 }
-.chooseus p {
+.chooseus_paragraph {
+    font-size: 1vw;
     grid-column: 1;
     grid-row: 2;
     margin-left: 30%;
+    place-self: center;
 }
 .points {
+    font-size: 1vw;
     grid-row: 2;
-    margin-left: 100px;
+    justify-self: start;
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 80px 80px 80px 80px 80px;
+    grid-template-columns: 4vw 300px;
+    grid-template-rows: repeat(5, auto);
+    row-gap: 3%;
 }
 .points img{
-    width: 60px;
+    width: 4vw;
     grid-column: 1;
+    place-self: center;
+
 }
 .points p {
-    position: relative;
-    margin-top: -60px;
-    margin-left: 80px;
+    justify-self: start;
+    align-self: center;
+    margin-left: 10px;
+    grid-column: 2;
 }
 
 .process {
@@ -239,12 +248,14 @@ body {
     align-self: center;
 }
 .steps {
+    font-size: 1vw;
     grid-column: 1;
     display: grid;
     grid-template-columns: 10% 90%;
-    grid-template-rows: repeat(8,80px);
+    grid-template-rows: repeat(8, auto);
     width: 30vw;
     place-self: center;
+    row-gap: 3%;
 }
 .steps img{
     width: 60%;
@@ -260,7 +271,7 @@ body {
     margin-top: 100px;
     display: grid;
     grid-template-columns: 55vw 45vw;
-    grid-template-rows: 50px 40vh;
+    grid-template-rows: auto auto;
 }
 .comparison img {
     width: 30vw;
@@ -268,8 +279,9 @@ body {
     max-width: 400px;
 }
 .comparison p {
+    font-size: 1vw;
     grid-column-start: 2;
-    width: 400px;
+    width: 30vw;
     justify-self: start;
     align-self: center;
 }
@@ -286,9 +298,11 @@ body {
     place-self: center;
 }
 .headline_uni {
+    font-size: 1vw;
     grid-column-start:2;
     grid-column-end: 5;
     place-self: center;
+    margin-bottom: 7%;
     color: #203F7E;
 }
 .universities img {
@@ -406,8 +420,41 @@ body {
     width: 80%;
     place-self: center;
 }
-.footer {
-    margin-top: 100px;
-    height: 20vh;
-    background-color: #203F7E;
+/*   ..........................  Footer ..........................  */
+footer{
+    margin-top: 5%;
+    background-color:  #203F7E;
+    padding: 2%;
+    color: white;
+    font-size: 1vw;
 }
+
+   .footer-content{
+     display: flex;
+     width: 60%;
+     margin-left: auto;
+     margin-right: auto;
+     line-height: 1.7;
+   }
+
+   .footer-left{
+     margin-left: auto;
+     margin-right: auto;  
+   }
+
+   .footer-center{
+     margin-left: auto;
+     margin-right: auto;
+   }
+
+   .footer-right{
+     margin-left: auto;
+     margin-right: auto;
+   }
+
+   .footer-bottom{
+     margin-top: 3%;
+     text-align: center;
+   }
+
+
