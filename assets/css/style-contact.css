@@ -1,517 +1,635 @@
 html {
-  height: 100%;
-  margin: 0;
-  font-family: "lato";
-  line-height: 1.2;
+    height: 100%;
+    margin: 0;
+    font-family: "lato";
+    line-height: 1.2;
 }
 
 body {
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  background-color: #EBF3FA;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #EBF3FA;
 }
 
 /*   .......................... nav-bar ..........................  */
-
+ 
 .topnav {
-  position: fixed;
-  width: 100%;
-  margin-top: -5%;
-  background-color: #EBF3FA;
-  overflow: hidden;
-  font-size: 16px;
-  box-shadow: 5px 2px 6px #888888a6;
-  z-index: 6;
+    position:fixed;
+    width: 100%;
+    margin-top: -5%;
+    background-color: #EBF3FA;
+    overflow: hidden;
+    font-size: 16px;
+    box-shadow: 5px 2px 6px #888888a6;
+    z-index: 6;
 }
 
 #logo {
-  margin-left: 50px;
+    margin-left: 50px;
 }
 
 .topnav a {
-  float: right;
-  color: #F1A34F;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 18px;
-  padding-right: 60px;
+    float: right;
+    color: #F1A34F;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 18px;
+    padding-right: 60px;
 }
 
 .topnav a:hover {
-  color: #F1A34F;
-  border-radius: 7px;
+    color: #F1A34F;
+    border-radius: 7px;
 }
 
 .topnav a.active {
-  color: #203F7E;
+    color: #203F7E;
 }
 
 .topnav .icon {
-  display: none;
+    display: none;
 }
 
 /*   .......................... nav - responsive ..........................  */
-
+ 
 @media screen and (max-width: 600px) {
-  .topnav a:not(:first-child) {
-    display: none;
-  }
-  .topnav a.icon {
-    float: right;
-    display: block;
-  }
-  .topnav.responsive {
-    position: relative;
-  }
-  .topnav.responsive a.icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .topnav.responsive a {
-    float: none;
-    color: #203F7E;
-    display: block;
-    text-align: center;
-  }
+    .topnav a:not(:first-child) {
+        display: none;
+    }
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+    .topnav.responsive {
+        position: relative;
+    }
+    .topnav.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .topnav.responsive a {
+        float: none;
+        color: #203F7E;
+        display: block;
+        text-align: center;
+    }
 }
 
 /*   .......................... Contact us btn ..........................  */
 
 .buttonStyle1-act {
-  background-color: #F1A34F;
-  color: #203F7E;
-  border: none;
-  padding-bottom: 15px 5px;
-  cursor: pointer;
-  border-radius: 7px;
-  box-shadow: 0 5px rgba(48, 48, 48, 0.23);
-  outline: none;
+    background-color: #F1A34F;
+    color: #203F7E;
+    border: none;
+    padding-bottom: 15px 5px;
+    cursor: pointer;
+    border-radius: 7px;
+    box-shadow: 0 5px rgba(48, 48, 48, 0.23);
+    outline: none;
 }
 
 .buttonStyle1 {
-  background-color: #F1A34F;
-  color: #ffffff;
-  border: none;
-  padding-bottom: 15px 5px;
-  cursor: pointer;
-  border-radius: 7px;
-  box-shadow: 0 5px rgba(48, 48, 48, 0.23);
-  outline: none;
+    background-color: #F1A34F;
+    color: #ffffff;
+    border: none;
+    padding-bottom: 15px 5px;
+    cursor: pointer;
+    border-radius: 7px;
+    box-shadow: 0 5px rgba(48, 48, 48, 0.23);
+    outline: none;
 }
 
+
 .buttonStyle1:active {
-  box-shadow: 0 2px white;
-  transform: translateY(4px);
-  outline: none;
+    box-shadow: 0 2px white;
+    transform: translateY(4px);
+    outline: none;
 }
 
 .buttonStyle1:hover {
-  outline: none;
+    outline: none;
 }
 
-.contact-button {
-  margin-top: 7%;
+.contact-button{
+    margin-top: 7%;
 }
 
 /*   .......................... arrow ..........................  */
-
+ 
 .arrow {
-  grid-column-start: 1;
-  grid-column-end: 4;
-  grid-row-start: 2;
-  grid-row-end: 2;
-  margin-right: auto;
-  margin-left: auto;
-  margin-top: 5%;
-  width: 30px;
-  height: 30px;
-  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgaGVpZ2h0PSI1MTIiIGlkPSJzdmcyIiB2ZXJzaW9uPSIxLjEiIHdpZHRoPSI1MTIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6Y2M9Imh0dHA6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL25zIyIgeG1sbnM6ZGM9Imh0dHA6Ly9wdXJsLm9yZy9kYy9lbGVtZW50cy8xLjEvIiB4bWxuczppbmtzY2FwZT0iaHR0cDovL3d3dy5pbmtzY2FwZS5vcmcvbmFtZXNwYWNlcy9pbmtzY2FwZSIgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIiB4bWxuczpzb2RpcG9kaT0iaHR0cDovL3NvZGlwb2RpLnNvdXJjZWZvcmdlLm5ldC9EVEQvc29kaXBvZGktMC5kdGQiIHhtbG5zOnN2Zz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxkZWZzIGlkPSJkZWZzNCIvPjxnIGlkPSJsYXllcjEiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAsLTU0MC4zNjIyKSI+PHBhdGggZD0ibSAxMjcuNDA2MjUsNjU3Ljc4MTI1IGMgLTQuOTg1MywwLjA3ODQgLTkuOTEwNzcsMi4xNjMwOCAtMTMuNDM3NSw1LjY4NzUgbCAtNTUsNTUgYyAtMy42MDA1NjUsMy41OTkyNyAtNS42OTY4ODMsOC42NTg5NSAtNS42OTY4ODMsMTMuNzUgMCw1LjA5MTA1IDIuMDk2MzE4LDEwLjE1MDczIDUuNjk2ODgzLDEzLjc1IEwgMjQyLjI1LDkyOS4yNSBjIDMuNTk5MjcsMy42MDA1NiA4LjY1ODk1LDUuNjk2ODggMTMuNzUsNS42OTY4OCA1LjA5MTA1LDAgMTAuMTUwNzMsLTIuMDk2MzIgMTMuNzUsLTUuNjk2ODggTCA0NTMuMDMxMjUsNzQ1Ljk2ODc1IGMgMy42MDA1NiwtMy41OTkyNyA1LjY5Njg4LC04LjY1ODk1IDUuNjk2ODgsLTEzLjc1IDAsLTUuMDkxMDUgLTIuMDk2MzIsLTEwLjE1MDczIC01LjY5Njg4LC0xMy43NSBsIC01NSwtNTUgYyAtMy41OTgxNSwtMy41OTEyNyAtOC42NTA2OCwtNS42ODEyNyAtMTMuNzM0MzgsLTUuNjgxMjcgLTUuMDgzNjksMCAtMTAuMTM2MjIsMi4wOSAtMTMuNzM0MzcsNS42ODEyNyBMIDI1Niw3NzguMDMxMjUgMTQxLjQzNzUsNjYzLjQ2ODc1IGMgLTMuNjY2NzgsLTMuNjY0MjMgLTguODQ4MDEsLTUuNzY0NDIgLTE0LjAzMTI1LC01LjY4NzUgeiIgaWQ9InBhdGgzNzY2LTEiIHN0eWxlPSJmb250LXNpemU6bWVkaXVtO2ZvbnQtc3R5bGU6bm9ybWFsO2ZvbnQtdmFyaWFudDpub3JtYWw7Zm9udC13ZWlnaHQ6bm9ybWFsO2ZvbnQtc3RyZXRjaDpub3JtYWw7dGV4dC1pbmRlbnQ6MDt0ZXh0LWFsaWduOnN0YXJ0O3RleHQtZGVjb3JhdGlvbjpub25lO2xpbmUtaGVpZ2h0Om5vcm1hbDtsZXR0ZXItc3BhY2luZzpub3JtYWw7d29yZC1zcGFjaW5nOm5vcm1hbDt0ZXh0LXRyYW5zZm9ybTpub25lO2RpcmVjdGlvbjpsdHI7YmxvY2stcHJvZ3Jlc3Npb246dGI7d3JpdGluZy1tb2RlOmxyLXRiO3RleHQtYW5jaG9yOnN0YXJ0O2Jhc2VsaW5lLXNoaWZ0OmJhc2VsaW5lO2NvbG9yOiMwMDAwMDA7ZmlsbDojMjIyMjIyO2ZpbGwtb3BhY2l0eToxO2ZpbGwtcnVsZTpub256ZXJvO3N0cm9rZTpub25lO3N0cm9rZS13aWR0aDozOC44ODAwMDEwNzttYXJrZXI6bm9uZTt2aXNpYmlsaXR5OnZpc2libGU7ZGlzcGxheTppbmxpbmU7b3ZlcmZsb3c6dmlzaWJsZTtlbmFibGUtYmFja2dyb3VuZDphY2N1bXVsYXRlO2ZvbnQtZmFtaWx5OlNhbnM7LWlua3NjYXBlLWZvbnQtc3BlY2lmaWNhdGlvbjpTYW5zIi8+PC9nPjwvc3ZnPg==);
-  background-size: contain;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    margin-right: auto;
+    margin-left: auto ;
+    margin-top: 5%;
+    width: 30px;
+    height: 30px;
+    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgaGVpZ2h0PSI1MTIiIGlkPSJzdmcyIiB2ZXJzaW9uPSIxLjEiIHdpZHRoPSI1MTIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6Y2M9Imh0dHA6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL25zIyIgeG1sbnM6ZGM9Imh0dHA6Ly9wdXJsLm9yZy9kYy9lbGVtZW50cy8xLjEvIiB4bWxuczppbmtzY2FwZT0iaHR0cDovL3d3dy5pbmtzY2FwZS5vcmcvbmFtZXNwYWNlcy9pbmtzY2FwZSIgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIiB4bWxuczpzb2RpcG9kaT0iaHR0cDovL3NvZGlwb2RpLnNvdXJjZWZvcmdlLm5ldC9EVEQvc29kaXBvZGktMC5kdGQiIHhtbG5zOnN2Zz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxkZWZzIGlkPSJkZWZzNCIvPjxnIGlkPSJsYXllcjEiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAsLTU0MC4zNjIyKSI+PHBhdGggZD0ibSAxMjcuNDA2MjUsNjU3Ljc4MTI1IGMgLTQuOTg1MywwLjA3ODQgLTkuOTEwNzcsMi4xNjMwOCAtMTMuNDM3NSw1LjY4NzUgbCAtNTUsNTUgYyAtMy42MDA1NjUsMy41OTkyNyAtNS42OTY4ODMsOC42NTg5NSAtNS42OTY4ODMsMTMuNzUgMCw1LjA5MTA1IDIuMDk2MzE4LDEwLjE1MDczIDUuNjk2ODgzLDEzLjc1IEwgMjQyLjI1LDkyOS4yNSBjIDMuNTk5MjcsMy42MDA1NiA4LjY1ODk1LDUuNjk2ODggMTMuNzUsNS42OTY4OCA1LjA5MTA1LDAgMTAuMTUwNzMsLTIuMDk2MzIgMTMuNzUsLTUuNjk2ODggTCA0NTMuMDMxMjUsNzQ1Ljk2ODc1IGMgMy42MDA1NiwtMy41OTkyNyA1LjY5Njg4LC04LjY1ODk1IDUuNjk2ODgsLTEzLjc1IDAsLTUuMDkxMDUgLTIuMDk2MzIsLTEwLjE1MDczIC01LjY5Njg4LC0xMy43NSBsIC01NSwtNTUgYyAtMy41OTgxNSwtMy41OTEyNyAtOC42NTA2OCwtNS42ODEyNyAtMTMuNzM0MzgsLTUuNjgxMjcgLTUuMDgzNjksMCAtMTAuMTM2MjIsMi4wOSAtMTMuNzM0MzcsNS42ODEyNyBMIDI1Niw3NzguMDMxMjUgMTQxLjQzNzUsNjYzLjQ2ODc1IGMgLTMuNjY2NzgsLTMuNjY0MjMgLTguODQ4MDEsLTUuNzY0NDIgLTE0LjAzMTI1LC01LjY4NzUgeiIgaWQ9InBhdGgzNzY2LTEiIHN0eWxlPSJmb250LXNpemU6bWVkaXVtO2ZvbnQtc3R5bGU6bm9ybWFsO2ZvbnQtdmFyaWFudDpub3JtYWw7Zm9udC13ZWlnaHQ6bm9ybWFsO2ZvbnQtc3RyZXRjaDpub3JtYWw7dGV4dC1pbmRlbnQ6MDt0ZXh0LWFsaWduOnN0YXJ0O3RleHQtZGVjb3JhdGlvbjpub25lO2xpbmUtaGVpZ2h0Om5vcm1hbDtsZXR0ZXItc3BhY2luZzpub3JtYWw7d29yZC1zcGFjaW5nOm5vcm1hbDt0ZXh0LXRyYW5zZm9ybTpub25lO2RpcmVjdGlvbjpsdHI7YmxvY2stcHJvZ3Jlc3Npb246dGI7d3JpdGluZy1tb2RlOmxyLXRiO3RleHQtYW5jaG9yOnN0YXJ0O2Jhc2VsaW5lLXNoaWZ0OmJhc2VsaW5lO2NvbG9yOiMwMDAwMDA7ZmlsbDojMjIyMjIyO2ZpbGwtb3BhY2l0eToxO2ZpbGwtcnVsZTpub256ZXJvO3N0cm9rZTpub25lO3N0cm9rZS13aWR0aDozOC44ODAwMDEwNzttYXJrZXI6bm9uZTt2aXNpYmlsaXR5OnZpc2libGU7ZGlzcGxheTppbmxpbmU7b3ZlcmZsb3c6dmlzaWJsZTtlbmFibGUtYmFja2dyb3VuZDphY2N1bXVsYXRlO2ZvbnQtZmFtaWx5OlNhbnM7LWlua3NjYXBlLWZvbnQtc3BlY2lmaWNhdGlvbjpTYW5zIi8+PC9nPjwvc3ZnPg==);
+    background-size: contain;
 }
 
 .bounce {
-  animation: bounce 3s infinite;
+    animation: bounce 3s infinite;
 }
 
 @keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
-    transform: translateY(0);
-  }
-  40% {
-    transform: translateY(-30px);
-  }
-  60% {
-    transform: translateY(-15px);
-  }
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-30px);
+    }
+    60% {
+        transform: translateY(-15px);
+    }
 }
 
 /*   .......................... Contact us page intro ..........................  */
-
-.grid-contact-intro {
-  display: grid;
-  width: 100%;
-  margin-top: 5%;
-  /* background-color: lawngreen; */
-  background-image: url("../images/ESS-BG.png");
-  background-repeat: no-repeat;
-  ;
-  background-size: 95%;
-  background-position: top;
-  grid-template-rows: 1fr;
-  grid-template-columns: 1fr 1fr;
-}
-
-.contact-intro {
-  width: 60%;
-  height: 40vh;
-  margin-top: 25%;
-  /* margin-right: 25%; */
-  margin-left: 40%;
-  font-size: 1.5vw;
-  color: #434343;
-  /* background-color: darkgoldenrod; */
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 1;
-  grid-row-end: 1;
-}
-
-.contact-intro-img img {
-  width: 30vw;
-  margin-left: 15%;
-  margin-top: 26%;
-  /* background-color: rgb(184, 11, 161); */
-  grid-column-start: 2;
-  grid-column-end: 4;
-  grid-row-start: 1;
-  grid-row-end: 1;
-}
-
-.contact-intro-img1 {
-  visibility: hidden;
-}
-
-/*   .......................... Contact us page- info ..........................  */
-
-.grid-contact-info {
-  display: grid;
-  height: 100%;
-  width: 100%;
-  margin-top: 5%;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
-  /* background-color: rgb(211, 208, 23);  */
-}
-
-.contact-info-img img {
-  width: 22vw;
-  margin-left: 30%;
-  margin-top: 5%;
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 1;
-  grid-row-end: 1;
-}
-
-.info-cont {
-  color: white;
-  font-size: 1.2vw;
-  width: 20vw;
-  margin-left: 32%;
-  margin-top: -69%;
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 1;
-  grid-row-end: 1;
-}
-
-/*   .......................... Contact us page- team ..........................  */
-
-.team h3 {
-  color: #203F7E;
-  margin-top: 7%;
-}
-
-.cards {
-  display: flex;
-  justify-content: center;
-  padding: 1.5%;
-  width: 45vw;
-}
-
-.card {
-  padding-right: 5%;
-  padding-left: 5%;
-  padding-top: 5%;
-  padding-bottom: 2%;
-  margin: 3%;
-  background: #fefff9;
-  color: #363636;
-  text-decoration: none;
-  box-shadow: rgba(0, 0, 0, 0.19) 0 0 8px 0;
-}
-
-.card img {
-  margin: auto;
-  display: block;
-}
-
-.card-text {
-  text-align: center;
-  width: 60%;
-  font-size: 1.2vw;
-}
-
-/*   .......................... Contact us page- form ..........................  */
-
-.form-page {
-  margin-top: 8%;
-  width: 100%;
-  height: 75vh;
-  background-image: url("../images/contact-bg.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 70%;
-}
-
-.Contact-form-page {
-  width: 60vw;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.company-info {
-  margin-top: 15%;
-  background: #00000094;
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
-  text-align: left;
-  color: white;
-}
-
-.contact {
-  margin-top: 15%;
-  background: #ffffff;
-  padding: 1%;
-  border-bottom-left-radius: 4px;
-  border-bottom-right-radius: 4px;
-}
-
-.contact form button, .contact form input, .contact form textarea {
-  width: 100%;
-  padding: 0.7em;
-  border: solid 1px #627EDC;
-  border-radius: 4px;
-}
-
-.contact form button {
-  background: #627EDC;
-  width: 15vw;
-  border: 0;
-  color: #e4e4e4;
-  text-transform: uppercase;
-  font-size: 14px;
-  font-weight: bold;
-}
-
-@media only screen and (min-width: 125px) {
-  .Contact-form-page {
+ 
+.grid-contact-intro{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-  .Contact-form-page>* {
-    padding: 2em;
-  }
-  .company-info {
-    border-radius: 4px 0 0 4px;
-  }
-  .contact {
-    border-radius: 0 4px 4px 0;
-  }
-}
+    width: 100%;
+    margin-top: 5%;
+    background-image: url("../images/ESS-BG.png");
+    background-repeat: no-repeat;;
+    background-size: 95%;
+    background-position: top;
+    grid-template-rows: 1fr;
+    grid-template-columns:  1fr 1fr;
+  }  
 
-/*   ..........................  Footer ..........................  */
-
-.footer {
-  margin-top: 5%;
-}
-
-/*   .......................... RESPONSIVE  ..........................  */
-
-/*   ..........................  For tablet ..........................  */
-
-@media only screen and (max-width: 768px) {
-  .topnav {
-    margin-top: -8%;
-  }
-  .grid-contact-intro {
-    margin-top: 8%;
-    height: 60%;
-    /* background-color: rgb(41, 70, 12); */
-  }
-  .contact-intro {
-    width: 70%;
-    /* height: 40vh; */
-    margin-top: 15%;
-    margin-left: 30%;
-    font-size: 1em;
+  .contact-intro{
+    width: 60%;
+    height: 40vh;
+    margin-top: 25%;
+    /* margin-right: 25%; */
+    margin-left: 40%;
+    font-size: 1.5vw;
+    color: #434343;
     /* background-color: darkgoldenrod; */
-  }
-  .arrow {
-    margin-top: 3%;
-    width: 20px;
-    height: 20px;
-  }
-  .grid-contact-info {
-    margin-top: 2%;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-  }
-  .contact-info-img img {
-    width: 35vw;
-    margin-top: 10%;
-    grid-column-start: 1;
-    grid-column-end: 4;
-    grid-row-start: 1;
-    grid-row-end: 1;
-  }
-  .info-cont {
-    font-size: 2vw;
-    width: 40vw;
-    margin-left: 32%;
-    margin-top: -55%;
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end: 1;
   }
-  .cards {
-    width: 30vw;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .card-text {
-    text-align: center;
-    width: 40%;
-    font-size: 2vw;
-  }
-  .team h3 {
-    color: #203F7E;
-    margin-top: 3%;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-  }
-  .Contact-form-page {
-    width: 50vw;
-    font-size: 1.6vw;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .company-info {
-    margin-top: 45%;
-  }
-  .contact {
-    margin-top: 45%;
-  }
-  .contact form button {
-    background: #627EDC;
-    width: 10vw;
-    border: 0;
-    color: #e4e4e4;
-    text-transform: uppercase;
-    font-size: 1.5vw;
-    font-weight: bold;
-  }
-}
 
-/*   ..........................   For phone ..........................  */
-
-@media only screen and (max-width: 600px) {
-  .topnav {
-    margin-top: -13%;
-  }
-  .grid-contact-intro {
-    margin-top: 13%;
-    background-image: none;
-  }
-  .contact-intro {
-    width: 90%;
-    height: 80%;
-    margin-top: 15%;
-    margin-left: 20%;
-    font-size: 3vw;
-    /* background-color: darkgoldenrod; */
-  }
-  .contact-intro-img1 img {
-    visibility: visible;
+  .contact-intro-img img{
     width: 30vw;
-    margin-top: 20%;
-    margin-left: 20%;
+    margin-left: 15%;
+    margin-top: 26%;
+    /* background-color: rgb(184, 11, 161); */
     grid-column-start: 2;
     grid-column-end: 4;
     grid-row-start: 1;
     grid-row-end: 1;
-  }
-  .contact-intro-img {
-    display: none;
-  }
-  .arrow {
-    margin-top: 2%;
-    width: 10px;
-    height: 10px;
-  }
-  .grid-contact-info {
-    margin-top: 2%;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-  }
-  .contact-info-img img {
-    width: 55vw;
-    margin-top: 10%;
-  }
-  .info-cont {
-    font-size: 3vw;
-    width: 50vw;
+}
+
+.contact-intro-img1{
+    visibility: hidden;
+}
+
+
+
+/*   .......................... Contact us page- info ..........................  */
+ 
+
+.grid-contact-info{
+    display: grid;
+    height: 100%;
+    width: 100%;
+    margin-top: 5%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    /* background-color: rgb(211, 208, 23);  */
+  }  
+
+
+  .contact-info-img img{
+    width: 22vw;
+    margin-left: 30%;
+    margin-top: 5%;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+ .info-cont{
+    color: white;
+    font-size: 1.2vw;
+    width: 20vw;
     margin-left: 32%;
-    margin-top: -85%;
+    margin-top: -69%;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
+} 
+
+
+/*   .......................... Contact us page- team ..........................  */
+ 
+.team h3{
+    color: #203F7E;
+    margin-top: 7%;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    padding: 1.5%;
+    width: 45vw;
+  
   }
-  .cards {
-    width: 10vw;
-    display: inline;
-    padding-right: 1%;
-    padding-left: 1%;
-    padding-top: 3%;
-  }
+  
   .card {
-    width: 50vw;
-    margin-left: auto;
-    margin-right: auto;
+    padding-right:  5%;
+    padding-left: 5%;
+    padding-top: 5%;
+    padding-bottom: 2%;
+    margin: 3%;
+    background: #fefff9;
+    color: #363636;
+    text-decoration: none;
+    box-shadow: rgba(0, 0, 0, 0.19) 0 0 8px 0;
   }
-  .card img {
-    width: 40vw;
+
+  .card img{
+    margin: auto;
+    display: block;
   }
+
   .card-text {
     text-align: center;
-    font-size: 3vw;
+    width: 60%;
+    font-size: 1.2vw;
   }
-  .team h3 {
-    color: #203F7E;
-    margin-top: -40%;
+  
+/*   .......................... Contact us page- form ..........................  */
+.form-page{
+    margin-top: 8%;
+ 
+    height: 75vh;
+    background-image: url("../images/contact-bg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70%;
+}
+
+.Contact-form-page{
+    width: 60vw;
+    margin: auto;
+  } 
+  
+  .company-info {
+    margin-top: 15%;
+    background: #00000094;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    text-align: left;
+    color: white;
+    font-size: 1.1vw;
   }
-  .form-page {
-    margin-top: -10%;
-    background-size: 100%;
+
+  .company-info p {
+    width: 70%;
+    margin-top: 15%;
   }
-  .Contact-form-page {
-    width: 90vw;
-    font-size: 2.7vw;
+  
+  .contact h4{
+    text-align: center;
   }
+  .contact {
+    font-size: 1.1vw;
+    margin-top: 15%;
+    background: #ffffff;
+    padding: 1%;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+  }
+  
+  .contact form button,
+  .contact form input,
+  .contact form textarea {
+    width: 100%;
+    padding: 0.7em;
+    border: solid 1px #F1A34F;
+    border-radius: 4px;
+  }
+   
   .contact form button {
-    width: 15vw;
-    font-size: 2.5vw;
+    background: #F1A34F;
+    width: 10vw;
+    border: 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.1vw;
+    font-weight: bold;
   }
+  
+  @media only screen and (min-width: 125px) {
+    .Contact-form-page {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+  
+    .Contact-form-page > * {
+      padding: 2em;
+    }
+  
+    .company-info {
+      border-radius: 4px 0 0 4px;
+    }
+  
+    .contact {
+      border-radius: 0 4px 4px 0;
+    }
+  }
+  
+/*   ..........................  Footer ..........................  */
+ footer{
+     margin-top: 5%;
+     background-color:  #203F7E;
+     padding: 2%;
+     color: white;
+     font-size: 1vw;
+ }
+
+    .footer-content{
+      display: flex;
+      width: 60%;
+      margin-left: auto;
+      margin-right: auto;
+      line-height: 1.7;
+    }
+
+    .footer-left{
+      margin-left: auto;
+      margin-right: auto;  
+    }
+
+    .footer-center{
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .footer-right{
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .footer-bottom{
+      margin-top: 3%;
+      text-align: center;
+    }
+
+
+
+
+
+ /*   .......................... RESPONSIVE  ..........................  */
+ 
+/*   ..........................  For tablet ..........................  */
+ 
+  @media only screen and (max-width: 768px) {
+    .topnav {
+        margin-top: -8%;
+    }
+    
+    
+    .grid-contact-intro{
+        margin-top: 8%;
+        height: 60%;
+        /* background-color: rgb(41, 70, 12); */
+      }  
+
+      .contact-intro{
+        width: 70%;
+        /* height: 40vh; */
+        margin-top: 15%;
+        margin-left: 30%;
+        font-size: 1em;
+        /* background-color: darkgoldenrod; */
+      }
+
+      .arrow {
+        margin-top: 3%;
+        width: 20px;
+        height: 20px;
+        
+    }
+
+    .grid-contact-info{
+        margin-top: 2%;
+        grid-template-columns:  1fr;
+        grid-template-rows: 1fr 1fr;
+      } 
+
+
+      .contact-info-img img{
+        width: 35vw;
+        margin-top: 10%;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 1;
+    }
+    
+    
+    .info-cont{
+        font-size: 2vw;
+        width: 40vw;
+        margin-left: 32%;
+        margin-top: -55%;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 1;
+    } 
+    
+
+    .cards {
+        width: 30vw;
+        margin-left:auto;
+        margin-right: auto;
+      }
+
+      .card-text {
+        text-align: center;
+        width: 40%;
+        font-size: 2vw;
+      }
+
+      .team h3{
+        color: #203F7E;
+        margin-top: 3%;
+        margin-left:auto;
+        margin-right: auto;
+        text-align: center;
+
+    }
+
+    .form-page{
+      width: 100vw;
+      height: 100vh;
+      background-size: 75%;
+  }
+  
+  .Contact-form-page{
+      width: 60vw;
+      margin-top: -15%;
+    } 
+    
+    .company-info {
+      margin-top: 80%;
+      font-size: 1.7vw;
+    }
+    
+    .contact {
+      font-size: 1.7vw;
+      margin-top: 80%;
+    }
+     
+    .contact form button {
+      font-size: 1.7vw;
+    }
+
+      footer{
+        margin-top: 0px;
+        font-size: 1.5vw;
+    }
+   
+       .footer-content{
+         width: 75%;
+       }
+}
+
+/*   ..........................   For phone ..........................  */
+ 
+@media only screen and (max-width: 600px) {
+
+    .topnav {
+        margin-top: -13%;
+    }
+    
+    
+    .grid-contact-intro{
+        margin-top: 13%;
+        background-image: none;
+      }  
+
+      .contact-intro{
+        width: 90%;
+        height: 80%;
+        margin-top: 15%;
+        margin-left: 20%;
+        font-size: 3vw;
+        /* background-color: darkgoldenrod; */
+      }
+
+      .contact-intro-img1 img{
+        visibility:visible;
+        width: 30vw;
+        margin-top: 20%;
+        margin-left: 20%;
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 1;
+    }
+
+    .contact-intro-img{
+        display: none;
+    }
+      .arrow {
+        margin-top: 2%;
+        width: 10px;
+        height: 10px;
+        
+    }
+
+    .grid-contact-info{
+        margin-top: 2%;
+        grid-template-columns:  1fr;
+        grid-template-rows: 1fr 1fr;
+      } 
+
+      .contact-info-img img{
+        width: 55vw;
+        margin-top: 10%;
+    }
+    
+    .info-cont{
+        font-size: 3vw;
+        width: 50vw;
+        margin-left: 32%;
+        margin-top: -85%;
+    } 
+
+    .cards {
+        width: 10vw;
+        display: inline;
+        padding-right:1%;
+        padding-left:1%;
+        padding-top:3%;
+      }
+
+    .card{
+        width: 50vw;
+        margin-left:auto;
+        margin-right: auto;
+    }
+
+      .card img {
+        width: 40vw;
+      }
+
+      .card-text {
+        text-align: center;
+        font-size: 3vw;
+      }
+
+      .team h3{
+        color: #203F7E;
+        margin-top: -40%;
+    }
+
+    .form-page{
+      height: 100vh;
+      background-size: 95%;
+  }
+  
+  .Contact-form-page{
+      width: 80vw;
+      margin-top: -35%;
+    } 
+    
+    .company-info {
+      margin-top: 130%;
+      font-size: 2vw;
+    }
+    
+    .contact {
+      font-size: 2vw;
+      margin-top: 130%;
+    }
+     
+    .contact form button {
+      font-size: 2vw;
+    }
+
+      footer{
+        margin-top: 0px;
+        font-size: 2.3vw;
+    }
+   
+       .footer-content{
+         width: 100%;
+       }
+
 }
