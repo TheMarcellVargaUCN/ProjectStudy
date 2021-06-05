@@ -18,6 +18,9 @@ body {
     overflow: hidden;
     font-size: 16px;
     box-shadow: 5px 2px 6px #888888a6;
+    position: fixed;
+    width: 100vw;
+    z-index: 100;
 }
 
 #logo {
@@ -109,14 +112,36 @@ body {
     grid-template-rows: 30% 15% 10%;
     column-gap: 2rem;
 }
-.landing-img-grid img {
+#mainimg {
     width: 100%;
     margin-top: -15%;
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 2;
-    z-index: -99;
+    z-index: -1;
+}
+.scroll {
+    position: relative;
+}
+#car {
+    width: 10%;
+    grid-row-start: 2;
+    margin-left: 2%;
+    float: left;
+    position: fixed;
+    z-index: -2;
+}
+#plane {
+    width: 7%;
+    grid-row-start: 2;
+    margin-left: 4%;
+    float: left;
+    position: fixed;
+    display: none;
+}
+#plane:active {
+    display: block;
 }
 .landing-headline {
     font-size: 14px;
@@ -197,7 +222,15 @@ body {
     grid-template-columns: 55vw 45vw;
     width: 100vw;
 }
-
+#airport {
+    grid-column: 1;
+    grid-row: 1;
+    float: left;
+    width: 45%;
+    margin-left: -80px;
+    margin-top: 50px;
+    z-index: 10;
+}
 .showcase {
     grid-column-start: 2;
     width: 35vw;
@@ -205,6 +238,7 @@ body {
     place-self: center;
 }
 .steps {
+    grid-column: 1;
     display: grid;
     grid-template-columns: 10% 90%;
     grid-template-rows: repeat(8,80px);
@@ -212,12 +246,13 @@ body {
     place-self: center;
 }
 .steps img{
-    width: 7%;
+    width: 60%;
     grid-column: 1;
     align-self: center;
 }
 .steps p {
     grid-column: 2;
+    align-self: center;
 }
 
 .comparison {
@@ -229,6 +264,7 @@ body {
 .comparison img {
     width: 30vw;
     place-self: center;
+    max-width: 500px;
 }
 .comparison p {
     grid-column-start: 2;
@@ -269,8 +305,16 @@ body {
 .prices {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows:  auto auto;
+    grid-template-rows:  150px 50px auto;
     margin-top: 50px;
+}
+#school {
+    width: 200px;
+    float: left;
+    place-self:start;
+    grid-column: 1;
+    grid-row: 1;
+    z-index: 10;
 }
 .prices img{
     display: block;
@@ -300,6 +344,8 @@ body {
     grid-row: 2;
     display: grid;
     grid-template-rows: 40% 10% 50%;
+    min-height: 300px;
+    max-width: 350px;
 }
 .review img {
     width: 25%;
@@ -317,25 +363,47 @@ body {
 .FAQ {
     display: grid;
     margin-top: 50px;
+    row-gap: 30px;
+    column-gap: 30px;
+}
+.faq_button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    place-self: center;
 }
 .question {
     background-color: white;
     border-radius: 7px;
     display: grid;
-    grid-template-columns: 10% 90%;
-    grid-template-rows: auto;
-    width: 70%;
+    grid-template-columns: 50px auto;
+    grid-template-rows: 50px;
+    width: 25vw;
     place-self: center;
     row-gap: 20px;
+    min-width: 310px;
 
 }
+
+.question td + td {
+    justify-self: start;
+}
+
+.question td {
+    justify-self: end;
+}
+
 .question img {
-    width: 80%;
-    height: 80%;
+    width: 50px;
+    height: 40px;
     place-self: center;
 }
 .question p {
     width: 80%;
+    place-self: center;
+}
+.footer {
+    margin-top: 500px;
 }
 /* ---------------------Services-------------------- */
 .img-grid {
