@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" rel="stylesheet"> -->
     <script src="https://kit.fontawesome.com/5d734a0479.js" crossorigin="anonymous"></script>
-    <link href="assets/CSS/style.css" rel=" stylesheet">
+    <link href="assets/CSS/style-index.css" rel=" stylesheet">
     <script src="assets/js/Javascript.js" defer></script>
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
@@ -17,7 +17,7 @@
 
 
  <!--   navigation -->
- <div class="topnav" id="myTopnav">
+<div class="topnav" id="myTopnav">
   <img src="assets/images/Logo.png" width="50px" id="logo">
   <!-- nav bar -->
   <a href="Contact-us.html"><button class="buttonStyle1">Contact Us</button></a>
@@ -34,7 +34,8 @@
     <img id="car" src="assets/images/landing/car.png">
     <img id="plane" src="assets/images/landing/plane.png">
   </div>
-  <img id="mainimg" src="assets/images/landing/landing-img.png" alt=LandingImg>
+    <img class="mainimg" src="assets/images/landing/landing-img.png" alt=LandingImg>
+ 
   <div class="landing-headline">
       <h1>EUROPEAN STUDY SOLUTION</h1>
   </div>
@@ -42,7 +43,7 @@
       <p>Sometime the first step can be the hardest but at<br> ESS - your trusted education agent - we make it<br> easy. Chat to our education consultants today and<br> be one of the thousands of students a year we help<br> with studying abroad.</p>
   </div>
   <div class="landing-contact-button">
-      <a href="#"><button class="buttonStyle1">Contac Us</button></a>
+      <a href="#"><button class="buttonStyle1">Contact Us</button></a>
   </div>
 
 </div>
@@ -135,16 +136,16 @@
    <script type = "text/javascript">
        var image = document.getElementById("image");
        var currentPos = 0;
-       var images = ["assets/images/showcase1.png", "assets/images/ESS-bg.png"]
+       var images = ["assets/images/showcase1.png", "assets/images/showcase2.jpg", "assets/images/showcase3.jpg", "assets/images/showcase4.jpg"]
 
-       function volgendefoto() {
+       function changeimg() {
            if (++currentPos >= images.length)
                currentPos = 0;
 
            image.src = images[currentPos];
        }
 
-       setInterval(volgendefoto, 5000);
+       setInterval(changeimg, 5000);
    </script>
 
    
@@ -189,7 +190,7 @@
   <div class="headline_reviews">
     <h2>Reviews from our customers</h2>
   </div>
-  <div class="review">
+  <div class="review" style="justify-self: end;">
     <img src="assets/images/landing/review1.png">
     <h3>Andrea Elwyn, 24</h3>
     <p>“FROM Canada: I found ESS agency more 
@@ -207,7 +208,7 @@
       visa but also for choosing right institution based on 
       my previous qualifications. ”</p>
   </div>
-  <div class="review">
+  <div class="review" style="justify-self: start;">
     <img src="assets/images/landing/review3.png">
     <h3>Andrea Elwyn, 24</h3>
     <p>“FROM Canada: I found ESS agency more 
