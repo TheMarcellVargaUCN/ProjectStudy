@@ -12,6 +12,10 @@ body {
     background-color: #EBF3FA;
 }
 
+h1, h2, h3 {
+    font-weight: bold;
+}
+
 /* -- ----------------------- Header -------------------------- */
 
 .topnav {
@@ -244,18 +248,24 @@ h1 {
     width: 100%;
     height: auto;
     border-collapse: collapse;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
+    grid-column-gap: 50px;
     justify-content: center;
     align-items: center;
     justify-items: center;
     grid-template-areas:
-    'uniheadline'
-    'universities';
+    'uniheadline uniheadline uniheadline'
+    'universities universities universities'
+    'programcontainer programinfo programinfo'
+    
 }
 
 .uniheadline { grid-area: uniheadline; }
 .universities { grid-area: universities; }
+.programcontainer { grid-area: programcontainer; }
+.programinfo { grid-area: programinfo; }
+
 
 .uniheadline {
     margin-top: 2.5vh;
@@ -281,3 +291,80 @@ h1 {
 }
 
 /* ----------------------- Program info -------------------------- */
+
+.programcontainer {
+    display: grid;
+    width: 100%;
+    height: auto;
+    border-collapse: collapse;
+    grid-row-gap: 25px;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    grid-template-areas:
+    'undergrad'
+    'postgrad'
+    'doctor'
+    'master';
+}
+
+.undergrad { grid-area: undergrad; }
+.postgrad { grid-area: postgrad; }
+.doctor { grid-area: doctor; }
+.master { grid-area: master; }
+
+.programcontainer h3 {
+    margin-top: 2.5vh;
+    place-self: center;
+    color: #203F7E;
+    font-weight: bold;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    display: inline;
+}
+
+.programcontainer i {
+    position: relative;
+    font-size: 150%;
+    float: right;
+    padding-right: 2.5vw;
+
+}
+
+.undergrad {
+    background-color: white;
+    width: 100%;
+    height: auto;
+    padding-top: 1.5vh;
+    padding-bottom: 1.5vh;
+
+}
+
+.postgrad {
+    background-color: white;
+    width: 100%;
+    height: auto;
+    padding-top: 1.5vh;
+    padding-bottom: 1.5vh;
+
+}
+
+.doctor {
+    background-color: white;
+    width: 100%;
+    height: auto;
+    padding-top: 1.5vh;
+    padding-bottom: 1.5vh;
+
+}
+
+.master {
+    background-color: white;
+    width: 100%;
+    height: auto;
+    padding-top: 1.5vh;
+    padding-bottom: 1.5vh;
+
+}
