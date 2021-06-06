@@ -292,7 +292,7 @@ h1 {
     padding: 2.5%;
 }
 
-/* ----------------------- Program info -------------------------- */
+/* ----------------------- Program container -------------------------- */
 
 .programcontainer {
     display: grid;
@@ -317,24 +317,57 @@ h1 {
 .doctor { grid-area: doctor; }
 .master { grid-area: master; }
 
+
 .programcontainer h3 {
-    margin-top: 2.5vh;
-    place-self: center;
+    position: relative;
     color: #203F7E;
     font-weight: bold;
-    padding-left: 5vw;
-    padding-right: 5vw;
     display: inline;
 }
 
-.programcontainer button {
-    font-size: 150%;
-    float: right;
+.programcontainer ul {
+    font-size: 110%;
+    margin-left: 2.5vw;
     margin-right: 2.5vw;
+}
+
+.programcontainer button {
+    width: 100%;
+    height: auto;
     border: none;
     background-color: transparent;
     cursor: pointer;
     place-self: center;
+    padding-left: 2.5vw;
+    text-align: left;
+    transition: 0.2s;
+}
+
+  
+.programcontainer i:before {
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+  
+.active i {
+    transform: scaleY(-1);;
+    transition: 0.2s;
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.programcontainer i {
+    float: right;
+    margin-right: 2.5vw;
+    font-size: 150%;
 }
 
 .undergrad {
@@ -372,4 +405,30 @@ h1 {
     padding-bottom: 1.5vh;
 
 }
+
+/* ----------------------- Program info -------------------------- */
+
+.programcontainer {
+    display: grid;
+    width: 100%;
+    height: auto;
+    border-collapse: collapse;
+    grid-row-gap: 25px;
+    grid-template-columns: 2fr;
+    grid-template-rows: auto;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    grid-template-areas:
+    'admissionvideo admissiontext'
+    'countrytext countryimage'
+    'map maptext';
+}
+
+.admissionvideo { grid-area: admissionvideo; }
+.admissiontext { grid-area: admissiontext; }
+.countrytext { grid-area: countrytext; }
+.countryimage { grid-area: countryimage; }
+.map { grid-area: map; }
+.maptext { grid-area: maptext; }
 
