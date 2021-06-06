@@ -58,12 +58,15 @@ body {
     background-color: #F1A34F;
     color: white;
     border: none;
-    width: 100px;
-    height: 30px;
+    width: 7vw;
+    height: 2.5vw;
+    max-width: 150px;
+    max-height: 50px;
     padding-bottom: 15px 25px;
     cursor: pointer;
     border-radius: 3px;
     outline: none;
+    font-size: 1vw;
 }
 
 .buttonStyle1:active {
@@ -107,7 +110,7 @@ body {
     height: 100vh;
     width: 100vw;
     grid-template-columns: 55% 45%;
-    grid-template-rows: 15vw 10vw 10%;
+    grid-template-rows: 15vw 12vw 10%;
     column-gap: 2rem;
 }
 .mainimg {
@@ -147,16 +150,17 @@ body {
     text-align: left;
     grid-column: 2;
     grid-row-start: 1;
-    max-width: 400px;
+    max-width: 50%;
     align-self: end;
 }
 .landing-headline-paragraph {
     text-align: left;
     grid-column-start: 2;
-    grid-column-end: 3;
+    grid-column-end: 2;
     grid-row-start: 2;
     grid-row-end: 3;
-    font-size: 1vw;
+    font-size: 1.2vw;
+    max-width: 50%;
 }
 .landing-contact-button {
     text-align: left;
@@ -164,7 +168,8 @@ body {
     grid-column-end: 2;
     grid-row-start: 3;
     grid-row-end: 3;
-    max-width: 400px;
+    max-width: 50%;
+    width: 80%;
 }
 .landing-arrow {
     display: block;
@@ -210,6 +215,7 @@ body {
     grid-template-columns: 4vw 300px;
     grid-template-rows: repeat(5, auto);
     row-gap: 3%;
+    place-self: center;
 }
 .points img{
     width: 4vw;
@@ -288,7 +294,7 @@ body {
 .uni_grid {
     display: grid;
     width: 100vw;
-    margin-top: 100px;
+    margin-top: 50px;
 }
 .universities {
     display: grid;
@@ -322,16 +328,17 @@ body {
 .prices {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows:  150px 50px auto;
+    grid-template-rows:  auto 50px auto;
     margin-top: 50px;
 }
 #school {
-    width: 200px;
+    width: 20%;
     float: left;
     place-self:start;
     grid-column: 1;
     grid-row: 1;
     z-index: 10;
+    max-width: 200px;
 }
 .prices img{
     display: block;
@@ -344,7 +351,7 @@ body {
 .reviews {
     width: 100vw;
     display: grid;
-    grid-template-columns: 1/3 1/3 1/3;
+    grid-template-columns: auto auto auto;
     grid-template-rows: auto auto;
     margin-top: 100px;
 }
@@ -352,16 +359,16 @@ body {
     grid-column: 2;
     place-self: center;
     color: #203F7E;
+    font-size: 1vw;
 }
 .review {
-    width: 80%;
+    width: 70%;
     place-self: center;
     background-color: white;
     border-radius: 10px;
     grid-row: 2;
     display: grid;
     grid-template-rows: 40% 10% 50%;
-    min-height: 300px;
     max-width: 350px;
 }
 .review img {
@@ -372,11 +379,14 @@ body {
 .review h3 {
     place-self: center;
     color: #F1A34F;
+    font-size: 1.5vw;
 }
 .review p {
     width: 80%;
     place-self: center;
     text-align: center;
+    padding: 20px;
+    font-size: 1.1vw;
 }
 .FAQ {
     display: grid;
@@ -384,42 +394,75 @@ body {
     row-gap: 30px;
     column-gap: 30px;
 }
-.faq_button {
+.faq_button1 , .faq_button2 , .faq_button3 , .faq_button4 , .faq_button5 , .faq_button6, .faq_button7 , .faq_button8   {
     border: none;
     background-color: transparent;
     cursor: pointer;
     place-self: center;
 }
-.question {
+.questionl {
     background-color: white;
-    border-radius: 7px;
+    border-radius: 2px;
     display: grid;
     grid-template-columns: 50px auto;
     grid-template-rows: 50px;
     width: 25vw;
     place-self: center;
-    row-gap: 20px;
     min-width: 310px;
-
-}
-
-.question td + td {
     justify-self: start;
 }
 
-.question td {
+.questionr {
+    background-color: white;
+    border-radius: 2px;
+    display: grid;
+    grid-template-columns: 50px auto;
+    grid-template-rows: 50px;
+    width: 25vw;
+    place-self: center;
+    min-width: 310px;
     justify-self: end;
 }
 
-.question img {
+.questionl img {
     width: 50px;
     height: 40px;
     place-self: center;
 }
-.question p {
-    width: 80%;
+.questionr img {
+    width: 50px;
+    height: 40px;
     place-self: center;
 }
+.questionl p {
+    width: 80%;
+    place-self: center;
+    font-size: 1vw;
+}
+.questionr p {
+    width: 80%;
+    place-self: center;
+    font-size: 1vw;
+}
+#answer1 , #answer2 , #answer3 , #answer3 , #answer4 , #answer5 , #answer6 , #answer7 , #answer8 {
+    width: 100%;
+    height: 100%;
+    place-self: center;
+    grid-column: 2;
+    display: none;
+    background-color: #203F7E;
+    color: white;
+    grid-column-start: 1;
+    grid-column-end: 3;  
+    border-radius: 2px; 
+}
+#answer1 p, #answer2 p, #answer3 p, #answer4 p, #answer5 p, #answer6 p, #answer7 p , #answer8 p {
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /*   ..........................  Footer ..........................  */
 footer{
     margin-top: 5%;
@@ -458,3 +501,122 @@ footer{
    }
 
 
+   /* -------------------------------responsiveness--------------------------------------- */
+
+@media screen and (max-width: 1000px) {
+    .chooseus {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr 1fr;
+    }
+    .chooseus p {
+        font-size: 1.5vw;
+        width: 55vw;
+    }
+    .points {
+        grid-column: 1;
+        grid-row: 3;
+        place-self: center;
+        font-size: 1.2vw;
+        grid-template-columns: 1fr;
+        width: 50%;
+    }
+    .chooseus_paragraph {
+        place-self: center;
+        width: 40vw;
+        margin: 0;
+    }
+    .process p{
+        font-size: 1.5vw;
+    }
+    .process {
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px auto 60% auto;
+        row-gap: 20px;
+    }
+    .showcase {
+        grid-column: 1;
+        grid-row: 4;
+        place-self: center;
+        margin-top: 30px;
+        width: 40%;
+    }
+    .steps {
+        width: 50vw;
+    }
+
+    .comparison {
+        grid-template-columns: 1fr;
+        grid-template-rows: 3;
+        margin-top: 150px;
+    }
+    .comparison p {
+        grid-column: 1;
+        grid-row: 2;
+        place-self: center;
+        font-size: 1.5vw;
+        width: 50vw;
+    }
+    .headline2 {
+        font-size: 1.5vw;
+    }
+    .comparison img {
+        grid-row: 3;
+        width: 25vw;
+        margin-top: 20px;
+
+    }
+    .headline_uni {
+        font-size: 1.5vw;
+    }
+    .prices img {
+        width: 90vw;
+    }
+    .landing-headline-paragraph {
+        max-width: 50%;
+    }
+    /* .buttonStyle1 {
+        width: ;
+    } */
+    .headline_reviews {
+        font-size: 1.5vw;
+    }
+    .FAQ {
+        grid-template-columns: 1fr;
+    }
+    .questionl {
+        grid-column: 1;
+        justify-self: center;
+    }
+    .questionr {
+        grid-column: 1;
+        justify-self: center;
+    }
+    .questionl p {
+        font-size: 1.5vw;
+    }
+    .questionr p {
+        font-size: 1.5vw;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .review p {
+        font-size: 1.5vw;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .review {
+        grid-template-rows: 25% 5% 50%;
+        row-gap: 10px;
+    }
+    .review img {
+        width: 15%;
+        min-width: 60px;
+        margin-top: 20px;
+    }
+    .FAQ p {
+        font-size: 2vw;
+    }
+
+}
