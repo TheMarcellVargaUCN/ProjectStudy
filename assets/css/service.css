@@ -223,7 +223,7 @@ body {
     display: block;
     background-color: inherit;
     color: black;
-    padding: 15px 20px;
+    padding: 15px 70px;
     width: 100%;
     border: none;
     outline: none;
@@ -236,6 +236,10 @@ body {
     background-color: #203F7E;
     color: white;
 }
+
+/* .service-tab i:hover {
+    color: white;
+} */
 
 /* .tab button.active {
     background-color: rgb(100, 219, 45);
@@ -271,7 +275,7 @@ hr {
     background-color: #203F7E;
 }
 
-h4 {
+h5 {
     margin-top: 70px;
     margin-bottom: -40px;
 }
@@ -283,4 +287,50 @@ h4 {
 
 img {
     border-radius: 7px;
+}
+
+/* --------------footer---------------- */
+
+footer {
+    margin-top: 5%;
+    background-color: #203F7E;
+    padding: 2%;
+    color: white;
+    font-size: 1vw;
+}
+
+.footer-content {
+    display: flex;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.7;
+}
+
+.footer-left {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer-center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer-right {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer-bottom {
+    margin-top: 3%;
+    text-align: center;
+}
+
+.service-tab i {
+    position: relative;
+    font-size: 150%;
+    float: left;
+    margin-top: -8%;
+    margin-left: 20px;
 }
