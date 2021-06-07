@@ -15,6 +15,14 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
+/* .left-div {
+    visibility: hidden;
+}
+
+.right-div {
+    visibility: hidden;
+} */
+
 /* navigation */
 
 .topnav {
@@ -131,7 +139,7 @@ body {
     grid-row-end: 2;
     margin-right: auto;
     margin-left: auto;
-    margin-top: 5%;
+    margin-top: 1%;
     width: 30px;
     height: 30px;
     background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgaGVpZ2h0PSI1MTIiIGlkPSJzdmcyIiB2ZXJzaW9uPSIxLjEiIHdpZHRoPSI1MTIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6Y2M9Imh0dHA6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL25zIyIgeG1sbnM6ZGM9Imh0dHA6Ly9wdXJsLm9yZy9kYy9lbGVtZW50cy8xLjEvIiB4bWxuczppbmtzY2FwZT0iaHR0cDovL3d3dy5pbmtzY2FwZS5vcmcvbmFtZXNwYWNlcy9pbmtzY2FwZSIgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIiB4bWxuczpzb2RpcG9kaT0iaHR0cDovL3NvZGlwb2RpLnNvdXJjZWZvcmdlLm5ldC9EVEQvc29kaXBvZGktMC5kdGQiIHhtbG5zOnN2Zz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxkZWZzIGlkPSJkZWZzNCIvPjxnIGlkPSJsYXllcjEiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAsLTU0MC4zNjIyKSI+PHBhdGggZD0ibSAxMjcuNDA2MjUsNjU3Ljc4MTI1IGMgLTQuOTg1MywwLjA3ODQgLTkuOTEwNzcsMi4xNjMwOCAtMTMuNDM3NSw1LjY4NzUgbCAtNTUsNTUgYyAtMy42MDA1NjUsMy41OTkyNyAtNS42OTY4ODMsOC42NTg5NSAtNS42OTY4ODMsMTMuNzUgMCw1LjA5MTA1IDIuMDk2MzE4LDEwLjE1MDczIDUuNjk2ODgzLDEzLjc1IEwgMjQyLjI1LDkyOS4yNSBjIDMuNTk5MjcsMy42MDA1NiA4LjY1ODk1LDUuNjk2ODggMTMuNzUsNS42OTY4OCA1LjA5MTA1LDAgMTAuMTUwNzMsLTIuMDk2MzIgMTMuNzUsLTUuNjk2ODggTCA0NTMuMDMxMjUsNzQ1Ljk2ODc1IGMgMy42MDA1NiwtMy41OTkyNyA1LjY5Njg4LC04LjY1ODk1IDUuNjk2ODgsLTEzLjc1IDAsLTUuMDkxMDUgLTIuMDk2MzIsLTEwLjE1MDczIC01LjY5Njg4LC0xMy43NSBsIC01NSwtNTUgYyAtMy41OTgxNSwtMy41OTEyNyAtOC42NTA2OCwtNS42ODEyNyAtMTMuNzM0MzgsLTUuNjgxMjcgLTUuMDgzNjksMCAtMTAuMTM2MjIsMi4wOSAtMTMuNzM0MzcsNS42ODEyNyBMIDI1Niw3NzguMDMxMjUgMTQxLjQzNzUsNjYzLjQ2ODc1IGMgLTMuNjY2NzgsLTMuNjY0MjMgLTguODQ4MDEsLTUuNzY0NDIgLTE0LjAzMTI1LC01LjY4NzUgeiIgaWQ9InBhdGgzNzY2LTEiIHN0eWxlPSJmb250LXNpemU6bWVkaXVtO2ZvbnQtc3R5bGU6bm9ybWFsO2ZvbnQtdmFyaWFudDpub3JtYWw7Zm9udC13ZWlnaHQ6bm9ybWFsO2ZvbnQtc3RyZXRjaDpub3JtYWw7dGV4dC1pbmRlbnQ6MDt0ZXh0LWFsaWduOnN0YXJ0O3RleHQtZGVjb3JhdGlvbjpub25lO2xpbmUtaGVpZ2h0Om5vcm1hbDtsZXR0ZXItc3BhY2luZzpub3JtYWw7d29yZC1zcGFjaW5nOm5vcm1hbDt0ZXh0LXRyYW5zZm9ybTpub25lO2RpcmVjdGlvbjpsdHI7YmxvY2stcHJvZ3Jlc3Npb246dGI7d3JpdGluZy1tb2RlOmxyLXRiO3RleHQtYW5jaG9yOnN0YXJ0O2Jhc2VsaW5lLXNoaWZ0OmJhc2VsaW5lO2NvbG9yOiMwMDAwMDA7ZmlsbDojMjIyMjIyO2ZpbGwtb3BhY2l0eToxO2ZpbGwtcnVsZTpub256ZXJvO3N0cm9rZTpub25lO3N0cm9rZS13aWR0aDozOC44ODAwMDEwNzttYXJrZXI6bm9uZTt2aXNpYmlsaXR5OnZpc2libGU7ZGlzcGxheTppbmxpbmU7b3ZlcmZsb3c6dmlzaWJsZTtlbmFibGUtYmFja2dyb3VuZDphY2N1bXVsYXRlO2ZvbnQtZmFtaWx5OlNhbnM7LWlua3NjYXBlLWZvbnQtc3BlY2lmaWNhdGlvbjpTYW5zIi8+PC9nPjwvc3ZnPg==);
@@ -194,14 +202,26 @@ body {
     width: 35vw;
 }
 
+.service-intro-img1 {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+.service-intro-img1 img {
+    visibility: hidden;
+    width: 35vw;
+}
+
 /* ------------------Main content -----------------*/
 
 .service-tab {
     display: grid;
     width: 100%;
     margin-top: 5%;
-    grid-template-rows: 0.1fr 0.1fr;
     grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.1fr 0.1fr;
     column-gap: 2rem;
 }
 
@@ -211,7 +231,7 @@ body {
     grid-row-start: 1;
     grid-row-end: 1;
     margin-left: 150px;
-    margin-top: 120px;
+    margin-top: 10px;
     float: left;
     background-color: white;
     width: 80%;
@@ -251,7 +271,7 @@ body {
     grid-row-start: 1;
     grid-row-end: 1;
     margin-left: 80px;
-    margin-top: 120px;
+    margin-top: 10px;
     float: left;
     padding: 0px 12px;
     background-color: white;
@@ -356,8 +376,7 @@ footer {
 
 @media only screen and (max-width: 960px) {
     .service-tab {
-        margin-top: -6%;
-        margin-left: -30px;
+        margin-left: -40px;
     }
     .tabcontent {
         margin-left: 60px;
@@ -380,8 +399,7 @@ footer {
         font-size: 16px;
     }
     .service-tab {
-        margin-top: -10%;
-        margin-left: -40px;
+        margin-left: -60px;
     }
     .tabcontent {
         margin-left: 40px;
@@ -416,7 +434,6 @@ footer {
 
 @media only screen and (max-width: 715px) {
     .service-tab {
-        margin-top: -10%;
         margin-left: -80px;
     }
     .tab {
@@ -467,9 +484,104 @@ footer {
 
 @media only screen and (max-width: 600px) {
     .topnav {
-        margin-top: -7%;
+        margin-top: -13%;
     }
     h4 {
         font-size: 13px;
     }
+    .grid-service-intro {
+        display: grid;
+        margin-top: 60px;
+        width: 100%;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.1fr;
+    }
+    .service-intro {
+        width: 70%;
+        height: 40vh;
+        margin-top: 15%;
+        margin-bottom: -15%;
+        margin-left: 20%;
+        font-size: 1.3vw;
+    }
+    .buttonStyle1 {
+        width: 80px;
+        height: 20px;
+        font-size: 13px;
+    }
+    .service-intro-img {
+        display: none;
+    }
+    .service-intro-img1 {
+        margin-top: 10%;
+        margin-left: 20%;
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 1;
+    }
+    .service-intro-img1 img {
+        width: 30vw;
+        visibility: visible;
+    }
+    /* ----------------Service Tab--------------- */
+    .service-tab {
+        display: grid;
+        width: 100%;
+        margin-top: 10%;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 0.1fr 0.1fr;
+        column-gap: 1rem;
+    }
+    .tab {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 1;
+        float: left;
+        display: block;
+        background-color: white;
+        width: 65%;
+        height: 260px;
+        border-radius: 7px;
+    }
+    .tab button {
+        color: black;
+        padding: 10px 60px;
+        font-size: 12px;
+    }
+    hr {
+        display: none;
+    }
+    .service-tab i {
+        position: relative;
+        font-size: 150%;
+        float: left;
+        margin-top: -8%;
+        margin-left: 20px;
+    }
+    .tabcontent {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 2;
+        margin-left: 120px;
+        margin-top: 80px;
+        float: left;
+        padding: 0px 12px;
+        background-color: white;
+        width: 80%;
+        border-left: none;
+        height: 500px;
+        border-radius: 7px;
+    }
+    /*   .left-div {
+        visibility: visible;
+        width: 50%;
+        float: left;
+    }
+    .right-div {
+        visibility: visible;
+        margin-left: 50%;
+    } */
 }
