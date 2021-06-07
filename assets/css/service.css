@@ -15,14 +15,6 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
-/* .left-div {
-    visibility: hidden;
-}
-
-.right-div {
-    visibility: hidden;
-} */
-
 /* navigation */
 
 .topnav {
@@ -309,10 +301,18 @@ h5 {
 #price-img {
     margin-top: 30px;
     width: 50%;
+    border-radius: 7px;
 }
 
-img {
-    border-radius: 7px;
+.aside-pic {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+.aside-pic img {
+    width: 35vw;
 }
 
 /* --------------footer---------------- */
@@ -555,7 +555,7 @@ footer {
     }
     .service-tab i {
         position: relative;
-        font-size: 150%;
+        font-size: 120%;
         float: left;
         margin-top: -8%;
         margin-left: 20px;
@@ -584,4 +584,75 @@ footer {
         visibility: visible;
         margin-left: 50%;
     } */
+}
+
+@media only screen and (max-width: 460px) {
+    .tabcontent {
+        margin-top: 40px;
+    }
+    .topnav {
+        margin-top: -13%;
+    }
+    h4 {
+        font-size: 10px;
+    }
+    .service-intro p {
+        font-size: 11px;
+    }
+    .service-intro h3 {
+        font-size: 12px;
+    }
+    .tab button {
+        color: black;
+        padding: 10px 60px;
+        font-size: 11px;
+    }
+    .service-tab i {
+        position: relative;
+        font-size: 100%;
+        float: left;
+        margin-top: -8%;
+        margin-left: 20px;
+    }
+    .tabcontent h3 {
+        font-size: 12px;
+    }
+    .tabcontent p {
+        font-size: 11px;
+    }
+    h5 {
+        font-size: 12px;
+    }
+    .arrow {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+@media only screen and (max-width: 460px) {
+    .topnav {
+        margin-top: -16%;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .topnav {
+        margin-top: -20%;
+    }
+}
+
+@media only screen and (max-width: 321px) {
+    .tabcontent {
+        margin-top: 100px;
+        margin-bottom: 20px;
+    }
+    .arrow {
+        width: 15px;
+        height: 15px;
+    }
+    .service-tab i {
+        font-size: 80%;
+        margin-top: -11%;
+        margin-left: 20px;
+    }
 }
