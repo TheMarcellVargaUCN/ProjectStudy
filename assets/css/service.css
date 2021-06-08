@@ -313,6 +313,12 @@ body {
     color: white;
 }
 
+.active, .btn:hover {
+    color: #203F7E;
+    font-weight: bold;
+    font-size: 20px;
+}
+
 .tabcontent {
     grid-column-start: 2;
     grid-column-end: 4;
