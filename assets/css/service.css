@@ -289,21 +289,22 @@ body {
     float: left;
     background-color: white;
     width: 80%;
-    height: 540px;
-    border-radius: 7px;
+    height: 640px;
+    border-radius: 6px;
 }
 
 .tab button {
+    margin-top: 10px;
     display: block;
     background-color: inherit;
-    color: black;
-    padding: 15px 70px;
+    padding: 20px 70px;
     width: 100%;
     border: none;
     outline: none;
     text-align: left;
     cursor: pointer;
     transition: 0.3s;
+    font-size: 16px;
 }
 
 .tab button:hover {
@@ -323,7 +324,7 @@ body {
     background-color: white;
     width: 80%;
     border-left: none;
-    height: 760px;
+    height: 890px;
     border-radius: 7px;
 }
 
@@ -348,6 +349,8 @@ hr {
 
 h5 {
     font-size: 15px;
+    margin-top: 40px;
+    margin-bottom: -30px;
 }
 
 #price-img {
@@ -392,11 +395,15 @@ h5 {
 }
 
 .main-picture img {
-    width: 23vw;
+    width: 25vw;
     margin-left: 140px;
-    margin-top: -50%;
+    margin-top: -80%;
     margin-bottom: 15px;
 }
+
+/* #info {
+    margin-left: 250px;
+} */
 
 /* --------------footer---------------- */
 
