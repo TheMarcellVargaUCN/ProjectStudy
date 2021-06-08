@@ -167,7 +167,7 @@ body {
 
 .buttonStyle1 i {
     font-size: 1vw;
-    padding-right: 0.5vw;
+    padding-right: 0.20vw;
 }
 
 .buttonStyle1:active {
@@ -179,6 +179,47 @@ body {
 .buttonStyle1:hover {
     outline: none;
 }
+
+.contact-button {
+    margin-top: 50px;
+}
+
+.fa {
+    font-size: 10px;
+}
+
+/* #button-fix i {
+    margin-right: -20px;
+} */
+
+/* .buttonStyle2 {
+    font-size: 1vw;
+    background-color: #F1A34F;
+    color: #ffffff;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 7px;
+    box-shadow: 0 5px rgba(48, 48, 48, 0.23);
+    outline: none;
+    width: 138px;
+    height: 35px;
+}
+
+.buttonStyle2 i {
+    font-size: 1vw;
+    padding-right: 3vw;
+} */
+
+/* .buttonStyle2:active {
+    box-shadow: 0 2px white;
+    transform: translateY(4px);
+    outline: none;
+}
+
+.buttonStyle2:hover {
+    outline: none;
+} */
 
 /* ------------------Arrow style------------- */
 
@@ -327,7 +368,7 @@ body {
     background-color: white;
     width: 80%;
     border-left: none;
-    height: 660px;
+    height: 740px;
     border-radius: 7px;
 }
 
@@ -362,15 +403,18 @@ h5 {
     border-radius: 7px;
 }
 
-.aside-pic {
+.main-picture {
     grid-column-start: 1;
     grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 1;
+    grid-row-start: 2;
+    grid-row-end: 2;
 }
 
-.aside-pic img {
-    width: 35vw;
+.main-picture img {
+    width: 20vw;
+    margin-left: 170px;
+    margin-top: -80%;
+    margin-bottom: 15px;
 }
 
 /* --------------footer---------------- */
