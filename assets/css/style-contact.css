@@ -12,109 +12,155 @@ body {
     background-color: #EBF3FA;
 }
 
-/*   .......................... nav-bar ..........................  */
- 
-.topnav {
-    position:fixed;
-    width: 100%;
-    margin-top: -5%;
-    background-color: #EBF3FA;
-    overflow: hidden;
-    font-size: 16px;
-    box-shadow: 5px 2px 6px #888888a6;
-    z-index: 6;
-}
-
-#logo {
-    margin-left: 50px;
-}
-
-.topnav a {
-    float: right;
-    color: #F1A34F;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 18px;
-    padding-right: 60px;
-}
-
-.topnav a:hover {
-    color: #F1A34F;
-    border-radius: 7px;
-}
-
-.topnav a.active {
-    color: #203F7E;
-}
-
-.topnav .icon {
-    display: none;
-}
-
-/*   .......................... nav - responsive ..........................  */
- 
-@media screen and (max-width: 600px) {
-    .topnav a:not(:first-child) {
-        display: none;
-    }
-    .topnav a.icon {
-        float: right;
-        display: block;
-    }
-    .topnav.responsive {
-        position: relative;
-    }
-    .topnav.responsive a.icon {
-        position: absolute;
-        right: 0;
-        top: 0;
-    }
-    .topnav.responsive a {
-        float: none;
-        color: #203F7E;
-        display: block;
-        text-align: center;
-    }
-}
-
 /*   .......................... Contact us btn ..........................  */
-
-.buttonStyle1-act {
-    background-color: #F1A34F;
-    color: #203F7E;
-    border: none;
-    padding-bottom: 15px 5px;
-    cursor: pointer;
-    border-radius: 7px;
-    box-shadow: 0 5px rgba(48, 48, 48, 0.23);
-    outline: none;
-}
-
 .buttonStyle1 {
-    background-color: #F1A34F;
-    color: #ffffff;
-    border: none;
-    padding-bottom: 15px 5px;
-    cursor: pointer;
-    border-radius: 7px;
-    box-shadow: 0 5px rgba(48, 48, 48, 0.23);
-    outline: none;
+  font-size: 1vw;
+  background-color: #F1A34F;
+  color: #ffffff;
+  border: none;
+  padding: 5px;
+  cursor: pointer;
+  border-radius: 7px;
+  box-shadow: 0 5px rgba(48, 48, 48, 0.23);
+  outline: none;
+}
+
+.buttonStyle1 i {
+  font-size: 1vw;
+  padding-right: 0.5vw;
 }
 
 
-.buttonStyle1:active {
-    box-shadow: 0 2px white;
-    transform: translateY(4px);
-    outline: none;
+/*   .......................... nav-bar ..........................  */
+
+.navbar {
+  display: flex;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: auto;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #EBF3FA;
+  box-shadow: 5px 2px 6px #888888a6;
+  z-index: 6;
 }
 
-.buttonStyle1:hover {
-    outline: none;
+.logo{
+  float: left;
+  margin-left: 3%;
+	display: flex;
+	align-items: center;
+  padding: 10px;
 }
 
-.contact-button{
-    margin-top: 7%;
+.logo img {
+  width: 3.7vw;
+  height: auto; 
+}
+
+.navbar-links {
+  height: 100%;
+  margin-right: 3%;
+}
+
+.navbar-links ul {
+  display: flex;
+}
+
+.navbar-links li {
+  list-style: none;
+}
+
+.navbar-links li a {
+  display: block;
+  text-decoration: none;
+  font-size: 1.2vw;
+  color: #F1A34F;
+  padding-right: 25px;
+  padding-left: 25px;
+}
+
+.toggle-button {
+  position: absolute; 
+  right: 1rem;
+  top: 1.5rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color:  #F1A34F;
+  border-radius: 10px; 
+}
+
+
+@media (max-width: 800px) {
+  .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+      
+  }
+
+  .logo img {
+    width: 7vw;
+    height: auto; 
+  }
+  .toggle-button {
+      display: flex;
+  }
+
+  .navbar-links {
+      display: none;
+      width: 100%;  
+      background-color:  #203F7E;
+  }
+
+  .navbar-links ul {
+      width: 100%;
+      flex-direction: column;
+  }
+
+  .navbar-links ul li {
+      text-align: center;
+
+  }
+
+  .navbar-links.active {
+      display: flex;
+  }
+
+  .navbar-links li a {
+    font-size: 3vw;
+    color: #F1A34F;
+    padding: 15px;
+  }
+
+  .buttonStyle2 {
+    font-size: 2vw;
+  }
+  
+  .buttonStyle2 i {
+    font-size: 2vw;
+  }
+   
+}
+
+@media only screen and (max-width: 600px) {
+
+  .logo img {
+    width: 10vw;
+    height: auto; 
+  }
+
+  .toggle-button {
+    top: 1rem;
+  }
 }
 
 /*   .......................... arrow ..........................  */
@@ -167,11 +213,9 @@ body {
     width: 60%;
     height: 40vh;
     margin-top: 25%;
-    /* margin-right: 25%; */
     margin-left: 40%;
-    font-size: 1.5vw;
+    font-size: 1.3vw;
     color: #434343;
-    /* background-color: darkgoldenrod; */
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 1;
@@ -182,7 +226,6 @@ body {
     width: 30vw;
     margin-left: 15%;
     margin-top: 26%;
-    /* background-color: rgb(184, 11, 161); */
     grid-column-start: 2;
     grid-column-end: 4;
     grid-row-start: 1;
@@ -205,7 +248,6 @@ body {
     margin-top: 5%;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
-    /* background-color: rgb(211, 208, 23);  */
   }  
 
 
@@ -237,6 +279,8 @@ body {
 .team h3{
     color: #203F7E;
     margin-top: 7%;
+    font-size: 1.4vw;
+    margin-left: 15%;
 }
 
 .cards {
@@ -273,7 +317,6 @@ body {
 /*   .......................... Contact us page- form ..........................  */
 .form-page{
     margin-top: 8%;
- 
     height: 75vh;
     background-image: url("../images/contact-bg.png");
     background-repeat: no-repeat;
@@ -410,7 +453,6 @@ body {
 
       .contact-intro{
         width: 70%;
-        /* height: 40vh; */
         margin-top: 15%;
         margin-left: 30%;
         font-size: 1em;
@@ -468,6 +510,7 @@ body {
       .team h3{
         color: #203F7E;
         margin-top: 3%;
+        font-size: 3vw;
         margin-left:auto;
         margin-right: auto;
         text-align: center;
@@ -477,22 +520,22 @@ body {
     .form-page{
       width: 100vw;
       height: 100vh;
-      background-size: 75%;
+      background-size: 85%;
   }
   
   .Contact-form-page{
       width: 60vw;
-      margin-top: -15%;
+      margin-top: -5%;
     } 
     
     .company-info {
-      margin-top: 80%;
+      margin-top: 45%;
       font-size: 1.7vw;
     }
     
     .contact {
       font-size: 1.7vw;
-      margin-top: 80%;
+      margin-top: 45%;
     }
      
     .contact form button {
@@ -596,7 +639,8 @@ body {
 
       .team h3{
         color: #203F7E;
-        margin-top: -40%;
+        margin-top: -30%;
+        font-size: 4vw;
     }
 
     .form-page{
@@ -606,17 +650,17 @@ body {
   
   .Contact-form-page{
       width: 80vw;
-      margin-top: -35%;
+      margin-top: -25%;
     } 
     
     .company-info {
-      margin-top: 130%;
+      margin-top: 100%;
       font-size: 2vw;
     }
     
     .contact {
       font-size: 2vw;
-      margin-top: 130%;
+      margin-top: 100%;
     }
      
     .contact form button {
