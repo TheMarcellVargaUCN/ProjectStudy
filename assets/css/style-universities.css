@@ -290,7 +290,7 @@ h1 {
 }
 
 
-.universities img:active {
+.tablinks.active {
     transform: scale(1.5);
 }
 
