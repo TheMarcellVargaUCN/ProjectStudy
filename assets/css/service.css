@@ -163,6 +163,7 @@ body {
     border-radius: 7px;
     box-shadow: 0 5px rgba(48, 48, 48, 0.23);
     outline: none;
+    margin-left: 20px;
 }
 
 .buttonStyle1 i {
