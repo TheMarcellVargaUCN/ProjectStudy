@@ -14,18 +14,47 @@
 </head>
 
 <body>
-    <!--   navigation -->
-    <div class="topnav" id="myTopnav">
-        <img src="assets/images/Logo.png" width="50px" id="logo">
-        <!-- nav bar -->
-        <a href="Contact-us.html"><button class="buttonStyle1">Contact Us</button></a>
-        <a href="service.html">Our Services</a>
-        <a href="universities.html">Universities</a>
 
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
+
+    <nav class="navbar">
+        <div class="logo"> <img src="assets/images/Logo.png" id="logo"></div>
+
+        <a href="#" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
         </a>
-    </div>
+        <div class="navbar-links">
+            <ul>
+                <li> <a href="universities.html">Universities</a></li>
+                <li> <a href="service.html">Our Services</a></li>
+                <li><a href="Contact-us.html"><button class="buttonStyle1"><i class="fas fa-phone-alt"></i>Contact
+                            Us</button></a></li>
+
+
+            </ul>
+        </div>
+    </nav>
+
+
+    <script>
+        const toggleButton = document.getElementsByClassName('toggle-button')[0]
+        const navbarLinks = document.getElementsByClassName('navbar-links')[0]
+
+        toggleButton.addEventListener('click', () => {
+            navbarLinks.classList.toggle('active')
+        })
+
+
+        $(document).ready(function () {
+            $('#nav-icon1,#nav-icon2,#nav-icon3,#nav-icon4').click(function () {
+                $(this).toggleClass('open');
+            });
+        });
+    </script>
+
+
+
 
     <!-- grid -->
 
@@ -40,7 +69,7 @@
                     accomodation and visa.</p>
 
                 <div class="contact-button">
-                    <a href="#"><button class="buttonStyle1">Contac Us</button></a>
+                    <button class="buttonStyle1"><i class="fas fa-phone-alt"></i>Contact Us</button></a></li>
 
                 </div>
             </section>
@@ -332,7 +361,7 @@
                     <br> Accomodation
                 </p>
                 <br>
-                <div class="contact-btn"> <button> contact us </button> </div>
+                <button class="buttonStyle1"><i class="fas fa-phone-alt"></i>Contact Us</button></a></li>
             </div>
 
             <div class="footer-center">
