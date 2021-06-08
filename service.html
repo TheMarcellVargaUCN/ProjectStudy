@@ -14,18 +14,47 @@
 </head>
 
 <body>
-    <!--   navigation -->
-    <div class="topnav" id="myTopnav">
-        <img src="assets/images/Logo.png" width="50px" id="logo">
-        <!-- nav bar -->
-        <a href="Contact-us.html"><button class="buttonStyle1">Contact Us</button></a>
-        <a href="service.html">Our Services</a>
-        <a href="universities.html">Universities</a>
 
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
+
+    <nav class="navbar">
+        <div class="logo"> <img src="assets/images/Logo.png" id="logo"></div>
+
+        <a href="#" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
         </a>
-    </div>
+        <div class="navbar-links">
+            <ul>
+                <li> <a href="universities.html">Universities</a></li>
+                <li> <a href="service.html">Our Services</a></li>
+                <li><a href="Contact-us.html"><button class="buttonStyle1"><i class="fas fa-phone-alt"></i>Contact
+                            Us</button></a></li>
+
+
+            </ul>
+        </div>
+    </nav>
+
+
+    <script>
+        const toggleButton = document.getElementsByClassName('toggle-button')[0]
+        const navbarLinks = document.getElementsByClassName('navbar-links')[0]
+
+        toggleButton.addEventListener('click', () => {
+            navbarLinks.classList.toggle('active')
+        })
+
+
+        $(document).ready(function () {
+            $('#nav-icon1,#nav-icon2,#nav-icon3,#nav-icon4').click(function () {
+                $(this).toggleClass('open');
+            });
+        });
+    </script>
+
+
+
 
     <!-- grid -->
 
@@ -40,7 +69,7 @@
                     accomodation and visa.</p>
 
                 <div class="contact-button">
-                    <a href="#"><button class="buttonStyle1">Contac Us</button></a>
+                    <button class="buttonStyle1"><i class="fas fa-phone-alt"></i>Contact Us</button></a></li>
 
                 </div>
             </section>
@@ -90,9 +119,7 @@
                 Accommodation</button>
             <i class="fas fa-chevron-right"></i>
             <hr>
-            <!--   <div class="aside-pic">
-                <img src="assets/images/students-service.jpg" width="100px">
-            </div> -->
+
 
         </div>
 
@@ -108,7 +135,8 @@
                 focus would lay on helping to find professional orientation, accompaniment with all the documentary
                 work,
                 preparation for life abroad, etc.</p>
-            <img src="assets/images/service-6.jpg" id="price-img">
+            <img src="assets/images/Group 1.png" id="price-img">
+
 
 
         </div>
@@ -141,15 +169,18 @@
                 tailored for international students.
             </p>
 
-            <!--    <img src="assets/images/service-10.jpg" id="price-img"> -->
-
+            <img src="assets/images/service-10.jpg" id="price-img">
 
             <h5>Do you have more questions related to Guidance?</h5>
 
             <div class="contact-button">
-                <a href="#"><button class="buttonStyle1">Contac Us</button></a>
+                <button class="buttonStyle1"><i class="fas fa-phone-alt"
+                        style="margin-top: 1px; margin-left:-3px; font-size: 18px;"></i>Contact
+                    Us</button></a></li>
             </div>
+
         </div>
+
 
         <div id="Service Price" class="tabcontent">
             <h3>Service Price</h3>
@@ -173,7 +204,8 @@
                 <!--       <img src="assets/images/price.png" id="price-img"> -->
             <h5>Do you have more questions related to Service Price?</h5>
             <div class="contact-button">
-                <a href="#"><button class="buttonStyle1">Contac Us</button></a>
+                <button class="buttonStyle1"><i class="fas fa-phone-alt"
+                        style="margin-top: 1px; margin-left:-3px;font-size: 18px;"></i>Contact Us</button></a></li>
             </div>
 
         </div>
@@ -201,7 +233,8 @@
             <h5>Do you have more questions related to Visa Application?</h5>
 
             <div class="contact-button">
-                <a href="#"><button class="buttonStyle1">Contac Us</button></a>
+                <button class="buttonStyle1"><i class="fas fa-phone-alt"
+                        style="margin-top: 1px; margin-left:-3px;font-size: 18px;"></i>Contact Us</button></a></li>
             </div>
         </div>
 
@@ -225,7 +258,8 @@
             <!--  <img src="assets/images/service-5.jpg" id="price-img"> -->
             <h5>Do you have more questions related to Filling out Application?</h5>
             <div class="contact-button">
-                <a href="#"><button class="buttonStyle1">Contac Us</button></a>
+                <button class="buttonStyle1"><i class="fas fa-phone-alt"
+                        style="margin-top: 1px; margin-left:-3px;font-size: 18px;"></i>Contact Us</button></a></li>
             </div>
         </div>
 
@@ -253,7 +287,8 @@
             <h5>Do you have more questions related to Universities?</h5>
 
             <div class="contact-button">
-                <a href="#"><button class="buttonStyle1">Contac Us</button></a>
+                <button class="buttonStyle1"><i class="fas fa-phone-alt"
+                        style="margin-top: 1px; margin-left:-3px;font-size: 18px;"></i>Contact Us</button></a></li>
             </div>
         </div>
 
@@ -286,7 +321,8 @@
             <h5>Do you have more questions related to Individual Meetings?</h5>
 
             <div class="contact-button">
-                <a href="#"><button class="buttonStyle1">Contac Us</button></a>
+                <button class="buttonStyle1"><i class="fas fa-phone-alt"
+                        style="margin-top: 1px; margin-left:-3px;font-size: 18px;"></i>Contact Us</button></a></li>
             </div>
         </div>
 
@@ -316,8 +352,13 @@
             </p>
             <h5>Do you have more questions related to Accomodation?</h5>
             <div class="contact-button">
-                <a href="#"><button class="buttonStyle1">Contac Us</button></a>
+                <button class="buttonStyle1"><i class="fas fa-phone-alt"
+                        style="margin-top: 1px; margin-left:-3px;font-size: 18px;"></i>Contact Us</button></a></li>
             </div>
+        </div>
+
+        <div class="main-picture">
+            <img src="assets/images/service-main-pic.png" id="main-picture">
         </div>
     </div>
 
@@ -326,19 +367,20 @@
         <div class="footer-content">
             <div class="footer-left">
                 <h4><b>Our Services</b></h4>
-                <p> Admission Counselling
-                    <br>Health Cover
-                    <br>Student Visa Service
-                    <br> Accomodation
+                <p><a href="service.html">Guidance and service</a>
+                    <br><a href="service.html">Service Price</a>
+                    <br><a href="service.html">Filling out the Application</a>
+                    <br><a href="service.html">Student Visa Service</a>
+                    <br> <a href="service.html">Accomodation</a>
                 </p>
                 <br>
-                <div class="contact-btn"> <button> contact us </button> </div>
+                <button class="buttonStyle1"><i class="fas fa-phone-alt"></i>Contact Us</button></a></li>
             </div>
 
             <div class="footer-center">
                 <h4><b> Contact Us </b></h4>
                 <p><b>Telephone:</b>
-                    <br>1 800 AFS-INFO
+                    <br>+380972841850
                     <br>
                     <br><b>Address:</b>
                     <br>120 Wall Street
@@ -349,17 +391,16 @@
 
             <div class="footer-right">
                 <h4><b>Study Abroad</b> </h4>
-                <p>Why study abroad?
-                    <br>Benefits of Overseas Study
-                    <br>Steps to study abroad
-                    <br>FAQs
+                <p>Why study abroad
+                    <br><a href="index.html">Steps to study abroad</a>
+                    <br><a href="index.html">FAQs</a>
                     <br>Ready to apply
-                    <br>Student stories
+                    <br><a href="index.html">Reviews</a>
                 </p>
             </div>
         </div>
         <div class="footer-bottom">
-            <p> Copyright © 2021 European Study Solution. </p>
+            <p> Copyright © 2021 European Study Solution </p>
         </div>
         </div>
     </footer>
