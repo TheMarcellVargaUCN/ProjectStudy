@@ -331,7 +331,7 @@ body {
     background-color: white;
     width: 80%;
     border-left: none;
-    height: 890px;
+    height: 900px;
     border-radius: 7px;
 }
 
@@ -364,6 +364,10 @@ h5 {
     margin-left: 20px;
 }
 
+#services-h5 {
+    margin-top: -60px;
+}
+
 #price-img {
     margin-top: 30px;
     width: 50%;
@@ -379,7 +383,7 @@ h5 {
 }
 
 #price-img2 {
-    margin-top: 30px;
+    margin-top: -20px;
     width: 100%;
     margin-left: -10px;
 }
