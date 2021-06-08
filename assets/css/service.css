@@ -331,7 +331,7 @@ body {
     background-color: white;
     width: 80%;
     border-left: none;
-    height: 900px;
+    height: 920px;
     border-radius: 7px;
 }
 
@@ -390,6 +390,14 @@ h5 {
 
 #price-img3 {
     margin-top: 40px;
+    margin-left: 20px;
+    width: 40%;
+    border-radius: 5px;
+    margin-left: 20px;
+}
+
+#price-img4 {
+    margin-top: 70px;
     margin-left: 20px;
     width: 40%;
     border-radius: 5px;
@@ -474,12 +482,41 @@ a {
 
 /* -----------------Responsive----------------- */
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1250px) {
+    .tabcontent {
+        width: 85%;
+        border-left: none;
+        height: 950px;
+        border-radius: 7px;
+    }
+}
+
+@media only screen and (max-width: 1230px) {
+    .tab {
+        width: 65%;
+        height: 720px;
+        border-radius: 7px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
     .main-picture img {
-        width: 26vw;
         margin-left: 170px;
         margin-top: -80%;
-        margin-bottom: 15px;
+    }
+    .tabcontent {
+        width: 90%;
+        margin-left: 30%;
+        height: 1600px;
+    }
+    .tab {
+        width: 65%;
+        height: 830px;
+        border-radius: 7px;
+        margin-left: 130px;
+    }
+    p {
+        font-size: 15px;
     }
     h5 {
         margin-top: 10px;
