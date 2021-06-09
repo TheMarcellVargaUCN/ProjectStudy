@@ -3,6 +3,7 @@ html {
   margin: 0;
   font-family: "lato";
   line-height: 1.2;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -305,7 +306,7 @@ body {
 
 .card-text {
   text-align: center;
-  width: 60%;
+  width: 100%;
   font-size: 1.2vw;
 }
 
@@ -368,6 +369,16 @@ body {
   text-transform: uppercase;
   font-size: 1.1vw;
   font-weight: bold;
+  cursor: pointer;
+}
+
+.contact form button:hover{
+  background: #db8120;
+  width: 10vw;
+  border: 0;
+  color: #ffffff;
+  font-weight:normal;
+  cursor: pointer;
 }
 
 @media only screen and (min-width: 125px) {
@@ -479,7 +490,7 @@ footer {
   }
   .card-text {
     text-align: center;
-    width: 40%;
+    width: 100%;
     font-size: 2vw;
   }
   .team h3 {

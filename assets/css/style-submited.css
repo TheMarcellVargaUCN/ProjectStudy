@@ -1,0 +1,106 @@
+
+html {
+    margin: 0;
+    font-family: "lato";
+    line-height: 1.2;
+  }
+  
+  body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #EBF3FA;
+    /* height: 100%;  */
+    overflow: hidden
+  }
+
+/*   .......................... Contact us btn ..........................  */
+
+ .buttonStyle1 {
+    font-size: 1.5vw;
+    background-color: #F1A34F;
+    color: #ffffff;
+    border: none;
+    padding: 7px;
+    cursor: pointer;
+    border-radius: 7px;
+    box-shadow: 0 5px rgba(48, 48, 48, 0.23);
+    outline: none;
+    margin-top: 1%;
+  } 
+  
+
+/*   .......................... Contact us page intro ..........................  */
+
+.grid-submit-intro{
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+.submit-intro{
+    margin-top: 5vw;
+    font-size: 1.5vw;
+}
+
+.submit-intro h3{
+    color: #203F7E;
+}
+
+.submit-intro-img{
+    margin-top: 5%;
+}
+
+.submit-intro-img img{
+    width: 30vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+  
+/*   ..........................  For tablet ..........................  */
+
+@media only screen and (max-width: 768px) {
+
+    .grid-submit-intro{
+        margin-top: 15%;
+    }
+
+    .submit-intro{
+        font-size: 2vw;
+    }
+
+    .submit-intro-img img{
+        margin-top: 5%;
+        width: 40vw;
+    }
+
+    .buttonStyle1 {
+        font-size: 2vw;
+      } 
+
+}
+
+    
+/*   ..........................   For phone ..........................  */
+
+@media only screen and (max-width: 600px) {
+   
+    .grid-submit-intro{
+        margin-top: 25%;
+    }
+
+    .submit-intro{
+        font-size: 3vw;
+    }
+
+    .submit-intro-img img{
+        margin-top:15%;
+        width: 55vw;
+    }
+    .buttonStyle1 {
+        font-size: 3vw;
+      } 
+
+}
