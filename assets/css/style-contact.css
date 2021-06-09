@@ -183,17 +183,31 @@ body {
 
 /*   .......................... Contact us page intro ..........................  */
 
-.grid-contact-intro {
+
+.grid-contact-intro{
   display: grid;
   width: 100%;
   margin-top: 5%;
   background-image: url("../images/ESS-BG.png");
-  background-repeat: no-repeat;
-  ;
+  background-repeat: no-repeat;;
   background-size: 95%;
   background-position: top;
   grid-template-rows: 1fr;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns:  1fr 1fr;
+}  
+
+  .contact-intro h3{
+    color: #203F7E;
+  }
+
+  .contact-intro-img img{
+    width: 30vw;
+    margin-left: 15%;
+    margin-top: 26%;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 1;
 }
 
 .contact-intro {
