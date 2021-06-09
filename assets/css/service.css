@@ -235,14 +235,24 @@ body {
 .service-intro {
     width: 60%;
     height: 40vh;
-    margin-top: 25%;
-    margin-left: 40%;
-    font-size: 1.5vw;
+    margin-top: 18%;
+    margin-left: 35%;
+    font-size: 1.3vw;
     color: #434343;
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end: 1;
+}
+
+.service-intro h3 {
+    color: #203F7E;
+    margin-bottom: -2%;
+}
+
+.service-intro p {
+    font-size: 1.3vw;
+    margin-bottom: -7%;
 }
 
 .service-intro-img {
