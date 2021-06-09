@@ -222,6 +222,10 @@ body {
     grid-row-end: 1;
   }
 
+  .contact-intro h3{
+    color: #203F7E;
+  }
+
   .contact-intro-img img{
     width: 30vw;
     margin-left: 15%;
