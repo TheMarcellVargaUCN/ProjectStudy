@@ -335,14 +335,14 @@ h1 {
     grid-template-areas:
     'undergrad'
     'postgrad'
-    'doctor'
-    'master';
+    'master'
+    'doctor';
 }
 
 .undergrad { grid-area: undergrad; }
 .postgrad { grid-area: postgrad; }
-.doctor { grid-area: doctor; }
 .master { grid-area: master; }
+.doctor { grid-area: doctor; }
 
 
 .programcontainer h3 {
