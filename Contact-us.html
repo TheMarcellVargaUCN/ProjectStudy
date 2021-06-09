@@ -17,7 +17,7 @@
    
 
    <nav class="navbar">
-   <div class="logo"> <img src="assets/images/Logo.png" id="logo"></div>
+   <div class="logo"> <img src="assets/images/Logo.png" id="logo" alt="logo"></div>
 	
     <a href="#" class="toggle-button">
       <span class="bar"></span>
@@ -28,7 +28,7 @@
       <ul>
         <li> <a href="universities.html">Universities</a></li>
 		<li> <a href="service.html">Our Services</a></li>
-        <li><a href="Contact-us.html"><button class="buttonStyle1"><i class="fas fa-phone-alt"></i>Contact Us</button></a></li>
+        <li><a href="Contact-us.html"><div class="buttonStyle1"><i class="fas fa-phone-alt"></i>Contact Us</div></a></li>
 	
       </ul>
     </div>
@@ -65,8 +65,9 @@ const toggleButton = document.getElementsByClassName('toggle-button')[0]
                 We will help you from the begging till the end, with all the
                 requirements you might need for filling university application,
                 accomodation and visa.</p>
-
-               <button class="buttonStyle1"><i class="fas fa-phone-alt"></i>Contact Us</button></a></li> 
+                
+               <button class="buttonStyle1" onclick="document.getElementById('form-page').scrollIntoView();" ><i class="fas fa-phone-alt"></i>Contact Us</button>
+               
             </section>
 
             <div class="contact-intro-img">
@@ -106,27 +107,26 @@ const toggleButton = document.getElementsByClassName('toggle-button')[0]
 
                         <img src="assets/images/person-1.png" alt=contact-picture>
                         
-                        </span>
-                        <span class="card-text">
+                        <article class="card-text">
                             <h4> Sumana Karki </h4>
                             <p> “FROM Canada: I found ESS agency more experience, 
                                 professional & dedicated. Their expertise are useful 
                                 for me not only for granting visa but also for choosing
                                 right institution based on my previous qualifications. ” </p>
-                        </span>
+                        </article>
                     
                     </div>
             
                     <div class="card">
                         <img src="assets/images/person-1.png" alt=contact-picture>
 
-                        <span class="card-text">
+                        <article class="card-text">
                             <h4> Sumana Karki </h4>
                             <p> “FROM Canada: I found ESS agency more experience, 
                                 professional & dedicated. Their expertise are useful 
                                 for me not only for granting visa but also for choosing
                                 right institution based on my previous qualifications. ” </p>
-                        </span>
+                        </article>
             
                     </div>
                     
@@ -138,7 +138,7 @@ const toggleButton = document.getElementsByClassName('toggle-button')[0]
 
  <!-- .......................... Contact us page - form .......................... -->
 
-      <div class="form-page">
+      <div class="form-page" id="form-page">
 	<div class="Contact-form-page">
 
 		<div class="company-info">
@@ -169,7 +169,7 @@ const toggleButton = document.getElementsByClassName('toggle-button')[0]
 				</p>
 
 				<p class="full">
-					<button type="submit">Submit</button>
+					<button type="button" onClick="location.href='contact-submit.html'" >Submit</button>
 				</p>
 			</form>
 		
@@ -191,7 +191,7 @@ const toggleButton = document.getElementsByClassName('toggle-button')[0]
            <br> Accomodation</p>
            <br>
            <div class="contact-button">
-            <a href="Contact-us.html"><button class="buttonStyle1"><i class="fas fa-phone-alt"></i>Contact Us</button></a>
+            <button class="buttonStyle1" onclick="document.getElementById('form-page').scrollIntoView();" ><i class="fas fa-phone-alt"></i>Contact Us</button>
         </div>  
      </div>
 
@@ -218,7 +218,6 @@ const toggleButton = document.getElementsByClassName('toggle-button')[0]
     </div>
     <div class="footer-bottom">
         <p> Copyright © 2021 European Study Solution. </p>
-    </div>
     </div>
  </footer>
 

@@ -3,6 +3,7 @@ html {
   margin: 0;
   font-family: "lato";
   line-height: 1.2;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -305,7 +306,7 @@ body {
 
 .card-text {
   text-align: center;
-  width: 60%;
+  width: 100%;
   font-size: 1.2vw;
 }
 
@@ -479,7 +480,7 @@ footer {
   }
   .card-text {
     text-align: center;
-    width: 40%;
+    width: 100%;
     font-size: 2vw;
   }
   .team h3 {
