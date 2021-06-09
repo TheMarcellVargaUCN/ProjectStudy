@@ -5,6 +5,8 @@
 html {
     height: 100%;
     margin: 0;
+    font-family: "lato";
+    line-height: 1.2;
 }
 
 body {
@@ -12,100 +14,161 @@ body {
     margin: 0;
     padding: 0;
     background-color: #EBF3FA;
-    font-family: 'Lato', sans-serif;
 }
 
 /* navigation */
 
-.topnav {
-    height: 55px;
+.navbar {
+    display: flex;
     position: fixed;
+    top: 0;
     width: 100%;
-    margin-top: -5%;
+    height: auto;
+    justify-content: space-between;
+    align-items: center;
     background-color: #EBF3FA;
-    overflow: hidden;
-    font-size: 16px;
     box-shadow: 5px 2px 6px #888888a6;
     z-index: 6;
 }
 
-#logo {
-    margin-left: 50px;
-}
-
 .logo {
     float: left;
+    margin-left: 3%;
+    display: flex;
+    align-items: center;
+    padding: 10px;
 }
 
-.topnav a {
-    float: right;
-    color: #F1A34F;
-    text-align: center;
-    padding: 14px 16px;
+.logo img {
+    width: 3.7vw;
+    height: auto;
+}
+
+.navbar-links {
+    height: 100%;
+    margin-right: 3%;
+}
+
+.navbar-links ul {
+    display: flex;
+}
+
+.navbar-links li {
+    list-style: none;
+}
+
+.navbar-links li a {
+    display: block;
     text-decoration: none;
-    font-size: 18px;
-    padding-right: 60px;
-}
-
-.topnav a:hover {
+    font-size: 1.2vw;
     color: #F1A34F;
-    border-radius: 7px;
+    padding-right: 25px;
+    padding-left: 25px;
 }
 
-.topnav a.active {
-    color: #203F7E;
-}
-
-.topnav .icon {
+.toggle-button {
+    position: absolute;
+    right: 1rem;
+    top: 1.5rem;
     display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
 }
 
-@media screen and (max-width: 600px) {
-    .topnav a:not(:first-child) {
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: #F1A34F;
+    border-radius: 10px;
+}
+
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .logo img {
+        width: 7vw;
+        height: auto;
+    }
+    .toggle-button {
+        display: flex;
+    }
+    .navbar-links {
         display: none;
+        width: 100%;
+        background-color: #203F7E;
     }
-    .topnav a.icon {
-        float: right;
-        display: block;
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
     }
-    .topnav.responsive {
-        position: relative;
-    }
-    .topnav.responsive a.icon {
-        position: absolute;
-        right: 0;
-        top: 0;
-    }
-    .topnav.responsive a {
-        float: none;
-        color: #203F7E;
-        display: block;
+    .navbar-links ul li {
         text-align: center;
+    }
+    .navbar-links.active {
+        display: flex;
+    }
+    .navbar-links li a {
+        font-size: 3vw;
+        color: #F1A34F;
+        padding: 15px;
+    }
+    .buttonStyle1 {
+        font-size: 3vw;
+    }
+    .buttonStyle1 i {
+        font-size: 3vw;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .logo img {
+        width: 10vw;
+        height: auto;
+        margin-top: 10px;
+    }
+    /*  .toggle-button {
+        top: 1rem;
+    } */
+    .buttonStyle1 {
+        font-size: 1.4vw;
+        background-color: #F1A34F;
+        height: 100px;
+        color: #ffffff;
+        border: none;
+        padding: 5px;
+        cursor: pointer;
+        border-radius: 7px;
+        box-shadow: 0 5px rgba(48, 48, 48, 0.23);
+        outline: none;
+    }
+    .buttonStyle1 i {
+        font-size: 3vw;
+        padding-right: 0.5vw;
     }
 }
 
 /*----------------- Contact Us btn -----------------*/
 
-.buttonStyle1-act {
-    background-color: #F1A34F;
-    color: #203F7E;
-    border: none;
-    padding-bottom: 15px 5px;
-    cursor: pointer;
-    border-radius: 7px;
-    box-shadow: 0 5px rgba(48, 48, 48, 0.23);
-    outline: none;
-}
-
 .buttonStyle1 {
+    font-size: 1vw;
     background-color: #F1A34F;
     color: #ffffff;
     border: none;
-    padding-bottom: 15px 5px;
+    padding: 5px;
     cursor: pointer;
     border-radius: 7px;
     box-shadow: 0 5px rgba(48, 48, 48, 0.23);
     outline: none;
+    margin-left: 20px;
+}
+
+.buttonStyle1 i {
+    font-size: 1vw;
+    padding-right: 0.20vw;
 }
 
 .buttonStyle1:active {
@@ -119,7 +182,7 @@ body {
 }
 
 .contact-button {
-    margin-top: 7%;
+    margin-top: 50px;
 }
 
 /* ------------------Arrow style------------- */
@@ -213,8 +276,29 @@ body {
     width: 100%;
     margin-top: 5%;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 0.1fr 0.1fr;
+    grid-template-rows: 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr;
     column-gap: 2rem;
+}
+
+.responsive-content {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.responsive-img {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.responsive-h5-button {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
 }
 
 .tab {
@@ -227,21 +311,22 @@ body {
     float: left;
     background-color: white;
     width: 80%;
-    height: 540px;
-    border-radius: 7px;
+    height: 640px;
+    border-radius: 6px;
 }
 
 .tab button {
+    margin-top: 10px;
     display: block;
     background-color: inherit;
-    color: black;
-    padding: 15px 70px;
+    padding: 20px 70px;
     width: 100%;
     border: none;
     outline: none;
     text-align: left;
     cursor: pointer;
     transition: 0.3s;
+    font-size: 16px;
 }
 
 .tab button:hover {
@@ -249,19 +334,17 @@ body {
     color: white;
 }
 
-/* .service-tab i:hover {
-    color: white;
-} */
-
-/* .tab button.active {
-    background-color: rgb(100, 219, 45);
-} */
+.active, .btn:hover {
+    color: #203F7E;
+    font-weight: bold;
+    font-size: 20px;
+}
 
 .tabcontent {
     grid-column-start: 2;
     grid-column-end: 4;
     grid-row-start: 1;
-    grid-row-end: 1;
+    grid-row-end: 3;
     margin-left: 80px;
     margin-top: 10px;
     float: left;
@@ -269,22 +352,25 @@ body {
     background-color: white;
     width: 80%;
     border-left: none;
-    height: 660px;
+    height: 920px;
     border-radius: 7px;
 }
 
 h3 {
     font-size: 23px;
     color: #F1A34F;
-    margin-top: 40px;
+    margin-top: 50px;
+    margin-left: 20px;
 }
 
 h4 {
     font-size: 18px;
+    margin-left: 20px;
 }
 
 p {
-    margin-top: 10px;
+    margin-left: 20px;
+    margin-top: 40px;
     font-size: 16px;
 }
 
@@ -293,26 +379,64 @@ hr {
 }
 
 h5 {
-    margin-top: 70px;
-    margin-bottom: -30px;
     font-size: 15px;
+    margin-top: 40px;
+    margin-bottom: -30px;
+    margin-left: 20px;
+}
+
+#services-h5 {
+    margin-top: -60px;
 }
 
 #price-img {
     margin-top: 30px;
     width: 50%;
-    border-radius: 7px;
+    border-radius: 5px;
+    margin-left: 20px;
 }
 
-.aside-pic {
+#price-img1 {
+    margin-top: 30px;
+    margin-left: 20px;
+    width: 40%;
+    border-radius: 5px;
+}
+
+#price-img2 {
+    margin-top: -20px;
+    width: 100%;
+    margin-left: -10px;
+}
+
+#price-img3 {
+    margin-top: 40px;
+    margin-left: 20px;
+    width: 40%;
+    border-radius: 5px;
+    margin-left: 20px;
+}
+
+#price-img4 {
+    margin-top: 70px;
+    margin-left: 20px;
+    width: 40%;
+    border-radius: 5px;
+    margin-left: 20px;
+}
+
+.main-picture {
     grid-column-start: 1;
     grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 1;
+    grid-row-start: 6;
+    grid-row-end: 7;
 }
 
-.aside-pic img {
-    width: 35vw;
+.main-picture img {
+    width: 25vw;
+    margin-left: 140px;
+    margin-top: -80%;
+    margin-bottom: 15px;
 }
 
 /* --------------footer---------------- */
@@ -357,24 +481,41 @@ footer {
     position: relative;
     font-size: 150%;
     float: left;
-    margin-top: -8%;
+    margin-top: -10%;
     margin-left: 20px;
+}
+
+a {
+    color: white;
 }
 
 /* -----------------Responsive----------------- */
 
-@media only screen and (max-width: 1000px) {
-    h5 {
-        margin-top: 10px;
-        margin-bottom: -5px;
-    }
+@media only screen and (max-width: 1024px) {
     .tabcontent {
-        margin-left: 60px;
-        height: 730px;
+        width: 90%;
+        height: 990px;
+        margin-left: 40px;
+    }
+    footer {
+        margin-top: 15%;
+    }
+    .tab {
+        height: 710px;
+        margin-left: 110px;
+    }
+    .main-picture img {
+        width: 30vw;
+        margin-left: 140px;
+        margin-top: -120%;
+        margin-bottom: 30px;
     }
 }
 
 @media only screen and (max-width: 960px) {
+    .navbar-links li a {
+        font-size: 1.7vw;
+    }
     .service-tab {
         margin-left: -40px;
     }
@@ -395,6 +536,15 @@ footer {
 }
 
 @media only screen and (max-width: 830px) {
+    .navbar-links li a {
+        font-size: 1.7vw;
+    }
+    .main-picture img {
+        width: 30vw;
+        margin-left: 140px;
+        margin-top: -100%;
+        margin-bottom: 90px;
+    }
     h4 {
         font-size: 16px;
     }
@@ -404,7 +554,10 @@ footer {
     .tabcontent {
         margin-left: 40px;
         width: 95%;
-        height: 690px;
+        height: 870px;
+    }
+    .tabcontent p {
+        font-size: 14px;
     }
     .arrow {
         margin-top: -6%;
@@ -413,11 +566,11 @@ footer {
     }
     .tab {
         width: 70%;
-        height: 600px;
+        height: 670px;
     }
     .service-tab i {
         font-size: 130%;
-        margin-top: -13%;
+        margin-top: -15%;
         margin-left: 20px;
     }
     .tab button {
@@ -429,230 +582,289 @@ footer {
     h3 {
         font-size: 16px;
         margin-top: 20px;
-    }
-}
-
-@media only screen and (max-width: 715px) {
-    .service-tab {
-        margin-left: -80px;
-    }
-    .tab {
-        width: 65%;
-        height: 580px;
-    }
-    .tabcontent {
-        margin-left: 30px;
-        width: 100%;
-        height: 690px;
-    }
-    p {
-        font-size: 13px;
-    }
-    h3 {
-        font-size: 16px;
-        margin-top: 20px;
-    }
-    .topnav {
-        margin-top: -7%;
-    }
-    .topnav a {
-        margin-top: 15px;
-        padding: 10px 19px;
-        text-decoration: none;
-        font-size: 14px;
-        padding-right: 20px;
-    }
-    #logo {
-        width: 35px;
-        margin-top: 15px;
-    }
-}
-
-@media only screen and (max-width: 670px) {
-    .tab {
-        width: 60%;
-        height: 610px;
-    }
-    .tabcontent {
-        margin-left: -10px;
-        width: 130%;
-        height: 720px;
-    }
-}
-
-/* ---------------Mobile Version------------- */
-
-@media only screen and (max-width: 600px) {
-    .topnav {
-        margin-top: -13%;
-    }
-    h4 {
-        font-size: 13px;
-    }
-    .grid-service-intro {
-        display: grid;
-        margin-top: 60px;
-        width: 100%;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 0.1fr;
-    }
-    .service-intro {
-        width: 70%;
-        height: 40vh;
-        margin-top: 15%;
-        margin-bottom: -15%;
-        margin-left: 20%;
-        font-size: 1.3vw;
-    }
-    .buttonStyle1 {
-        width: 80px;
-        height: 20px;
-        font-size: 13px;
-    }
-    .service-intro-img {
-        display: none;
-    }
-    .service-intro-img1 {
-        margin-top: 10%;
-        margin-left: 20%;
-        grid-column-start: 2;
-        grid-column-end: 4;
-        grid-row-start: 1;
-        grid-row-end: 1;
-    }
-    .service-intro-img1 img {
-        width: 30vw;
-        visibility: visible;
-    }
-    /* ----------------Service Tab--------------- */
-    .service-tab {
-        display: grid;
-        width: 100%;
-        margin-top: 10%;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 0.1fr 0.1fr;
-        column-gap: 1rem;
-    }
-    .tab {
-        grid-column-start: 1;
-        grid-column-end: 4;
-        grid-row-start: 1;
-        grid-row-end: 1;
-        float: left;
-        display: block;
-        background-color: white;
-        width: 65%;
-        height: 260px;
-        border-radius: 7px;
-    }
-    .tab button {
-        color: black;
-        padding: 10px 60px;
-        font-size: 12px;
-    }
-    hr {
-        display: none;
-    }
-    .service-tab i {
-        position: relative;
-        font-size: 120%;
-        float: left;
-        margin-top: -8%;
-        margin-left: 20px;
-    }
-    .tabcontent {
-        grid-column-start: 1;
-        grid-column-end: 4;
-        grid-row-start: 2;
-        grid-row-end: 2;
-        margin-left: 120px;
-        margin-top: 80px;
-        float: left;
-        padding: 0px 12px;
-        background-color: white;
-        width: 80%;
-        border-left: none;
-        height: 500px;
-        border-radius: 7px;
-    }
-    /*   .left-div {
-        visibility: visible;
-        width: 50%;
-        float: left;
-    }
-    .right-div {
-        visibility: visible;
-        margin-left: 50%;
-    } */
-}
-
-@media only screen and (max-width: 460px) {
-    .tabcontent {
-        margin-top: 40px;
-    }
-    .topnav {
-        margin-top: -13%;
-    }
-    h4 {
-        font-size: 10px;
-    }
-    .service-intro p {
-        font-size: 11px;
-    }
-    .service-intro h3 {
-        font-size: 12px;
-    }
-    .tab button {
-        color: black;
-        padding: 10px 60px;
-        font-size: 11px;
-    }
-    .service-tab i {
-        position: relative;
-        font-size: 100%;
-        float: left;
-        margin-top: -8%;
-        margin-left: 20px;
-    }
-    .tabcontent h3 {
-        font-size: 12px;
-    }
-    .tabcontent p {
-        font-size: 11px;
     }
     h5 {
-        font-size: 12px;
+        margin-top: 20px;
+        margin-bottom: -2px;
+        font-size: 14px;
     }
-    .arrow {
-        width: 20px;
-        height: 20px;
+    .service-intro {
+        margin-top: 15%;
+        margin-left: 40%;
     }
-}
-
-@media only screen and (max-width: 460px) {
-    .topnav {
-        margin-top: -16%;
+    .contact-button {
+        margin-top: 20px;
     }
-}
-
-@media only screen and (max-width: 360px) {
-    .topnav {
-        margin-top: -20%;
+    @media only screen and (max-width: 715px) {
+        footer {
+            margin-top: 0px;
+            font-size: 1.5vw;
+        }
+        .footer-content {
+            width: 75%;
+        }
+        .service-tab {
+            margin-left: -80px;
+        }
+        .tab {
+            width: 65%;
+            height: 710px;
+        }
+        .tabcontent {
+            margin-left: 10px;
+            width: 115%;
+            height: 870px;
+        }
+        p {
+            font-size: 12px;
+        }
+        h3 {
+            font-size: 16px;
+            margin-top: 20px;
+        }
+        .topnav {
+            margin-top: -7%;
+        }
+        #logo {
+            width: 35px;
+            margin-top: 15px;
+        }
+        .navbar-links li a {
+            font-size: 2vw;
+        }
+        .grid-service-intro {
+            margin-top: 10%;
+        }
     }
-}
-
-@media only screen and (max-width: 321px) {
-    .tabcontent {
-        margin-top: 100px;
-        margin-bottom: 20px;
+    @media only screen and (max-width: 670px) {
+        .tab {
+            width: 60%;
+            height: 770px;
+        }
+        .tabcontent {
+            margin-left: -30px;
+            width: 130%;
+            height: 870px;
+        }
+        .grid-service-intro {
+            margin-top: 12%;
+        }
+        .main-picture img {
+            width: 30vw;
+            margin-left: 120px;
+            margin-top: -100%;
+            margin-bottom: 190px;
+        }
     }
-    .arrow {
-        width: 15px;
-        height: 15px;
+    /* ---------------Mobile Version------------- */
+    @media only screen and (max-width: 600px) {
+        footer {
+            margin-top: 0px;
+            font-size: 2.3vw;
+        }
+        .footer-content {
+            width: 100%;
+        }
+        .main-picture img {
+            display: none;
+        }
+        h4 {
+            font-size: 13px;
+        }
+        .grid-service-intro {
+            display: grid;
+            margin-top: 20px;
+            width: 100%;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 0.1fr;
+            margin-top: 15%;
+        }
+        .service-intro {
+            width: 70%;
+            height: 40vh;
+            margin-top: -2%;
+            margin-bottom: -10%;
+            margin-left: 20%;
+            font-size: 1.3vw;
+        }
+        .buttonStyle1 {
+            width: 90px;
+            height: 30px;
+            font-size: 13px;
+        }
+        .buttonStyle1 i {
+            font-size: 2vw;
+            padding-right: 0.40vw;
+        }
+        .service-intro-img {
+            display: none;
+        }
+        .service-intro-img1 {
+            margin-top: 10%;
+            margin-left: 20%;
+            grid-column-start: 2;
+            grid-column-end: 4;
+            grid-row-start: 1;
+            grid-row-end: 1;
+        }
+        .service-intro-img1 img {
+            width: 30vw;
+            visibility: visible;
+        }
+        /* ----------------Service Tab--------------- */
+        .service-tab {
+            display: grid;
+            width: 100%;
+            margin-top: 10%;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 0.1fr 0.1fr 0.1fr;
+            column-gap: 1rem;
+        }
+        .tab {
+            grid-column-start: 1;
+            grid-column-end: 4;
+            grid-row-start: 1;
+            grid-row-end: 1;
+            float: left;
+            display: block;
+            background-color: white;
+            width: 65%;
+            height: 320px;
+            border-radius: 7px;
+            margin-left: 30%;
+        }
+        .tab button {
+            color: black;
+            padding: 10px 60px;
+            font-size: 12px;
+        }
+        hr {
+            display: none;
+        }
+        .arrow {
+            margin-top: 4%;
+        }
+        .service-tab i {
+            position: relative;
+            font-size: 120%;
+            float: left;
+            margin-top: -8%;
+            margin-left: 20px;
+        }
+        .tabcontent {
+            grid-column-start: 1;
+            grid-column-end: 4;
+            grid-row-start: 2;
+            grid-row-end: 2;
+            margin-left: 25%;
+            margin-top: 80px;
+            float: left;
+            padding: 0px 12px;
+            background-color: white;
+            width: 80%;
+            border-left: none;
+            height: 850px;
+            border-radius: 7px;
+            font-size: 12px;
+        }
     }
-    .service-tab i {
-        font-size: 80%;
-        margin-top: -11%;
-        margin-left: 20px;
+    @media only screen and (max-width: 460px) {
+        .navbar-links li a {
+            font-size: 3vw;
+        }
+        .tabcontent {
+            margin-top: 40px;
+        }
+        .topnav {
+            margin-top: -13%;
+        }
+        h4 {
+            font-size: 10px;
+        }
+        .service-intro p {
+            font-size: 11px;
+        }
+        .service-intro h3 {
+            font-size: 12px;
+        }
+        .tab button {
+            color: black;
+            padding: 10px 60px;
+            font-size: 11px;
+        }
+        .service-tab i {
+            position: relative;
+            font-size: 100%;
+            float: left;
+            margin-top: -8%;
+            margin-left: 20px;
+        }
+        .tabcontent h3 {
+            font-size: 12px;
+        }
+        .tabcontent p {
+            font-size: 11px;
+        }
+        h5 {
+            font-size: 12px;
+        }
+        .arrow {
+            width: 20px;
+            height: 20px;
+        }
+        .grid-service-intro {
+            margin-top: 18%;
+        }
+    }
+    @media only screen and (max-width: 376px) {
+        .navbar-links li a {
+            font-size: 2.9vw;
+        }
+        .grid-service-intro {
+            margin-top: 23%;
+        }
+        .service-intro {
+            width: 85%;
+            margin-top: 14%;
+            margin-bottom: 10%;
+            font-size: 1.2vw;
+        }
+        .tab {
+            width: 65%;
+            height: 360px;
+            border-radius: 7px;
+            margin-left: 40%;
+        }
+        .tabcontent {
+            margin-top: 90px;
+            margin-left: 33%;
+        }
+    }
+    @media only screen and (max-width: 320px) {
+        .navbar-links li a {
+            font-size: 2.9vw;
+        }
+        .tabcontent {
+            margin-top: 70px;
+            margin-bottom: 20px;
+        }
+        .arrow {
+            width: 15px;
+            height: 15px;
+        }
+        .service-tab i {
+            font-size: 80%;
+            margin-top: -11%;
+            margin-left: 20px;
+        }
+        .tab {
+            width: 65%;
+            height: 380px;
+            margin-right: -25px;
+        }
+        .buttonStyle1 i {
+            font-size: 3vw;
+            padding-right: 0.40vw;
+        }
     }
 }
