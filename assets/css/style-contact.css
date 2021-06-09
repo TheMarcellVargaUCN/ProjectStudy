@@ -369,6 +369,16 @@ body {
   text-transform: uppercase;
   font-size: 1.1vw;
   font-weight: bold;
+  cursor: pointer;
+}
+
+.contact form button:hover{
+  background: #db8120;
+  width: 10vw;
+  border: 0;
+  color: #ffffff;
+  font-weight:normal;
+  cursor: pointer;
 }
 
 @media only screen and (min-width: 125px) {
