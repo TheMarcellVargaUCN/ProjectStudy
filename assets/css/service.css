@@ -280,27 +280,6 @@ body {
     column-gap: 2rem;
 }
 
-.responsive-content {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 2;
-}
-
-.responsive-img {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 2;
-    grid-row-end: 3;
-}
-
-.responsive-h5-button {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 3;
-    grid-row-end: 4;
-}
-
 .tab {
     grid-column-start: 1;
     grid-column-end: 2;
@@ -382,7 +361,7 @@ h5 {
     font-size: 15px;
     margin-top: 40px;
     margin-bottom: -30px;
-    margin-left: 20px;
+    margin-left: 30px;
 }
 
 #services-h5 {
@@ -420,7 +399,7 @@ h5 {
 #price-img4 {
     margin-top: 70px;
     margin-left: 20px;
-    width: 40%;
+    width: 50%;
     border-radius: 5px;
     margin-left: 20px;
 }
@@ -437,6 +416,11 @@ h5 {
     margin-left: 140px;
     margin-top: -80%;
     margin-bottom: 15px;
+}
+
+.contact-button a {
+    text-decoration: none;
+    margin-left: 10px;
 }
 
 /* --------------footer---------------- */
