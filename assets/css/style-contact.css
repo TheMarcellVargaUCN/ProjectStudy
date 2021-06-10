@@ -25,11 +25,26 @@ body {
   border-radius: 7px;
   box-shadow: 0 5px rgba(48, 48, 48, 0.23);
   outline: none;
+  margin-left: 20px;
 }
 
 .buttonStyle1 i {
   font-size: 1vw;
-  padding-right: 0.5vw;
+  padding-right: 0.20vw;
+}
+
+.buttonStyle1:active {
+  box-shadow: 0 2px white;
+  transform: translateY(4px);
+  outline: none;
+}
+
+.buttonStyle1:hover {
+  outline: none;
+}
+
+.contact-button {
+  margin-top: 50px;
 }
 
 .buttonStyle2 {
@@ -47,6 +62,20 @@ body {
 .buttonStyle2 i {
   font-size: 1vw;
   padding-right: 0.5vw;
+}
+
+.buttonStyle2:active {
+  box-shadow: 0 2px white;
+  transform: translateY(4px);
+  outline: none;
+}
+
+.buttonStyle2:hover {
+  outline: none;
+}
+
+.contact-button {
+  margin-top: 50px;
 }
 
 /*   .......................... nav-bar ..........................  */
@@ -150,11 +179,30 @@ body {
     padding: 15px;
   }
   .buttonStyle2 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 13vw;
     font-size: 2vw;
   }
+  
   .buttonStyle2 i {
     font-size: 2vw;
+    padding-right: 0.5vw;
+  } 
+  
+  .buttonStyle1 {
+    font-size: 2vw;
   }
+  
+  .buttonStyle1 i {
+    font-size: 2vw;
+  }
+  
+  
+  .topnav {
+    margin-top: -8%;
+  }
+
 }
 
 @media only screen and (max-width: 600px) {
@@ -164,6 +212,18 @@ body {
   }
   .toggle-button {
     top: 1rem;
+  }
+     
+  .buttonStyle1 {
+    font-size: 2vw;
+  }
+  
+  .buttonStyle1 i {
+    font-size: 2vw;
+  }
+  
+  .topnav {
+    margin-top: -13%;
   }
 }
 
@@ -467,30 +527,7 @@ footer {
 
 @media only screen and (max-width: 768px) {
   
-  .buttonStyle2 {
-    margin-left: auto;
-    margin-right: auto;
-    width: 13vw;
-    font-size: 2vw;
-  }
-  
-  .buttonStyle2 i {
-    font-size: 2vw;
-    padding-right: 0.5vw;
-  } 
-  
-  .buttonStyle1 {
-    font-size: 2vw;
-  }
-  
-  .buttonStyle1 i {
-    font-size: 2vw;
-  }
-  
-  
-  .topnav {
-    margin-top: -8%;
-  }
+
   .grid-contact-intro {
     margin-top: 8%;
     height: 60%;
@@ -595,18 +632,7 @@ footer {
 
 @media only screen and (max-width: 600px) {
   
-    
-  .buttonStyle1 {
-    font-size: 2vw;
-  }
-  
-  .buttonStyle1 i {
-    font-size: 2vw;
-  }
-  
-  .topnav {
-    margin-top: -13%;
-  }
+ 
   .grid-contact-intro {
     margin-top: 13%;
     background-image: none;

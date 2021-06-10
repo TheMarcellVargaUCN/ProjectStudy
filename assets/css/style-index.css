@@ -11,100 +11,223 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
-/* navigation */
-
-.topnav {
-    background-color: #EBF3FA;
-    overflow: hidden;
-    font-size: 16px;
-    box-shadow: 5px 2px 6px #888888a6;
-    /* position: fixed; */
-    width: 100vw;
-    z-index: 100;
-}
-
-#logo {
-    margin-left: 50px;
-    margin-top: 5px;
-    float: left;
-    display: block;
-}
-
-.topnav a {
-    float: right;
-    color: #F1A34F;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 18px;
-    margin-top: 5px;
-    padding-right: 60px;
-}
-
-.topnav a:hover {
-    color: #F1A34F;
-    border-radius: 7px;
-}
-
-.topnav a.active {
-    color: #203F7E;
-}
-
-.topnav .icon {
-    display: none;
-}
+/*   .......................... Contact us btn ..........................  */
 
 .buttonStyle1 {
-    background-color: #F1A34F;
-    color: white;
-    border: none;
-    width: 7vw;
-    height: 2.5vw;
-    max-width: 150px;
-    max-height: 50px;
-    padding-bottom: 15px 25px;
-    cursor: pointer;
-    border-radius: 3px;
-    outline: none;
     font-size: 1vw;
-}
-
-.buttonStyle1:active {
+    background-color: #F1A34F;
+    color: #ffffff;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 7px;
+    box-shadow: 0 5px rgba(48, 48, 48, 0.23);
+    outline: none;
+    margin-left: 20px;
+  }
+  
+  .buttonStyle1 i {
+    font-size: 1vw;
+    padding-right: 0.20vw;
+  }
+  
+  .buttonStyle1:active {
     box-shadow: 0 2px white;
     transform: translateY(4px);
     outline: none;
-}
-
-.buttonStyle1:hover {
+  }
+  
+  .buttonStyle1:hover {
     outline: none;
-}
-
-@media screen and (max-width: 600px) {
-    .topnav a:not(:first-child) {
-        display: none;
+  }
+  
+  .contact-button {
+    margin-top: 50px;
+  }
+  
+  .buttonStyle2 {
+    font-size: 1vw;
+    background-color: #F1A34F;
+    color: #ffffff;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 7px;
+    box-shadow: 0 5px rgba(48, 48, 48, 0.23);
+    outline: none;
+  }
+  
+  .buttonStyle2 i {
+    font-size: 1vw;
+    padding-right: 0.5vw;
+  }
+  
+  .buttonStyle2:active {
+    box-shadow: 0 2px white;
+    transform: translateY(4px);
+    outline: none;
+  }
+  
+  .buttonStyle2:hover {
+    outline: none;
+  }
+  
+  .contact-button {
+    margin-top: 50px;
+  }
+  
+  /*   .......................... nav-bar ..........................  */
+  
+  .navbar {
+    display: flex;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: auto;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #EBF3FA;
+    box-shadow: 5px 2px 6px #888888a6;
+    z-index: 30;
+  }
+  
+  .logo {
+    float: left;
+    margin-left: 3%;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .logo img {
+    width: 3.7vw;
+    height: auto;
+  }
+  
+  .navbar-links {
+    height: 100%;
+    margin-right: 3%;
+  }
+  
+  .navbar-links ul {
+    display: flex;
+  }
+  
+  .navbar-links li {
+    list-style: none;
+  }
+  
+  .navbar-links li a {
+    display: block;
+    text-decoration: none;
+    font-size: 1.2vw;
+    color: #F1A34F;
+    padding-right: 25px;
+    padding-left: 25px;
+  }
+  
+  .toggle-button {
+    position: absolute;
+    right: 1rem;
+    top: 1.5rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+  }
+  
+  .toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: #F1A34F;
+    border-radius: 10px;
+  }
+  
+  @media (max-width: 800px) {
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
     }
-    .topnav a.icon {
-        float: right;
-        display: block;
+    .logo img {
+      width: 7vw;
+      height: auto;
     }
-    .topnav.responsive {
-        position: relative;
+    .toggle-button {
+      display: flex;
     }
-    .topnav.responsive a.icon {
-        position: absolute;
-        right: 0;
-        top: 0;
+    .navbar-links {
+      display: none;
+      width: 100%;
+      background-color: #203F7E;
     }
-    .topnav.responsive a {
-        float: none;
-        color: #203F7E;
-        display: block;
-        text-align: center;
+    .navbar-links ul {
+      width: 100%;
+      flex-direction: column;
     }
-}
+    .navbar-links ul li {
+      text-align: center;
+    }
+    .navbar-links.active {
+      display: flex;
+    }
+    .navbar-links li a {
+      font-size: 3vw;
+      color: #F1A34F;
+      padding: 15px;
+    }
+    .buttonStyle2 {
+      margin-left: auto;
+      margin-right: auto;
+      width: 14vw;
+      font-size: 2vw;
+    }
+    
+    .buttonStyle2 i {
+      font-size: 2vw;
+      padding-right: 0.5vw;
+    } 
+    
+    .buttonStyle1 {
+      font-size: 2vw;
+    }
+    
+    .buttonStyle1 i {
+      font-size: 2vw;
+    }
+    
+    
+    .topnav {
+      margin-top: -8%;
+    }
+  
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .logo img {
+      width: 10vw;
+      height: auto;
+    }
+    .toggle-button {
+      top: 1rem;
+    }
+       
+    .buttonStyle1 {
+      font-size: 2vw;
+    }
+    
+    .buttonStyle1 i {
+      font-size: 2vw;
+    }
+    
+    .topnav {
+      margin-top: -13%;
+    }
+  }
 
 /*---------------------------- main page ------------------- */
 .landing-img-grid{
+    margin-top: 5%;
     display: grid;
     box-sizing: border-box;
     height: auto;
@@ -604,10 +727,14 @@ footer{
     .review p {
         font-size: 1.5vw;
     }
+    .landing-img-grid{
+        margin-top: 10%;
+    }
 }
 
 @media screen and (max-width: 650px) {
     .landing-img-grid {
+        margin-top: 17%;
         grid-template-columns: 40% 60%;
         grid-template-rows: 20vw 20vw 10vw;
     }
