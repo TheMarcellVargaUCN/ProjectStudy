@@ -8,66 +8,69 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/5d734a0479.js" crossorigin="anonymous"></script>
     <link href="assets/CSS/style-contact.css" rel=" stylesheet">
-   
+
     <title> Contact Us </title>
 </head>
 
 <body>
-   <!-- .......................... Nav-bar .......................... -->
-   
-
-   <nav class="navbar">
-     <div class="logo"> <a href="index.html"><img src="assets/images/Logo.png" id="logo" alt="logo"> </a></div>
-	
-    <a href="#" class="toggle-button">
-      <span class="bar"></span>
-      <span class="bar"></span>
-      <span class="bar"></span>
-    </a>
-    <div class="navbar-links">
-      <ul>
-        <li> <a href="universities.html">Universities</a></li>
-		<li> <a href="service.html">Our Services</a></li>
-        <li><a href="Contact-us.html"><div class="buttonStyle1"><i class="fas fa-phone-alt"></i>Contact Us</div></a></li>
-	
-      </ul>
-    </div>
-  </nav> 
+    <!-- .......................... Nav-bar .......................... -->
 
 
-<script> 
-const toggleButton = document.getElementsByClassName('toggle-button')[0]
-    const navbarLinks = document.getElementsByClassName('navbar-links')[0]
-    
-    toggleButton.addEventListener('click', () => {
-      navbarLinks.classList.toggle('active')
-    })
-    
-    
-    $(document).ready(function(){
-        $('#nav-icon1,#nav-icon2,#nav-icon3,#nav-icon4').click(function(){
-            $(this).toggleClass('open');
+    <nav class="navbar">
+        <div class="logo"> <a href="index.html"><img src="assets/images/Logo.png" id="logo" alt="logo"> </a></div>
+
+        <a href="#" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        <div class="navbar-links">
+            <ul>
+                <li> <a href="universities.html">Universities</a></li>
+                <li> <a href="service.html">Our Services</a></li>
+                <li><a href="Contact-us.html">
+                        <div class="buttonStyle1"><i class="fas fa-phone-alt"></i>Contact Us</div>
+                    </a></li>
+
+            </ul>
+        </div>
+    </nav>
+
+
+    <script>
+        const toggleButton = document.getElementsByClassName('toggle-button')[0]
+        const navbarLinks = document.getElementsByClassName('navbar-links')[0]
+
+        toggleButton.addEventListener('click', () => {
+            navbarLinks.classList.toggle('active')
+        })
+
+
+        $(document).ready(function () {
+            $('#nav-icon1,#nav-icon2,#nav-icon3,#nav-icon4').click(function () {
+                $(this).toggleClass('open');
+            });
         });
-    });
     </script>
 
 
 
-  <!-- .......................... Contact us page - intro .......................... -->
+    <!-- .......................... Contact us page - intro .......................... -->
 
-  <div class="grid-contact-all">
-  
+    <div class="grid-contact-all">
+
         <div class="grid-contact-intro">
 
             <section class="contact-intro">
                 <h3>CONTACT US</h3>
                 <p>Our Service provide all needed step to be accepted to the university.
-                We will help you from the begging till the end, with all the
-                requirements you might need for filling university application,
-                accomodation and visa.</p>
-                
-               <button class="buttonStyle1" onclick="document.getElementById('form-page').scrollIntoView();" ><i class="fas fa-phone-alt"></i>Contact Us</button>
-               
+                    We will help you from the begging till the end, with all the
+                    requirements you might need for filling university application,
+                    accomodation and visa.</p>
+
+                <button class="buttonStyle1" onclick="document.getElementById('form-page').scrollIntoView();"><i
+                        class="fas fa-phone-alt"></i>Contact Us</button>
+
             </section>
 
             <div class="contact-intro-img">
@@ -80,12 +83,12 @@ const toggleButton = document.getElementsByClassName('toggle-button')[0]
             <div class="arrow bounce"></div>
 
         </div>
-       
- <!-- .......................... Contact us page - info .......................... -->
+
+        <!-- .......................... Contact us page - info .......................... -->
 
 
         <div class="grid-contact-info">
-       
+
             <div class="contact-info-img">
                 <img src="assets/images/contact-card.png" alt=contact-picture>
                 <p class="info-cont">
@@ -93,133 +96,143 @@ const toggleButton = document.getElementsByClassName('toggle-button')[0]
                     <br>
                     <b>Phone-number: </b> +380972841850<br>
                     <br>
-                    <b>Opening hours:</b>  <br> 
-                    Mon-Sat: 7am-5pm EST<br> 
-                    Sun:  Closed </p>
+                    <b>Opening hours:</b> <br>
+                    Mon-Sat: 7am-5pm EST<br>
+                    Sun: Closed
+                </p>
             </div>
-    
+
             <div class="side-team">
-                
-                <div class="team"> <h3>Our Team</h3></div>
-                
-            	<div class="cards">
-                    <div class="card" >
+
+                <div class="team">
+                    <h3>Our Team</h3>
+                </div>
+
+                <div class="cards">
+                    <div class="card">
 
                         <img src="assets/images/person-1.png" alt=contact-picture>
-                        
+
                         <article class="card-text">
                             <h4> Sumana Karki </h4>
-                            <p> “FROM Canada: I found ESS agency more experience, 
-                                professional & dedicated. Their expertise are useful 
+                            <p> “FROM Canada: I found ESS agency more experience,
+                                professional & dedicated. Their expertise are useful
                                 for me not only for granting visa but also for choosing
                                 right institution based on my previous qualifications. ” </p>
                         </article>
-                    
+
                     </div>
-            
+
                     <div class="card">
                         <img src="assets/images/person-1.png" alt=contact-picture>
 
                         <article class="card-text">
                             <h4> Sumana Karki </h4>
-                            <p> “FROM Canada: I found ESS agency more experience, 
-                                professional & dedicated. Their expertise are useful 
+                            <p> “FROM Canada: I found ESS agency more experience,
+                                professional & dedicated. Their expertise are useful
                                 for me not only for granting visa but also for choosing
                                 right institution based on my previous qualifications. ” </p>
                         </article>
-            
+
                     </div>
-                    
-            
+
+
                 </div>
             </div>
-    
-        </div> 
 
- <!-- .......................... Contact us page - form .......................... -->
+        </div>
 
-      <div class="form-page" id="form-page">
-	<div class="Contact-form-page">
+        <!-- .......................... Contact us page - form .......................... -->
 
-		<div class="company-info">
-			<h2><b>Whats is next...</b></h2>
-			<p> “FROM Canada: I found ESS agency more experience, 
-				professional & dedicated. Their expertise are useful 
-				for me not only for granting visa but also for choosing
-				right institution based on my previous qualifications. ” 
-			</p>
-		</div>
-	
-		<div class="contact">
-			<h4> APPLY NOW </h4>
-			<form id="contact-form">
-				<p>
-					<label>Name</label>
-					<input type="text" name="name" >
-				</p>
+        <div class="form-page" id="form-page">
+            <div class="Contact-form-page">
 
-				<p>
-					<label>E-mail Address</label>
-					<input type="email" name="email">
-				</p>
+                <div class="company-info">
+                    <h2><b>Whats is next...</b></h2>
+                    <p> After submission, we will reach you for more details of setting a meeting time, will talk about
+                        the
+                        suitable service package and future
+                        guidelines!<br> <br>We are looking forward to help you with applications and make your dreams
+                        come true towards
+                        high-educaton!
 
-				<p>
-					<label>Phone Number</label>
-					<input type="text" name="phone" id="phone">
-				</p>
+                    </p>
+                </div>
 
-				<p class="full">
-					<button type="button" onClick="location.href='contact-submit.html'" >Submit</button>
-				</p>
-			</form>
-		
-		</div>
+                <div class="contact">
+                    <h4> APPLY NOW </h4>
+                    <form id="contact-form">
+                        <p>
+                            <label>Name</label>
+                            <input type="text" name="name">
+                        </p>
 
-	</div>
+                        <p>
+                            <label>E-mail Address</label>
+                            <input type="email" name="email">
+                        </p>
+
+                        <p>
+                            <label>Phone Number</label>
+                            <input type="text" name="phone" id="phone">
+                        </p>
+
+                        <p class="full">
+                            <button type="button" onClick="location.href='contact-submit.html'">Submit</button>
+                        </p>
+                    </form>
+
+                </div>
+
+            </div>
+        </div>
+
+
     </div>
 
-       
-    </div>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-left">
+                <h4><b>Our Services</b></h4>
+                <p> Admission Counselling
+                    <br>Health Cover
+                    <br>Student Visa Service
+                    <br> Accomodation
+                </p>
+                <br>
+                <div class="contact-button">
+                    <button class="buttonStyle1" onclick="document.getElementById('form-page').scrollIntoView();"><i
+                            class="fas fa-phone-alt"></i>Contact Us</button>
+                </div>
+            </div>
 
- <footer>
-     <div class="footer-content">
-     <div class="footer-left">
-         <h4><b>Our Services</b></h4> 
-           <p> Admission Counselling
-           <br>Health Cover
-           <br>Student Visa Service
-           <br> Accomodation</p>
-           <br>
-           <div class="contact-button">
-            <button class="buttonStyle1" onclick="document.getElementById('form-page').scrollIntoView();" ><i class="fas fa-phone-alt"></i>Contact Us</button>
-        </div>  
-     </div>
+            <div class="footer-center">
+                <h4><b> Contact Us </b></h4>
+                <p><b>Telephone:</b>
+                    <br>1 800 AFS-INFO
+                    <br>
+                    <br><b>Address:</b>
+                    <br>120 Wall Street
+                    <br>Floor 4
+                    <br> New York, NY 10005
+                </p>
+            </div>
 
-     <div class="footer-center">
-        <h4><b> Contact Us </b></h4> 
-        <p><b>Telephone:</b>
-        <br>1 800 AFS-INFO
-        <br>
-        <br><b>Address:</b>
-        <br>120 Wall Street
-        <br>Floor 4
-        <br> New York, NY 10005</p>
-    </div>
-
-    <div class="footer-right">
-        <h4><b>Study Abroad</b> </h4> 
-        <p>Why study abroad?
-        <br>Benefits of Overseas Study
-        <br>Steps to study abroad
-        <br>FAQs
-        <br>Ready to apply
-        <br>Student stories</p>
-    </div>
-    </div>
-    <div class="footer-bottom">
-        <p> Copyright © 2021 European Study Solution. </p>
-    </div>
- </footer>
+            <div class="footer-right">
+                <h4><b>Study Abroad</b> </h4>
+                <p>Why study abroad?
+                    <br>Benefits of Overseas Study
+                    <br>Steps to study abroad
+                    <br>FAQs
+                    <br>Ready to apply
+                    <br>Student stories
+                </p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p> Copyright © 2021 European Study Solution. </p>
+        </div>
+    </footer>
 
 </body>
 
