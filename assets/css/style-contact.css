@@ -32,6 +32,23 @@ body {
   padding-right: 0.5vw;
 }
 
+.buttonStyle2 {
+  font-size: 1vw;
+  background-color: #F1A34F;
+  color: #ffffff;
+  border: none;
+  padding: 5px;
+  cursor: pointer;
+  border-radius: 7px;
+  box-shadow: 0 5px rgba(48, 48, 48, 0.23);
+  outline: none;
+}
+
+.buttonStyle2 i {
+  font-size: 1vw;
+  padding-right: 0.5vw;
+}
+
 /*   .......................... nav-bar ..........................  */
 
 .navbar {
@@ -288,11 +305,12 @@ body {
 }
 
 .card {
+  width: 90%;
   padding-right: 5%;
   padding-left: 5%;
   padding-top: 5%;
   padding-bottom: 2%;
-  margin: 3%;
+  margin: 2%;
   background: #fefff9;
   color: #363636;
   text-decoration: none;
@@ -300,11 +318,18 @@ body {
 }
 
 .card img {
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
   display: block;
 }
 
-.card-text {
+.card-text p{
+  text-align: left;
+  width: 100%;
+  font-size: 1.1vw;
+}
+
+.card-text h4{
   text-align: center;
   width: 100%;
   font-size: 1.2vw;
@@ -441,6 +466,28 @@ footer {
 /*   ..........................  For tablet ..........................  */
 
 @media only screen and (max-width: 768px) {
+  
+  .buttonStyle2 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 13vw;
+    font-size: 2vw;
+  }
+  
+  .buttonStyle2 i {
+    font-size: 2vw;
+    padding-right: 0.5vw;
+  } 
+  
+  .buttonStyle1 {
+    font-size: 2vw;
+  }
+  
+  .buttonStyle1 i {
+    font-size: 2vw;
+  }
+  
+  
   .topnav {
     margin-top: -8%;
   }
@@ -485,39 +532,52 @@ footer {
     grid-row-end: 1;
   }
   .cards {
-    width: 30vw;
+    margin-top: 0%;
+    width: 90vw;
     margin-left: auto;
     margin-right: auto;
   }
-  .card-text {
+
+  .card img {
+    width: 20vw;
+  }
+
+  .card-text p{
+    text-align: left;
+    width: 100%;
+    font-size: 2vw;
+  }
+  
+  .card-text h4{
     text-align: center;
     width: 100%;
     font-size: 2vw;
   }
+
   .team h3 {
-    color: #203F7E;
-    margin-top: 3%;
-    font-size: 3vw;
+    margin-top: 0%;
+    font-size: 2.5vw;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
   }
+
   .form-page {
     width: 100vw;
     height: 100vh;
     background-size: 85%;
   }
   .Contact-form-page {
-    width: 60vw;
+    width: 70vw;
     margin-top: -5%;
   }
   .company-info {
-    margin-top: 45%;
+    margin-top: 55%;
     font-size: 1.7vw;
   }
   .contact {
     font-size: 1.7vw;
-    margin-top: 45%;
+    margin-top: 55%;
   }
   .contact form button {
     font-size: 1.7vw;
@@ -534,6 +594,16 @@ footer {
 /*   ..........................   For phone ..........................  */
 
 @media only screen and (max-width: 600px) {
+  
+    
+  .buttonStyle1 {
+    font-size: 2vw;
+  }
+  
+  .buttonStyle1 i {
+    font-size: 2vw;
+  }
+  
   .topnav {
     margin-top: -13%;
   }
@@ -568,7 +638,7 @@ footer {
     height: 10px;
   }
   .grid-contact-info {
-    margin-top: 2%;
+    margin-top: 5%;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
   }
@@ -595,33 +665,43 @@ footer {
     margin-right: auto;
   }
   .card img {
-    width: 40vw;
+    width: 30vw;
   }
-  .card-text {
-    text-align: center;
+
+  .card-text p{
     font-size: 3vw;
   }
+  
+  .card-text h4{
+    font-size: 3vw;
+  }
+ 
   .team h3 {
-    color: #203F7E;
-    margin-top: -30%;
+    margin-top: -40%;
     font-size: 4vw;
   }
+
   .form-page {
     height: 100vh;
-    background-size: 95%;
+    background-size: 100%;
+    margin-top: -15%;
   }
+
   .Contact-form-page {
-    width: 80vw;
-    margin-top: -25%;
+    width: 100vw;
+    /* margin-top: -15%; */
   }
+
   .company-info {
-    margin-top: 100%;
-    font-size: 2vw;
+    margin-top: 90%;
+    font-size: 2.5vw;
+    width: 100%;
   }
   .contact {
     font-size: 2vw;
-    margin-top: 100%;
+    margin-top: 90%;
   }
+
   .contact form button {
     font-size: 2vw;
   }
@@ -632,4 +712,12 @@ footer {
   .footer-content {
     width: 100%;
   }
+}
+
+@media only screen and (max-width: 400px) {
+  .form-page {
+    background-image: none;
+    margin-bottom: -40%;
+  }
+  
 }
