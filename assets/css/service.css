@@ -7,6 +7,7 @@ html {
     margin: 0;
     font-family: "lato";
     line-height: 1.2;
+    scroll-behavior: smooth;
 }
 
 body {
