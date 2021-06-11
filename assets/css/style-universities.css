@@ -16,84 +16,7 @@ h1, h2, h3 {
     font-weight: bold;
 }
 
-
-/* -- ----------------------- Header -------------------------- */
-
-.topnav {
-    position: -webkit-sticky; /* Safari */
-    position: sticky;
-    top: 0;
-    bottom: 0;
-    z-index: 7;
-    overflow: hidden;
-    width: 100%;
-    height: auto;
-    margin: 0;
-    padding: 0;
-    background-color: #EBF3FA;
-    font-size: 16px;
-    box-shadow: 5px 2px 6px #888888a6;
-}
-
-#logo {
-    margin-left: 50px;
-    margin-top: 5px;
-}
-
-.topnav a {
-    float: right;
-    color: #F1A34F;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 18px;
-    margin-top: 5px;
-    padding-right: 60px;
-}
-
-.topnav a:hover {
-    color: #F1A34F;
-    border-radius: 7px;
-}
-
-.topnav a.active {
-    color: #203F7E;
-}
-
-.topnav .icon {
-    display: none;
-}
-
-
-
-/*   .......................... Header Responsivity ..........................  */
- 
-@media screen and (max-width: 660px) {
-    .topnav a:not(:first-child) {
-        display: none;
-    }
-    .topnav a.icon {
-        float: right;
-        display: block;
-    }
-    .topnav.responsive {
-        position: relative;
-    }
-    .topnav.responsive a.icon {
-        position: absolute;
-        right: 0;
-        top: 0;
-    }
-    .topnav.responsive a {
-        float: none;
-        color: #203F7E;
-        display: block;
-        text-align: center;
-    }
-}
-
-
-/*   .......................... Contact Us Button ..........................  */
+/* ----------------------- Contact us Button -------------------------- */
  
 
 .buttonStyle1 {
@@ -107,160 +30,320 @@ h1, h2, h3 {
     box-shadow: 0 5px rgba(48, 48, 48, 0.23);
     outline: none;
     margin-left: 20px;
-  }
-  
-  .buttonStyle1 i {
+}
+
+.buttonStyle1 i {
     font-size: 1vw;
     padding-right: 0.20vw;
-  }
-  
-  .buttonStyle1:active {
+}
+
+.buttonStyle1:active {
     box-shadow: 0 2px white;
     transform: translateY(4px);
     outline: none;
-  }
-  
-  .buttonStyle1:hover {
+}
+
+.buttonStyle1:hover {
     outline: none;
-  }
-  
-  .contact-button {
+}
+
+.contact-button {
     margin-top: 50px;
-  }
-  
-  .buttonStyle2 {
-    font-size: 21px;
+}
+
+.buttonStyle2 {
+    font-size: 1vw;
     background-color: #F1A34F;
     color: #ffffff;
     border: none;
-    padding: 2.5%;
-    padding-left: 2.5vw;
-    padding-right: 2.5vw;
+    padding: 5px;
     cursor: pointer;
     border-radius: 7px;
     box-shadow: 0 5px rgba(48, 48, 48, 0.23);
     outline: none;
-  }
-  
-  .buttonStyle2 i {
-    font-size: 24p;
-    padding-right: 2.5vw;
-  }
-  
-  .buttonStyle2:active {
+}
+
+.buttonStyle2 i {
+    font-size: 1vw;
+    padding-right: 0.5vw;
+}
+
+.buttonStyle2:active {
     box-shadow: 0 2px white;
     transform: translateY(4px);
     outline: none;
-  }
-  
-  .buttonStyle2:hover {
-    outline: none;
-  }
-  
-  .contact-button {
-    margin-top: 50px;
-  }
-
-/* ----------------------- Intro content -------------------------- */
-
-.img-cont {
-    margin-left: 2.5vw;
-    margin-right: 2.5vw;
 }
 
-.img-cont img {
-    width: 100%;
-    position: relative;
-    margin-top: 5vh;
-    margin-bottom: 2.5vh;
+.buttonStyle2:hover {
+    outline: none;
+}
 
+.contact-button {
+    margin-top: 50px;
+}
 
-    z-index: -7;
-} 
+/* ------------------------- Header -------------------------- */
 
-.introgrid {
-    position: absolute;
-    display: grid;
+.navbar {
+    display: flex;
+    position: fixed;
+    top: 0;
     width: 100%;
     height: auto;
-    border-collapse: collapse;
-    justify-content: center;
-    border-collapse: collapse;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #EBF3FA;
+    box-shadow: 5px 2px 6px #888888a6;
+    z-index: 6;
+  }
+  
+  .logo {
+    float: left;
+    margin-left: 3%;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .logo img {
+    width: 3.7vw;
+    height: auto;
+  }
+  
+  .navbar-links {
+    height: 100%;
+    margin-right: 3%;
+  }
+  
+  .navbar-links ul {
+    display: flex;
+  }
+  
+  .navbar-links li {
+    list-style: none;
+  }
+  
+  .navbar-links li a {
+    display: block;
+    text-decoration: none;
+    font-size: 1.2vw;
+    color: #F1A34F;
+    padding-right: 25px;
+    padding-left: 25px;
+  }
+  
+  .toggle-button {
+    position: absolute;
+    right: 1rem;
+    top: 1.5rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+  }
+  
+  .toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: #F1A34F;
+    border-radius: 10px;
+  }
+  
+  @media (max-width: 800px) {
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .logo img {
+      width: 7vw;
+      height: auto;
+    }
+    .toggle-button {
+      display: flex;
+    }
+    .navbar-links {
+      display: none;
+      width: 100%;
+      background-color: #203F7E;
+    }
+    .navbar-links ul {
+      width: 100%;
+      flex-direction: column;
+    }
+    .navbar-links ul li {
+      text-align: center;
+    }
+    .navbar-links.active {
+      display: flex;
+    }
+    .navbar-links li a {
+      font-size: 3vw;
+      color: #F1A34F;
+      padding: 15px;
+    }
+    .buttonStyle2 {
+      margin-left: auto;
+      margin-right: auto;
+      width: 13vw;
+      font-size: 2vw;
+    }
+    
+    .buttonStyle2 i {
+      font-size: 2vw;
+      padding-right: 0.5vw;
+    } 
+    
+    .buttonStyle1 {
+      font-size: 2vw;
+    }
+    
+    .buttonStyle1 i {
+      font-size: 2vw;
+    }
+    
+    
+    .topnav {
+      margin-top: -8%;
+    }
+  
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .logo img {
+      width: 10vw;
+      height: auto;
+    }
+    .toggle-button {
+      top: 1rem;
+    }
+       
+    .buttonStyle1 {
+      font-size: 2vw;
+    }
+    
+    .buttonStyle1 i {
+      font-size: 2vw;
+    }
+    
+    .topnav {
+      margin-top: -13%;
+    }
+  }
+    
+/* ----------------------- Superior grid -------------------------- */
+
+.introgrid {
+    display: grid;
+    width: 100%;
+    margin-top: 5%;
+    background-image: url("../images/ESS-BG.png");
+    background-repeat: no-repeat;
+    ;
+    background-size: 95%;
+    background-position: top;
+    grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas:
-    'introtext introimage'
-    'arrow arrow'
-}
-
-.introtext { grid-area: introtext; }
-.introimage { grid-area: introimage; }
-.arrow { grid-area: arrow; }
-
-
-.introtext {
-    margin-left: 35%;
-    margin-top: 30%;
-    font-size: 22px;
-    width: 58%;
-    color: #434343;
-}
-
-h1 {
+  }
+  
+  .introtext h3 {
     color:#F1A34F;
-}
-
-.introimage img {
-    width: 75%;
+  }
+  
+  .university-intro-img img {
+    width: 30vw;
     margin-left: 15%;
-    margin-top: 32%;
-}
+    margin-top: 26%;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 1;
+  }
+  
+  .introtext {
+    width: 60%;
+    height: 40vh;
+    margin-top: 25%;
+    margin-left: 40%;
+    font-size: 1.3vw;
+    color: #434343;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
+  }
+
+
+  .university-intro-img img {
+    width: 30vw;
+    margin-left: 15%;
+    margin-top: 26%;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 1;
+  }
+  
+  .university-intro-img-mobile {
+    visibility: hidden;
+  }
+  
+/* ----------------------- Intro content -------------------------- */
 
 /* ----------------------- Arrow -------------------------- */
 .arrow {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 2;
     margin-right: auto;
     margin-left: auto;
-    margin-top: 1%;
+    margin-top: 5%;
     width: 30px;
     height: 30px;
     background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgaGVpZ2h0PSI1MTIiIGlkPSJzdmcyIiB2ZXJzaW9uPSIxLjEiIHdpZHRoPSI1MTIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6Y2M9Imh0dHA6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL25zIyIgeG1sbnM6ZGM9Imh0dHA6Ly9wdXJsLm9yZy9kYy9lbGVtZW50cy8xLjEvIiB4bWxuczppbmtzY2FwZT0iaHR0cDovL3d3dy5pbmtzY2FwZS5vcmcvbmFtZXNwYWNlcy9pbmtzY2FwZSIgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIiB4bWxuczpzb2RpcG9kaT0iaHR0cDovL3NvZGlwb2RpLnNvdXJjZWZvcmdlLm5ldC9EVEQvc29kaXBvZGktMC5kdGQiIHhtbG5zOnN2Zz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxkZWZzIGlkPSJkZWZzNCIvPjxnIGlkPSJsYXllcjEiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAsLTU0MC4zNjIyKSI+PHBhdGggZD0ibSAxMjcuNDA2MjUsNjU3Ljc4MTI1IGMgLTQuOTg1MywwLjA3ODQgLTkuOTEwNzcsMi4xNjMwOCAtMTMuNDM3NSw1LjY4NzUgbCAtNTUsNTUgYyAtMy42MDA1NjUsMy41OTkyNyAtNS42OTY4ODMsOC42NTg5NSAtNS42OTY4ODMsMTMuNzUgMCw1LjA5MTA1IDIuMDk2MzE4LDEwLjE1MDczIDUuNjk2ODgzLDEzLjc1IEwgMjQyLjI1LDkyOS4yNSBjIDMuNTk5MjcsMy42MDA1NiA4LjY1ODk1LDUuNjk2ODggMTMuNzUsNS42OTY4OCA1LjA5MTA1LDAgMTAuMTUwNzMsLTIuMDk2MzIgMTMuNzUsLTUuNjk2ODggTCA0NTMuMDMxMjUsNzQ1Ljk2ODc1IGMgMy42MDA1NiwtMy41OTkyNyA1LjY5Njg4LC04LjY1ODk1IDUuNjk2ODgsLTEzLjc1IDAsLTUuMDkxMDUgLTIuMDk2MzIsLTEwLjE1MDczIC01LjY5Njg4LC0xMy43NSBsIC01NSwtNTUgYyAtMy41OTgxNSwtMy41OTEyNyAtOC42NTA2OCwtNS42ODEyNyAtMTMuNzM0MzgsLTUuNjgxMjcgLTUuMDgzNjksMCAtMTAuMTM2MjIsMi4wOSAtMTMuNzM0MzcsNS42ODEyNyBMIDI1Niw3NzguMDMxMjUgMTQxLjQzNzUsNjYzLjQ2ODc1IGMgLTMuNjY2NzgsLTMuNjY0MjMgLTguODQ4MDEsLTUuNzY0NDIgLTE0LjAzMTI1LC01LjY4NzUgeiIgaWQ9InBhdGgzNzY2LTEiIHN0eWxlPSJmb250LXNpemU6bWVkaXVtO2ZvbnQtc3R5bGU6bm9ybWFsO2ZvbnQtdmFyaWFudDpub3JtYWw7Zm9udC13ZWlnaHQ6bm9ybWFsO2ZvbnQtc3RyZXRjaDpub3JtYWw7dGV4dC1pbmRlbnQ6MDt0ZXh0LWFsaWduOnN0YXJ0O3RleHQtZGVjb3JhdGlvbjpub25lO2xpbmUtaGVpZ2h0Om5vcm1hbDtsZXR0ZXItc3BhY2luZzpub3JtYWw7d29yZC1zcGFjaW5nOm5vcm1hbDt0ZXh0LXRyYW5zZm9ybTpub25lO2RpcmVjdGlvbjpsdHI7YmxvY2stcHJvZ3Jlc3Npb246dGI7d3JpdGluZy1tb2RlOmxyLXRiO3RleHQtYW5jaG9yOnN0YXJ0O2Jhc2VsaW5lLXNoaWZ0OmJhc2VsaW5lO2NvbG9yOiMwMDAwMDA7ZmlsbDojMjIyMjIyO2ZpbGwtb3BhY2l0eToxO2ZpbGwtcnVsZTpub256ZXJvO3N0cm9rZTpub25lO3N0cm9rZS13aWR0aDozOC44ODAwMDEwNzttYXJrZXI6bm9uZTt2aXNpYmlsaXR5OnZpc2libGU7ZGlzcGxheTppbmxpbmU7b3ZlcmZsb3c6dmlzaWJsZTtlbmFibGUtYmFja2dyb3VuZDphY2N1bXVsYXRlO2ZvbnQtZmFtaWx5OlNhbnM7LWlua3NjYXBlLWZvbnQtc3BlY2lmaWNhdGlvbjpTYW5zIi8+PC9nPjwvc3ZnPg==);
     background-size: contain;
-}
-
-.bounce {
+  }
+  
+  .bounce {
     animation: bounce 3s infinite;
-}
-
-@keyframes bounce {
+  }
+  
+  @keyframes bounce {
     0%, 20%, 50%, 80%, 100% {
-        transform: translateY(0);
+      transform: translateY(0);
     }
     40% {
-        transform: translateY(-30px);
+      transform: translateY(-30px);
     }
     60% {
-        transform: translateY(-15px);
+      transform: translateY(-15px);
     }
-}
-/* ----------------------- University headline + selector -------------------------- */
+  }
+  /* ----------------------- University headline + selector -------------------------- */
 
 .unitopcontainer {
     display: grid;
     max-width: 100%;
-    height: auto;
+    overflow: hidden;
     font-size: 120%;
     border-collapse: collapse;
     margin-top: 2.5vh;
     margin-bottom: 2.5vh;
+    margin-left: 2.5vw;
+    margin-right: 2.5vw;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     justify-content: center;
     align-items: center;
     justify-items: center;
     grid-template-areas:
-    'uniheadline'
-    'universities';
+        'uniheadline'
+        'universities';
+}
+
+.unitopcontainer h3 {
+        font-size: 1.6vw;
 }
 
 .uniheadline { grid-area: uniheadline; }
@@ -268,13 +351,14 @@ h1 {
 
 
 .uniheadline {
-    margin-top: 2.5vh;
     place-self: center;
     color: #203F7E;
 }
+
 .universities {
     display: grid;
-    grid-template-columns: repeat(5, 12.5vw);
+    height: auto;
+    grid-template-columns: repeat(5, 1fr);
     grid-template-rows: auto;
     margin-top: 2.5vh;
     margin-bottom: 2.5vh;
@@ -282,16 +366,14 @@ h1 {
     
 }
 
-
 .universities button {
     margin: auto;
     padding: 0;
     background-color: inherit;
-    float: left;
     border: none;
     outline: none;
     cursor: pointer;
-    padding: 12.5% 15%;
+    padding: 6.25% 7.5%;
     transition: 0.2s;
     font-size: 17px;
     
@@ -309,7 +391,7 @@ h1 {
 
 
 .tablinks.active {
-    transform: scale(1.5);
+    transform: scale(1.1);
 }
 
 
@@ -341,6 +423,7 @@ h1 {
 
 
 /* ----------------------- Program container -------------------------- */
+
 
 .programcontainer {
     display: grid;
@@ -378,6 +461,7 @@ h1 {
 }
 
 .programcontainer li {
+    font-size: 1.1vw;
     margin-bottom: 1.5vh;
 }
 
@@ -385,6 +469,7 @@ h1 {
     width: 100%;
     height: auto;
     border: none;
+    float: right;
     background-color: transparent;
     cursor: pointer;
     place-self: center;
@@ -399,8 +484,18 @@ h1 {
     font-weight: bold;
     float: right;
     margin-left: 5px;
+    transition: 0.2s;
+
 }
   
+.programcontainer i {
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+    transition: 0.2s;
+
+}
 .active i {
     transform: scaleY(-1);;
     transition: 0.2s;
@@ -588,6 +683,9 @@ h1 {
     color: #203F7E;
 }
 
+.unicontainer h3 {
+    font-size: 1.6vw;
+}
 
 /* ----------------------- Student Life -------------------------- */
 
@@ -632,88 +730,165 @@ h1 {
 /* ----------------------- Footer -------------------------- */
 
 footer {
-    width: 100%;
-    height: auto;
-    margin-top: 5%;
-    background-color:  #203F7E;
-    padding-top: 2%;
-    padding-bottom: 2%;
-    color: white;
-    font-size: 1vw;
+  margin-top: 5%;
+  background-color: #203F7E;
+  padding: 2%;
+  color: white;
+  font-size: 1vw;
 }
 
-   .footer-content {
-     display: flex;
-     width: 60%;
-     margin-left: auto;
-     margin-right: auto;
-     line-height: 1.7;
-   }
+.footer-content {
+  display: flex;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.7;
+}
 
-   .footer-left {
-     margin-left: auto;
-     margin-right: auto;  
-   }
+.footer-left {
+  margin-left: auto;
+  margin-right: auto;
+}
 
-   .footer-center {
-     margin-left: auto;
-     margin-right: auto;
-   }
+.footer-center {
+  margin-left: auto;
+  margin-right: auto;
+}
 
-   .footer-right {
-     margin-left: auto;
-     margin-right: auto;
-   }
+.footer-right {
+  margin-left: auto;
+  margin-right: auto;
+}
 
-   .footer-bottom {
-     margin-top: 3%;
-     text-align: center;
-   }
+.footer-bottom {
+  margin-top: 3%;
+  text-align: center;
+}
 
-   /* ----------------------- Responsiveness -------------------------- */
-   
-   @media only screen and (max-width: 660px) {
+a {
+  color: white;
+}
+
+/* ----------------------- Responsiveness - Even Larger screen -------------------------- */
+
+
+@media only screen and (min-width: 1800px) {
     
-    .buttonStyle1 {
-        width: 16vw;
-        height: 5vw;
-        font-size: 2vw;
-    }    
-
-    .introgrid {
-        position: absolute;
-        display: grid;
-        width: 100%;
-        height: auto;
-        border-collapse: collapse;
-        justify-content: center;
-        border-collapse: collapse;
-        justify-content: center;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto;
-        grid-template-areas:
-        'introtext introimage'
-        'arrow arrow'
+    .programinfo {
+        margin-left: 5vw;
+        margin-right: 5vw;
+        margin-top: 5vh;
+        margin-bottom: 5vh;
+        padding: 0;
     }
 
+    .programinfo iframe{
+        width: 80%;
+        height: 16vh;
+    }
+
+
+    .programinfo img{
+        width: 80%;
+        height: 16vh;
+    }
+
+    .admissiontext {
+        margin: auto;
+    }
+
+    .countrytext {
+        margin: auto;
+    }
+
+    
+
+
+}
+
+
+/* ----------------------- Responsiveness - Larger screen -------------------------- */
+
+
+@media only screen and (max-width: 1100px) {
+    .programinfo {
+        display: grid;
+        margin-left: 2.5vw;
+        margin-right: 2.5vw;
+        padding-top: 2.5vh;
+        padding-bottom: 2.5vh;
+        border-collapse: collapse;
+        grid-row-gap: 50px;
+        grid-column-gap: 50px;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        justify-content: center;
+        justify-items: center;
+        grid-template-areas:
+        'admissionvideo'
+        'admissiontext'
+        'countryimage'
+        'countrytext';
+    }
+ 
+    .programinfocontainer {
+        margin: 0;
+    }
 
     .introtext {
-        width: 100%;
-        margin-left: 7.5vw;
-        margin-top: 5vh;
-        font-size: 18px;
-        color: #434343;
-    }
-    
-    h1 {
-        color:#F1A34F;
-        font-size: 28px;
-    }
-    
-    .introimage img {
-        width: 80%;
+        height: 20vh;
     }
 
+}
+
+/* ----------------------- Responsiveness - Tablet+ -------------------------- */
+
+@media only screen and (max-width: 870px) {
+
+.universities {
+    grid-template-columns: repeat(5, 1fr);
+    margin-left: 0;
+    margin-right: 0; 
+}
+
+
+.universities img {
+    height: 6vh;
+    transition: transform .2s;
+    place-self: center;
+}
+    
+
+.tablinks.active {
+    transform: scale(1.1);
+}
+
+}
+
+/* ----------------------- Responsiveness - Tablet -------------------------- */
+   
+   @media only screen and (max-width: 768px) {
+      
+        .introgrid {
+          margin-top: 8%;
+          height: 60%;
+          /* background-color: rgb(41, 70, 12); */
+        }
+        .introtext {
+          width: 70%;
+          height: 15vh;
+          margin-top: 17%;
+          margin-left: 30%;
+          font-size: 2vw;
+          /* background-color: darkgoldenrod; */
+        }
+
+        .arrow {
+            margin-top: 3%;
+            width: 20px;
+            height: 20px;
+        }  
+      
 
     .universities {
         grid-template-columns: repeat(5, 1fr);
@@ -730,7 +905,7 @@ footer {
         
     
     .tablinks.active {
-        transform: scale(1.25);
+        transform: scale(1.1);
     }
     
     .unitopcontainer {
@@ -738,10 +913,10 @@ footer {
         max-width: 100%;
         overflow: hidden;
         font-size: 120%;
-        margin-left: 0;
-        margin-right: 0;
+        margin-left: 5vw;
+        margin-right: 5vw;
         border-collapse: collapse;
-        margin-top: 5vh;
+        margin-top: 2.5vh;
         margin-bottom: 2.5vh;
         grid-template-columns: 1fr;
         grid-template-rows: auto;
@@ -871,6 +1046,59 @@ footer {
             margin-top: 2.5vh;
             margin-bottom: 2.5vh;
         }
-   @media only screen and (max-width: 1000px) {
 
+        footer {
+            margin-top: 0px;
+            font-size: 1.5vw;
+          }
+          .footer-content {
+            width: 75%;
+          }        
+        
+   }
+
+   /* ----------------------- Responsiveness - Mobile -------------------------- */
+
+    @media only screen and (max-width: 600px) {
+
+        .introgrid {
+            margin-top: 13%;
+            background-image: none;
+          }
+          .introtext {
+            width: 90%;
+            height: 80%;
+            margin-top: 15%;
+            margin-left: 20%;
+            font-size: 3vw;
+            /* background-color: darkgoldenrod; */
+          }
+          .university-intro-img-mobile img {
+            visibility: visible;
+            width: 30vw;
+            margin-top: 20%;
+            margin-left: 20%;
+            grid-column-start: 2;
+            grid-column-end: 4;
+            grid-row-start: 1;
+            grid-row-end: 1;
+          }
+          .university-intro-img {
+            display: none;
+          }
+          .arrow {
+            margin-top: 2%;
+            width: 10px;
+            height: 10px;
+          }
+
+          footer {
+            margin-top: 0px;
+            font-size: 2.3vw;
+          }
+          .footer-content {
+            width: 100%;
+          }
+        
 }
+
