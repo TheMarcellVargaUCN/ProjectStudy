@@ -18,44 +18,44 @@
 <body>
 
 
-     <!-- .......................... Nav-bar .......................... -->
+  <!-- .......................... Nav-bar .......................... -->
 
 
-     <nav class="navbar">
-      <div class="logo"> <a href="index.html"><img src="assets/images/Logo.png" id="logo" alt="logo"> </a></div>
+  <nav class="navbar">
+    <div class="logo"> <a href="index.html"><img src="assets/images/Logo.png" id="logo" alt="logo"> </a></div>
 
-      <a href="#" class="toggle-button">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-      </a>
-      <div class="navbar-links">
-          <ul>
-              <li> <a href="universities.html">Universities</a></li>
-              <li> <a href="service.html">Our Services</a></li>
-              <li><a href="Contact-us.html">
-                      <div class="buttonStyle2"><i class="fas fa-phone-alt"></i>Contact Us</div>
-                  </a></li>
+    <a href="#" class="toggle-button">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </a>
+    <div class="navbar-links">
+      <ul>
+        <li> <a href="universities.html">Universities</a></li>
+        <li> <a href="service.html">Our Services</a></li>
+        <li><a href="Contact-us.html">
+            <div class="buttonStyle2"><i class="fas fa-phone-alt"></i>Contact Us</div>
+          </a></li>
 
-          </ul>
-      </div>
+      </ul>
+    </div>
   </nav>
 
 
   <script>
-      const toggleButton = document.getElementsByClassName('toggle-button')[0]
-      const navbarLinks = document.getElementsByClassName('navbar-links')[0]
+    const toggleButton = document.getElementsByClassName('toggle-button')[0]
+    const navbarLinks = document.getElementsByClassName('navbar-links')[0]
 
-      toggleButton.addEventListener('click', () => {
-          navbarLinks.classList.toggle('active')
-      })
+    toggleButton.addEventListener('click', () => {
+      navbarLinks.classList.toggle('active')
+    })
 
 
-      $(document).ready(function () {
-          $('#nav-icon1,#nav-icon2,#nav-icon3,#nav-icon4').click(function () {
-              $(this).toggleClass('open');
-          });
+    $(document).ready(function () {
+      $('#nav-icon1,#nav-icon2,#nav-icon3,#nav-icon4').click(function () {
+        $(this).toggleClass('open');
       });
+    });
   </script>
 
 
@@ -77,9 +77,11 @@
     <div class="landing-contact-button">
       <a href="#"><button class="buttonStyle1">Contact Us</button></a>
     </div>
-    <div class="landing-arrow bounce">
-      <i class="fas fa-chevron-down"></i>
-    </div>
+
+    <div class="arrow bounce"></div>
+    <!--  <div class="landing-arrow bounce">
+      <i class="fas fa-chevron-down"></i> -->
+  </div>
   </div>
 
 
@@ -225,9 +227,9 @@
     <div class="review" style="justify-self: end;">
       <img src="assets/images/landing/review1.png">
       <h3>Kristoff Jameson, 22</h3>
-      <p>“FROM California: My experience with ESS was 
+      <p>“FROM California: My experience with ESS was
         great. They helped me with all the documentation
-        and also everything what I needed for transit 
+        and also everything what I needed for transit
         to study in France.”
 
       </p>
@@ -341,45 +343,46 @@
 
   <footer>
     <div class="footer-content">
-        <div class="footer-left">
-            <h4><b>Our Services</b></h4>
-            <p><a href="service.html">Guidance and service</a>
-                <br><a href="service.html">Service Price</a>
-                <br><a href="service.html">Filling out the Application</a>
-                <br><a href="service.html">Student Visa Service</a>
-                <br> <a href="service.html">Accomodation</a>
-            </p>
-            <br>
-            <button class="buttonStyle1" onClick="location.href='Contact-us.html'"><i class="fas fa-phone-alt"></i>Contact Us</button></a></li>
-        </div>
+      <div class="footer-left">
+        <h4><b>Our Services</b></h4>
+        <p><a href="service.html">Guidance and service</a>
+          <br><a href="service.html">Service Price</a>
+          <br><a href="service.html">Filling out the Application</a>
+          <br><a href="service.html">Student Visa Service</a>
+          <br> <a href="service.html">Accomodation</a>
+        </p>
+        <br>
+        <button class="buttonStyle1" onClick="location.href='Contact-us.html'"><i class="fas fa-phone-alt"></i>Contact
+          Us</button></a></li>
+      </div>
 
-        <div class="footer-center">
-            <h4><b> Contact Us </b></h4>
-            <p><b>Telephone:</b>
-                <br>+380972841850
-                <br>
-                <br><b>Address:</b>
-                <br>120 Wall Street
-                <br>Floor 4
-                <br> New York, NY 10005
-            </p>
-        </div>
+      <div class="footer-center">
+        <h4><b> Contact Us </b></h4>
+        <p><b>Telephone:</b>
+          <br>+380972841850
+          <br>
+          <br><b>Address:</b>
+          <br>120 Wall Street
+          <br>Floor 4
+          <br> New York, NY 10005
+        </p>
+      </div>
 
-        <div class="footer-right">
-            <h4><b>Study Abroad</b> </h4>
-            <p>Why study abroad
-                <br><a href="#steps">Steps to study abroad</a>
-                <br><a  href="#FAQ">FAQs</a>
-                <br>Ready to apply
-                <br><a  href="#reviews">Reviews</a>
-            </p>
-        </div>
+      <div class="footer-right">
+        <h4><b>Study Abroad</b> </h4>
+        <p>Why study abroad
+          <br><a href="#steps">Steps to study abroad</a>
+          <br><a href="#FAQ">FAQs</a>
+          <br>Ready to apply
+          <br><a href="#reviews">Reviews</a>
+        </p>
+      </div>
     </div>
     <div class="footer-bottom">
-        <p> Copyright © 2021 European Study Solution </p>
+      <p> Copyright © 2021 European Study Solution </p>
     </div>
     </div>
-</footer>
+  </footer>
 
 </body>
 
