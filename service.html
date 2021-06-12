@@ -16,45 +16,45 @@
 <body>
 
 
-  <!-- .......................... Nav-bar .......................... -->
+    <!-- .......................... Nav-bar .......................... -->
 
 
-  <nav class="navbar">
-    <div class="logo"> <a href="index.html"><img src="assets/images/Logo.png" id="logo" alt="logo"> </a></div>
+    <nav class="navbar">
+        <div class="logo"> <a href="index.html"><img src="assets/images/Logo.png" id="logo" alt="logo"> </a></div>
 
-    <a href="#" class="toggle-button">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-    </a>
-    <div class="navbar-links">
-        <ul>
-            <li> <a href="universities.html">Universities</a></li>
-            <li> <a href="service.html">Our Services</a></li>
-            <li><a href="Contact-us.html">
-                    <div class="buttonStyle2"><i class="fas fa-phone-alt"></i>Contact Us</div>
-                </a></li>
+        <a href="#" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        <div class="navbar-links">
+            <ul>
+                <li> <a href="universities.html">Universities</a></li>
+                <li> <a href="service.html">Our Services</a></li>
+                <li><a href="Contact-us.html">
+                        <div class="buttonStyle2"><i class="fas fa-phone-alt"></i>Contact Us</div>
+                    </a></li>
 
-        </ul>
-    </div>
-</nav>
-
-
-<script>
-    const toggleButton = document.getElementsByClassName('toggle-button')[0]
-    const navbarLinks = document.getElementsByClassName('navbar-links')[0]
-
-    toggleButton.addEventListener('click', () => {
-        navbarLinks.classList.toggle('active')
-    })
+            </ul>
+        </div>
+    </nav>
 
 
-    $(document).ready(function () {
-        $('#nav-icon1,#nav-icon2,#nav-icon3,#nav-icon4').click(function () {
-            $(this).toggleClass('open');
+    <script>
+        const toggleButton = document.getElementsByClassName('toggle-button')[0]
+        const navbarLinks = document.getElementsByClassName('navbar-links')[0]
+
+        toggleButton.addEventListener('click', () => {
+            navbarLinks.classList.toggle('active')
+        })
+
+
+        $(document).ready(function () {
+            $('#nav-icon1,#nav-icon2,#nav-icon3,#nav-icon4').click(function () {
+                $(this).toggleClass('open');
+            });
         });
-    });
-</script>
+    </script>
 
 
 
@@ -99,7 +99,7 @@
             <i class="fas fa-chevron-right"></i>
 
             <hr>
-            <button class="tablinks active" onclick="openCity(event, 'Guidance ')">Guidance and
+            <button class="tablinks" onclick="openCity(event, 'Guidance')">Guidance and
                 Counselling</button>
             <i class="fas fa-chevron-right"></i>
             <hr>
@@ -396,9 +396,10 @@
                     <br> <a href="service.html">Accomodation</a>
                 </p>
                 <br>
-                <button class="buttonStyle1" onClick="location.href='Contact-us.html'"><i class="fas fa-phone-alt"></i>Contact Us</button></a></li>
+                <button class="buttonStyle1" onClick="location.href='Contact-us.html'"><i
+                        class="fas fa-phone-alt"></i>Contact Us</button></a></li>
             </div>
-    
+
             <div class="footer-center">
                 <h4><b> Contact Us </b></h4>
                 <p><b>Telephone:</b>
@@ -410,14 +411,14 @@
                     <br> New York, NY 10005
                 </p>
             </div>
-    
+
             <div class="footer-right">
                 <h4><b>Study Abroad</b> </h4>
                 <p>Why study abroad
                     <br><a href="index.html#steps">Steps to study abroad</a>
-                    <br><a  href="index.html#FAQ">FAQs</a>
+                    <br><a href="index.html#FAQ">FAQs</a>
                     <br>Ready to apply
-                    <br><a  href="index.html#reviews">Reviews</a>
+                    <br><a href="index.html#reviews">Reviews</a>
                 </p>
             </div>
         </div>
