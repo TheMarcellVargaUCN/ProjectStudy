@@ -649,18 +649,21 @@ h1, h2, h3 {
     border-collapse: collapse;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
-    grid-column-gap: 50px;
+    grid-column-gap: 25px;
     justify-content: center;
     align-items: center;
     justify-items: center;
     grid-template-areas:
-    'map map maptext';
+    'map maptext';
 }
 
 .map { grid-area: map; }
 .maptext { grid-area: maptext; }
 
-
+.maptext {
+    width: 100%;
+    height: auto;
+}
 
 .map {
     width: 100%;
@@ -674,9 +677,6 @@ h1, h2, h3 {
     left: 0;
 }
 
-.maptext {
-    margin-right: 2.5vw;
-}
 
 .maptext h2 {
     margin:0;
