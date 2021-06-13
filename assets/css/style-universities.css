@@ -343,7 +343,7 @@ h1, h2, h3 {
 }
 
 .unitopcontainer h3 {
-        font-size: 1.6vw;
+    font-size: 1.6vw;
 }
 
 .uniheadline { grid-area: uniheadline; }
@@ -354,6 +354,7 @@ h1, h2, h3 {
     place-self: center;
     color: #203F7E;
 }
+
 
 .universities {
     display: grid;
@@ -401,7 +402,6 @@ h1, h2, h3 {
 .unicontainer {
     display: grid;
     max-width: 100%;
-    font-size: 120%;
     margin-left: 2.5vw;
     margin-right: 2.5vw;
     border-collapse: collapse;
@@ -415,6 +415,10 @@ h1, h2, h3 {
     'programcontainer programinfocontainer programinfocontainer'
     'studentlife studentlife studentlife';
     
+}
+
+.unicontainer p {
+  font-size: 1.1vw;
 }
 
 .programcontainer { grid-area: programcontainer; }
@@ -483,16 +487,15 @@ h1, h2, h3 {
     color: #777;
     font-weight: bold;
     float: right;
-    margin-left: 5px;
     transition: 0.2s;
 
 }
   
 .programcontainer i {
+    font-size: 1.5vw;
     color: #777;
     font-weight: bold;
     float: right;
-    margin-left: 5px;
     transition: 0.2s;
 
 }
@@ -554,28 +557,29 @@ h1, h2, h3 {
 /* ----------------------- Program info -------------------------- */
 
 .programinfocontainer {
-    margin-left: 2.5vw;
-    margin-right: 2.5vw;
     background-color: white;
 }
 
 .programinfo {
     display: grid;
+    height: 100%;
     margin-left: 2.5vw;
     margin-right: 2.5vw;
-    padding-top: 2.5vh;
+    margin-top: 2.5vh;
+    margin-bottom: 2.5vh;
     padding-bottom: 2.5vh;
     border-collapse: collapse;
-    grid-row-gap: 50px;
-    grid-column-gap: 50px;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
+    grid-row-gap: 25px;
+    grid-column-gap: 25px;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
     justify-content: center;
     justify-items: center;
     grid-template-areas:
     'admissionvideo admissiontext'
-    'countrytext countryimage'
+    'countrytext countryimage';
 }
+
 
 .admissionvideo { grid-area: admissionvideo; }
 .admissiontext { grid-area: admissiontext; }
@@ -594,11 +598,6 @@ h1, h2, h3 {
 
 }
 
-.yt {
-    width: 100%;
-    height: 15vh;
-}
-
 .admissionvideo {
     width: 100%;
     height: auto;
@@ -614,13 +613,15 @@ h1, h2, h3 {
 }
 
 .admissiontext {
-    width: 100%;
-    height: auto;
-    align-items: start;
+  margin: auto auto;
 }
 
 .admissiontext h3 {
     margin: 0;
+}
+
+.countrytext {
+  margin: auto auto;
 }
 
 .countrytext h3 {
@@ -631,13 +632,11 @@ h1, h2, h3 {
 
 .countryimage {
     width: 100%;
-    height: auto;
+    height: 100%;
 }
 .countryimage img {
     width: 100%;
-    height: 15vh;
-    top:0;
-    left: 0;
+    height: 100%;
 }
 
 .mapcontainer {
@@ -648,22 +647,25 @@ h1, h2, h3 {
     border-collapse: collapse;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
-    grid-column-gap: 50px;
+    grid-column-gap: 25px;
     justify-content: center;
     align-items: center;
     justify-items: center;
     grid-template-areas:
-    'map map maptext';
+    'map maptext';
 }
 
 .map { grid-area: map; }
 .maptext { grid-area: maptext; }
 
-
+.maptext {
+    width: 100%;
+    height: auto;
+}
 
 .map {
     width: 100%;
-    height: auto;
+    height: 100%;
 }
 
 .map iframe {
@@ -673,9 +675,6 @@ h1, h2, h3 {
     left: 0;
 }
 
-.maptext {
-    margin-right: 2.5vw;
-}
 
 .maptext h2 {
     margin:0;
@@ -684,7 +683,7 @@ h1, h2, h3 {
 }
 
 .unicontainer h3 {
-    font-size: 1.6vw;
+    font-size: 1.4vw;
 }
 
 /* ----------------------- Student Life -------------------------- */
@@ -697,8 +696,8 @@ h1, h2, h3 {
     border-collapse: collapse;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
-    grid-row-gap: 50px;
-    grid-column-gap: 50px;
+    grid-row-gap: 2.5vw;
+    grid-column-gap: 2.5vh;
     justify-content: center;
     align-items: center;
     justify-items: center;
@@ -769,81 +768,75 @@ a {
   color: white;
 }
 
-/* ----------------------- Responsiveness - Even Larger screen -------------------------- */
+/* ----------------------- Responsiveness - Larger screen -------------------------- */
 
-
-@media only screen and (min-width: 1800px) {
-    
-    .programinfo {
-        margin-left: 5vw;
-        margin-right: 5vw;
-        margin-top: 5vh;
-        margin-bottom: 5vh;
-        padding: 0;
-    }
-
-    .programinfo iframe{
-        width: 80%;
-        height: 16vh;
-    }
-
-
-    .programinfo img{
-        width: 80%;
-        height: 16vh;
-    }
-
-    .admissiontext {
-        margin: auto;
-    }
-
-    .countrytext {
-        margin: auto;
-    }
-
-    
-
-
+@media only screen and (min-width: 1400px) {
+  
+  .programcontainer i {
+    margin-top: 0.75vh;
+  }
 }
 
 
-/* ----------------------- Responsiveness - Larger screen -------------------------- */
+@media only screen and (max-width: 1200px) {
+  
+  .programinfo {
+    padding-top: 2.5vh;
+    padding-bottom: 2.5vh;
+  }
+  
 
+  .admissionvideo {
+    width: 100%;
+    height: 80%;
+    position: relative;
 
-@media only screen and (max-width: 1100px) {
-    .programinfo {
-        display: grid;
-        margin-left: 2.5vw;
-        margin-right: 2.5vw;
-        padding-top: 2.5vh;
-        padding-bottom: 2.5vh;
-        border-collapse: collapse;
-        grid-row-gap: 50px;
-        grid-column-gap: 50px;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-        justify-content: center;
-        justify-items: center;
-        grid-template-areas:
-        'admissionvideo'
-        'admissiontext'
-        'countryimage'
-        'countrytext';
-    }
- 
-    .programinfocontainer {
-        margin: 0;
-    }
+}
+.admissionvideo iframe {
+    width: 100%;
+    height: 100%;
+    top:0;
+    left: 0;
+    position: absolute;
+}        
 
-    .introtext {
-        height: 20vh;
-    }
+.countryimage {
+    width: 100%;
+    height: 80%;
+}
+.countryimage img {
+    width: 100%;
+    height: 100%;
+    top:0;
+    left: 0;
+}        
+
 
 }
 
 /* ----------------------- Responsiveness - Tablet+ -------------------------- */
 
 @media only screen and (max-width: 870px) {
+ 
+  .introgrid {
+    margin-top: 8%;
+    height: 60%;
+    /* background-color: rgb(41, 70, 12); */
+  }
+  .introtext {
+    width: 70%;
+    height: 15vh;
+    margin-top: 17%;
+    margin-left: 30%;
+    font-size: 2vw;
+    /* background-color: darkgoldenrod; */
+  }
+
+  .arrow {
+    margin-top: 3%;
+    width: 20px;
+    height: 20px;
+}  
 
 .universities {
     grid-template-columns: repeat(5, 1fr);
@@ -863,90 +856,23 @@ a {
     transform: scale(1.1);
 }
 
+.unicontainer {
+  display: grid;
+  max-width: 100%;
+  overflow: hidden;
+  border-collapse: collapse;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-row-gap: 2.5vh;
+  justify-content: center;
+  align-items: start;
+  justify-items: center;
+  grid-template-areas:
+  'programcontainer'
+  'programinfocontainer'
+  'studentlife';        
 }
 
-/* ----------------------- Responsiveness - Tablet -------------------------- */
-   
-   @media only screen and (max-width: 768px) {
-      
-        .introgrid {
-          margin-top: 8%;
-          height: 60%;
-          /* background-color: rgb(41, 70, 12); */
-        }
-        .introtext {
-          width: 70%;
-          height: 15vh;
-          margin-top: 17%;
-          margin-left: 30%;
-          font-size: 2vw;
-          /* background-color: darkgoldenrod; */
-        }
-
-        .arrow {
-            margin-top: 3%;
-            width: 20px;
-            height: 20px;
-        }  
-      
-
-    .universities {
-        grid-template-columns: repeat(5, 1fr);
-        margin-left: 0;
-        margin-right: 0; 
-    }
-
-
-    .universities img {
-        height: 6vh;
-        transition: transform .2s;
-        place-self: center;
-    }
-        
-    
-    .tablinks.active {
-        transform: scale(1.1);
-    }
-    
-    .unitopcontainer {
-        display: grid;
-        max-width: 100%;
-        overflow: hidden;
-        font-size: 120%;
-        margin-left: 5vw;
-        margin-right: 5vw;
-        border-collapse: collapse;
-        margin-top: 2.5vh;
-        margin-bottom: 2.5vh;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-        justify-content: center;
-        align-items: center;
-        justify-items: center;
-        grid-template-areas:
-        'uniheadline'
-        'universities';
-    }
-
-
-    .unicontainer {
-        display: grid;
-        max-width: 100%;
-        overflow: hidden;
-        font-size: 120%;
-        border-collapse: collapse;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-        grid-row-gap: 2.5vh;
-        justify-content: center;
-        align-items: start;
-        justify-items: center;
-        grid-template-areas:
-        'programcontainer'
-        'programinfocontainer'
-        'studentlife';        
-    }
-    
 
     .programinfo {
         display: grid;
@@ -955,8 +881,8 @@ a {
         padding-top: 2.5vh;
         padding-bottom: 2.5vh;
         border-collapse: collapse;
-        grid-row-gap: 50px;
-        grid-column-gap: 50px;
+        grid-row-gap: 25px;
+        grid-column-gap: 25px;
         grid-template-columns: 1fr;
         grid-template-rows: auto;
         justify-content: center;
@@ -969,7 +895,20 @@ a {
     }
  
     .programinfocontainer {
-        margin: 0;
+        margin-left: 5vw;
+        margin-right: 5vw;
+    }
+
+    .unicontainer h3 {
+      font-size: 2vw;
+    }
+
+    .unicontainer p {
+      font-size: 1.5vw;
+    }
+
+    .unicontainer li {
+      font-size: 1.5vw;
     }
 
         .mapcontainer {
@@ -1042,10 +981,50 @@ a {
             left: 0;
         }        
 
+
         .maptext {
             margin-top: 2.5vh;
             margin-bottom: 2.5vh;
         }
+
+
+}
+
+/* ----------------------- Responsiveness - Tablet -------------------------- */
+   
+   @media only screen and (max-width: 768px) {
+    
+    .universities {
+        grid-template-columns: repeat(5, 1fr);
+        margin-left: 0;
+        margin-right: 0; 
+    }
+
+
+    .universities img {
+        height: 6vh;
+        transition: transform .2s;
+        place-self: center;
+    }
+        
+    
+    .tablinks.active {
+        transform: scale(1.1);
+    }
+    
+
+    .unitopcontainer h3 {
+      font-size: 2.5vw;
+  }  
+
+    
+    .unicontainer h3 {
+      font-size: 3vw;
+    }
+
+    .unicontainer p {
+      font-size: 3vw;
+    }
 
         footer {
             margin-top: 0px;
