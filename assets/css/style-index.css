@@ -468,6 +468,7 @@ body {
 }
 .uni_logo {
     grid-row: 2;
+    place-self: center;
 }
 .headline_uni {
     font-size: 1vw;
