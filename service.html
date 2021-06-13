@@ -11,9 +11,9 @@
     <script src="https://kit.fontawesome.com/5d734a0479.js" crossorigin="anonymous"></script>
     <script src="assets/js/Java.js" defer></script>
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicons/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
     <title>ESS - Our Service</title>
 </head>
 
@@ -21,27 +21,28 @@
 
 
     <!-- .......................... Nav-bar .......................... -->
+    <main>
 
+        <nav class="navbar">
+            <div class="logo"> <a href="index.html"><img src="assets/images/Logo.png" id="logo" alt="logo"> </a></div>
 
-    <nav class="navbar">
-        <div class="logo"> <a href="index.html"><img src="assets/images/Logo.png" id="logo" alt="logo"> </a></div>
+            <a href="#" class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+            <div class="navbar-links">
+                <ul>
+                    <li> <a href="universities.html">Universities</a></li>
+                    <li> <a href="service.html">Our Services</a></li>
+                    <li><a href="Contact-us.html">
+                            <div class="buttonStyle2"><i class="fas fa-phone-alt"></i>Contact Us</div>
+                        </a></li>
 
-        <a href="#" class="toggle-button">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </a>
-        <div class="navbar-links">
-            <ul>
-                <li> <a href="universities.html">Universities</a></li>
-                <li> <a href="service.html">Our Services</a></li>
-                <li><a href="Contact-us.html">
-                        <div class="buttonStyle2"><i class="fas fa-phone-alt"></i>Contact Us</div>
-                    </a></li>
-
-            </ul>
-        </div>
-    </nav>
+                </ul>
+            </div>
+        </nav>
+    </main>
 
 
     <script>
@@ -65,328 +66,354 @@
 
 
     <!-- grid -->
+    <section>
 
-    <div class="grid-srvice-all">
+        <div class="grid-srvice-all">
 
-        <div class="grid-service-intro">
+            <div class="grid-service-intro">
 
-            <section class="service-intro">
-                <h3>AGENCY SERVICES</h3>
-                <p>Our Service provide all needed step to be accepted to the university. We will help you from the
-                    begging till the end, with all the requirements you might need for filling university application,
-                    accomodation and visa.</p>
+                <section class="service-intro">
+                    <h3>AGENCY SERVICES</h3>
+                    <p>Our Service provide all needed step to be accepted to the university. We will help you from the
+                        begging till the end, with all the requirements you might need for filling university
+                        application,
+                        accomodation and visa.</p>
+
+                    <div class="contact-button">
+                        <button class="buttonStyle1"><i class="fas fa-phone-alt"></i>Contact Us</button></a></li>
+
+                    </div>
+                </section>
+
+                <div class="service-intro-img">
+                    <img src="assets/images/front-page-figures.png" alt=service-picture>
+                </div>
+
+                <div class="service-intro-img1">
+                    <img src="assets/images/mobile-pic-service.png" alt=service-picture>
+                </div>
+
+                <div class="arrow bounce"></div>
+            </div>
+        </div>
+
+
+        <!----------------------Service Information----------------------- -->
+
+        <div class="service-tab">
+            <div class="tab">
+                <button class="tablinks" onclick="openCity(event, 'About-Company')" id="defaultOpen">About the
+                    Study Agency</button>
+                <i class="fas fa-chevron-right"></i>
+
+                <hr>
+                <button class="tablinks" onclick="openCity(event, 'Guidance')">Guidance and
+                    Counselling</button>
+                <i class="fas fa-chevron-right"></i>
+                <hr>
+                <button class="tablinks" onclick="openCity(event, 'Service Price')">Service Price</button>
+                <i class="fas fa-chevron-right"></i>
+                <hr>
+                <button class="tablinks" onclick="openCity(event, 'Visa')">Visa Application</button>
+                <i class="fas fa-chevron-right"></i>
+                <hr>
+                <button class="tablinks" onclick="openCity(event, 'Application')">Filling out the
+                    Application</button>
+                <i class="fas fa-chevron-right"></i>
+                <hr>
+                <button class="tablinks" onclick="openCity(event, 'Communication')">Communication with
+                    university </button>
+                <i class="fas fa-chevron-right"></i>
+                <hr>
+                <button class="tablinks" onclick="openCity(event, 'Meetings')">Personal Meetings</button>
+                <i class="fas fa-chevron-right"></i>
+                <hr>
+                <button class="tablinks" onclick="openCity(event, 'Accomodation')">Search of
+                    Accommodation</button>
+                <i class="fas fa-chevron-right"></i>
+                <hr>
+
+            </div>
+
+
+
+            <div id="About-Company" class="tabcontent">
+                <h3>About the Study Agency</h3>
+
+                <p><strong>European Study Solution</strong>- ESS, is a newly start up organization registered in
+                    Ukraine,<br>
+                    whose purpose is to help American students with the application process and
+                    preparation<br> for life
+                    abroad.
+                    ESS would like to provide a payable service for Americans to help with <br><strong>application
+                        submission to
+                        European
+                        educational programs</strong>. At the moment we are callobarting<br> with the five major France
+                    Universities,
+                    which Diploma are recognized worldwide.
+                    <br><br>Our main service feature is a unique approach to their
+                    client, where the
+                    main
+                    focus would <br>lay on helping to find professional orientation, accompaniment with all the
+                    documentary
+                    work,
+                    preparation for life abroad, etc.
+                </p>
+
+
+                <img src="assets/images/france-service.png" id="price-img3" alt="France">
+
+                <h5>Do you have more questions about European Study Solution?</h5>
 
                 <div class="contact-button">
-                    <button class="buttonStyle1"><i class="fas fa-phone-alt"></i>Contact Us</button></a></li>
-
+                    <a href="Contact-us.html"><button class="buttonStyle1"><i class="fas fa-phone-alt"
+                                style="margin-top: 1px; margin-left:-3px;font-size: 18px;"></i>Contact Us</button></a>
                 </div>
-            </section>
 
-            <div class="service-intro-img">
-                <img src="assets/images/front-page-figures.png" alt=service-picture>
+
             </div>
 
-            <div class="service-intro-img1">
-                <img src="assets/images/mobile-pic-service.png" alt=service-picture>
-            </div>
+            <div id="Guidance" class="tabcontent">
+                <h3>Guidance and Counselling</h3>
+                <p>Making the decision to study abroad takes guts. It shows your somebody who isn’t <br> afraid to take
+                    on new frontiers.We certainly understand the excitement of studying <br>overseas but we also know it
+                    can
+                    be
+                    nerve-wracking.
+                    At ESS, we’ve been a trusted <br>advisor to parents and students because we provide full detailed
+                    pre-departure<br>
+                    counselling.Unlike
+                    other student-recruitment agencies, we can even book your flights<br> in-house.
 
-            <div class="arrow bounce"></div>
-        </div>
-    </div>
+                    <br> <br> <strong> We’ll help</strong> ensure every detail is taken care of for
+                    your arrival in your new country. If you<br> require it, we’ll arrange for you to be picked up from
+                    the
+                    airport
+                    and check in with you
+                    to <br>make sure you arrive safely at your hotel. Our job is to set you and your family’s mind
+                    at<br>
+                    ease
+                    by
+                    providing you accurate, detailed
+                    information about what you can expect upon <br>arrival.We are world-leaders in student service and
+                    the
+                    trusted
+                    partner of many top <br>education
+                    providers because of the extra care we take of our students.
 
-    <!----------------------Service Information----------------------- -->
+                    <br><br>Our pre-departure counselling will also help you address foreign exchange and travel<br>
+                    arrangements.
+                </p>
 
-    <div class="service-tab">
-        <div class="tab">
-            <button class="tablinks" onclick="openCity(event, 'About-Company')" id="defaultOpen">About the
-                Study Agency</button>
-            <i class="fas fa-chevron-right"></i>
+                <img src="assets/images/guidance1.jpg" id="price-img" alt="Guidance">
 
-            <hr>
-            <button class="tablinks" onclick="openCity(event, 'Guidance')">Guidance and
-                Counselling</button>
-            <i class="fas fa-chevron-right"></i>
-            <hr>
-            <button class="tablinks" onclick="openCity(event, 'Service Price')">Service Price</button>
-            <i class="fas fa-chevron-right"></i>
-            <hr>
-            <button class="tablinks" onclick="openCity(event, 'Visa')">Visa Application</button>
-            <i class="fas fa-chevron-right"></i>
-            <hr>
-            <button class="tablinks" onclick="openCity(event, 'Application')">Filling out the
-                Application</button>
-            <i class="fas fa-chevron-right"></i>
-            <hr>
-            <button class="tablinks" onclick="openCity(event, 'Communication')">Communication with
-                university </button>
-            <i class="fas fa-chevron-right"></i>
-            <hr>
-            <button class="tablinks" onclick="openCity(event, 'Meetings')">Personal Meetings</button>
-            <i class="fas fa-chevron-right"></i>
-            <hr>
-            <button class="tablinks" onclick="openCity(event, 'Accomodation')">Search of
-                Accommodation</button>
-            <i class="fas fa-chevron-right"></i>
-            <hr>
+                <h5>Do you have more questions related to Guidance?</h5>
 
+                <div class="contact-button">
+                    <a href="Contact-us.html"><button class="buttonStyle1"><i class="fas fa-phone-alt"
+                                style="margin-top: 1px; margin-left:-3px;font-size: 18px;"></i>Contact Us</button></a>
+                </div>
 
-        </div>
-
-
-        <div id="About-Company" class="tabcontent">
-            <h3>About the Study Agency</h3>
-
-            <p><strong>European Study Solution</strong>- ESS, is a newly start up organization registered in
-                Ukraine,<br>
-                whose purpose is to help American students with the application process and
-                preparation<br> for life
-                abroad.
-                ESS would like to provide a payable service for Americans to help with <br><strong>application
-                    submission to
-                    European
-                    educational programs</strong>. At the moment we are callobarting<br> with the five major France
-                Universities,
-                which Diploma are recognized worldwide.
-                <br><br>Our main service feature is a unique approach to their
-                client, where the
-                main
-                focus would <br>lay on helping to find professional orientation, accompaniment with all the
-                documentary
-                work,
-                preparation for life abroad, etc.
-            </p>
-
-
-            <img src="assets/images/france-service.png" id="price-img3">
-
-            <h5>Do you have more questions about European Study Solution?</h5>
-
-            <div class="contact-button">
-                <a href="Contact-us.html"><button class="buttonStyle1"><i class="fas fa-phone-alt"
-                            style="margin-top: 1px; margin-left:-3px;font-size: 18px;"></i>Contact Us</button></a>
             </div>
 
 
-        </div>
+            <div id="Service Price" class="tabcontent">
+                <h3>Service Price</h3>
+                <p> European Study Solution has a payable service packages. You can choose from <strong> Basic,<br>
+                        Standard
+                        and
+                        Premium</strong>.
+                    Every package can offer different services, including application<br> filling, search of
+                    accommodation,
+                    Visa
+                    application and etc. <strong>First consultation is for free!</strong>
+                <p>
 
-        <div id="Guidance" class="tabcontent">
-            <h3>Guidance and Counselling</h3>
-            <p>Making the decision to study abroad takes guts. It shows your somebody who isn’t <br> afraid to take
-                on new frontiers.We certainly understand the excitement of studying <br>overseas but we also know it can
-                be
-                nerve-wracking.
-                At ESS, we’ve been a trusted <br>advisor to parents and students because we provide full detailed
-                pre-departure<br>
-                counselling.Unlike
-                other student-recruitment agencies, we can even book your flights<br> in-house.
+                    <img src="assets/images/prices.png" id="price-img2" alt="Service Price">
+                <h5 id="services-h5">Do you have more questions related to Service Price?</h5>
+                <div class="contact-button">
+                    <a href="Contact-us.html"><button class="buttonStyle1"><i class="fas fa-phone-alt"
+                                style="margin-top: 1px; margin-left:-3px;font-size: 18px;"></i>Contact Us</button></a>
+                </div>
 
-                <br> <br> <strong> We’ll help</strong> ensure every detail is taken care of for
-                your arrival in your new country. If you<br> require it, we’ll arrange for you to be picked up from the
-                airport
-                and check in with you
-                to <br>make sure you arrive safely at your hotel. Our job is to set you and your family’s mind at<br>
-                ease
-                by
-                providing you accurate, detailed
-                information about what you can expect upon <br>arrival.We are world-leaders in student service and the
-                trusted
-                partner of many top <br>education
-                providers because of the extra care we take of our students.
+            </div>
 
-                <br><br>Our pre-departure counselling will also help you address foreign exchange and travel<br>
-                arrangements.
-            </p>
+            <div id="Visa" class="tabcontent">
+                <h3>Visa Application</h3>
+                <p>
 
-            <img src="assets/images/guidance1.jpg" id="price-img">
+                    Great! So your application has been approved, you’ve got your offer and you’re <br>ready to go
+                    overseas.
+                    But
+                    wait! Before you can leave the country, you’re going to<br> need to make sure you have an
+                    International
+                    Student
+                    Visa.
+                    <strong>Don’t worry</strong>, this is <br>something ESS can arrange on your behalf from start to
+                    finish.
+                    <br><br>We not
+                    only
+                    provide
+                    up-to-date advice regarding the visa requirements of your <br>destination country but we can process
+                    the
+                    visas
+                    in-house.
+                    This means you don’t<br> need to go outside ESS to complete this part of the process. And because we
+                    know<br>
+                    the
+                    details of your application already, we can help get you quicker outcomes.
+                </p>
+                <img src="assets/images/visa-application.jpg" id="price-img" alt="Visa Application">
 
-            <h5>Do you have more questions related to Guidance?</h5>
+                <h5>Do you have more questions related to Visa Application?</h5>
 
-            <div class="contact-button">
-                <a href="Contact-us.html"><button class="buttonStyle1"><i class="fas fa-phone-alt"
-                            style="margin-top: 1px; margin-left:-3px;font-size: 18px;"></i>Contact Us</button></a>
+                <div class="contact-button">
+                    <a href="Contact-us.html"><button class="buttonStyle1"><i class="fas fa-phone-alt"
+                                style="margin-top: 1px; margin-left:-3px;font-size: 18px;"></i>Contact Us</button></a>
+                </div>
+            </div>
+
+            <div id="Application" class="tabcontent">
+                <h3>Filling out the Application</h3>
+                <p>Wishing for an offer from the University of your dreams? Or just need advice<br> on course
+                    requirements?
+                    At ESS we can help you kick-start your journey <br>to study abroad. We’ll be right there with you
+                    from
+                    application to enrolment,<br> making sure you get to where you need to go.
+                    Representing hundreds of top <br>Universities worldwide, we'll take on all the heavy lifting in your
+                    application<br>
+                    process. <br><br>Filling in forms, chasing documents and helping you overcome any <br>bumps in the
+                    road
+                    along
+                    the
+                    way.
+                    Our job is to maximise your chances of <br>getting the best possible education.
+                    <br><br>
+
+                    How to Apply, Step-By-Step
+                    The application process can be daunting for <br>any student. Especially when studying abroad. That’s
+                    why
+                    at
+                    ESS we make<br> the process as streamlined as possible.
+                    <strong>Simply send an application and apply<br> for a counsellor meeting, to get to know a
+                        step-by-step
+                        guide
+                        today.</strong>
+                </p>
+                <img src="assets/images/application.jpg" id="price-img" alt="Application">
+                <h5>Do you have more questions related to Filling out Application?</h5>
+                <div class="contact-button">
+                    <a href="Contact-us.html"><button class="buttonStyle1"><i class="fas fa-phone-alt"
+                                style="margin-top: 1px; margin-left:-3px;font-size: 18px;"></i>Contact Us</button></a>
+                </div>
+            </div>
+
+            <div id="Communication" class="tabcontent">
+                <h3>Communication with university </h3>
+                <p>ESS works with a big network of agents that are carefully chosen to represent our <br>collaborating
+                    universities to students all around the world. Together we share a <br>vision for creating the best
+                    outcomes
+                    for
+                    our students and the universities we work <br>with.<br><br>
+
+                    We understand that our agents play a big
+                    part in
+                    a
+                    student’s
+                    decision-making and <br>application process, so we provide all of the tools and resources needed to
+                    help<br>
+                    students make the right choice about their education.<br><br>
+
+                    <strong> We are ensure fully communication with universities,</strong> especially during Covid-19
+                    <br>situation, to keep
+                    you
+                    updated about different deadlines, updates, fees, with <br>applications and new opportunities to be
+                    enrolled
+                    in
+                    the different university activities,<br> sports teams.
+                </p>
+                <img src="assets/images/communication.jpg" id="price-img" alt="Communication">
+                <h5>Do you have more questions related to Universities?</h5>
+
+                <div class="contact-button">
+                    <a href="Contact-us.html"><button class="buttonStyle1"><i class="fas fa-phone-alt"
+                                style="margin-top: 1px; margin-left:-3px;font-size: 18px;"></i>Contact Us</button></a>
+                </div>
+            </div>
+
+            <div id="Meetings" class="tabcontent">
+                <h3>Personal Meetings</h3>
+                <p>
+                    Do you want to find out about studying for <strong>a degree in France </strong>on the basis of
+                    your<br>
+                    foreign
+                    qualification? To hear about the rules for <strong>admission</strong> to undergraduate
+                    <br>programmes
+                    and to
+                    Master's and
+                    adult
+                    higher education programmes? Or are you <br>not sure about your program choice, and would like to
+                    get
+                    <strong> personal
+                        traits test?</strong> Then<br> Personal Meetings with our agency crew its just for you!
+                </p>
+                <img src="assets/images/meetings.jpg" id="price-img4" alt="Meetings">
+                <h5>Do you have more questions related to Individual Meetings?</h5>
+
+                <div class="contact-button">
+                    <a href="Contact-us.html"><button class="buttonStyle1"><i class="fas fa-phone-alt"
+                                style="margin-top: 1px; margin-left:-3px;font-size: 18px;"></i>Contact Us</button></a>
+                </div>
+            </div>
+
+            <div id="Accomodation" class="tabcontent">
+                <h3>Search of Accommodation</h3>
+                <p>Choosing the right place to stay in your new country can be daunting. That’s why<br> it helps to have
+                    the
+                    best
+                    local knowledge. At ESS we place thousands of students <br>annually in accommodation and we know
+                    where
+                    students
+                    feel safest and happiest.<br><br>
+
+                    Our extensive selection of accommodation partners means we can help you browse<br> for the right
+                    choice
+                    based on
+                    your needs. Every student has different preferences, <br>some choose to stay in groups, others like
+                    to
+                    be
+                    alone.
+                    Whatever the request we can <br>make sure you feel safe in knowing the accommodation provider you’ve
+                    chosen
+                    has
+                    a <br>quality track-record.
+                    Students in France have several different accommodation options<br> available to them. ESS can help
+                    you
+                    find:<br><br>
+
+                    <strong> 1. Homestay arrangements<br><br></strong>
+                    <strong> 2. Hotel accommodation until you find permanent housing<br><br></strong>
+                    <strong> 3. Temporary housing with international student groups<br><br></strong>
+                    <strong> 4. On-campus housing in halls of residence or small apartments<br><br></strong>
+
+                </p>
+                <img src="assets/images/accomodation.jpg" id="price-img" alt="Accomodation">
+
+                <h5>Do you have more questions related to Accomodation?</h5>
+                <div class="contact-button">
+                    <a href="Contact-us.html"><button class="buttonStyle1"><i class="fas fa-phone-alt"
+                                style="margin-top: 1px; margin-left:-3px;font-size: 18px;"></i>Contact Us</button></a>
+                </div>
+
+
+            </div>
+
+            <div class="main-picture">
+                <img src="assets/images/service-main-pic.png" id="main-picture">
             </div>
 
         </div>
-
-
-        <div id="Service Price" class="tabcontent">
-            <h3>Service Price</h3>
-            <p> European Study Solution has a payable service packages. You can choose from <strong> Basic,<br> Standard
-                    and
-                    Premium</strong>.
-                Every package can offer different services, including application<br> filling, search of accommodation,
-                Visa
-                application and etc. <strong>First consultation is for free!</strong>
-            <p>
-
-                <img src="assets/images/prices.png" id="price-img2">
-            <h5 id="services-h5">Do you have more questions related to Service Price?</h5>
-            <div class="contact-button">
-                <a href="Contact-us.html"><button class="buttonStyle1"><i class="fas fa-phone-alt"
-                            style="margin-top: 1px; margin-left:-3px;font-size: 18px;"></i>Contact Us</button></a>
-            </div>
-
-        </div>
-
-        <div id="Visa" class="tabcontent">
-            <h3>Visa Application</h3>
-            <p>
-
-                Great! So your application has been approved, you’ve got your offer and you’re <br>ready to go overseas.
-                But
-                wait! Before you can leave the country, you’re going to<br> need to make sure you have an
-                International
-                Student
-                Visa.
-                <strong>Don’t worry</strong>, this is <br>something ESS can arrange on your behalf from start to finish.
-                <br><br>We not
-                only
-                provide
-                up-to-date advice regarding the visa requirements of your <br>destination country but we can process the
-                visas
-                in-house.
-                This means you don’t<br> need to go outside ESS to complete this part of the process. And because we
-                know<br>
-                the
-                details of your application already, we can help get you quicker outcomes.
-            </p>
-            <img src="assets/images/visa-application.jpg" id="price-img">
-
-            <h5>Do you have more questions related to Visa Application?</h5>
-
-            <div class="contact-button">
-                <a href="Contact-us.html"><button class="buttonStyle1"><i class="fas fa-phone-alt"
-                            style="margin-top: 1px; margin-left:-3px;font-size: 18px;"></i>Contact Us</button></a>
-            </div>
-        </div>
-
-        <div id="Application" class="tabcontent">
-            <h3>Filling out the Application</h3>
-            <p>Wishing for an offer from the University of your dreams? Or just need advice<br> on course requirements?
-                At ESS we can help you kick-start your journey <br>to study abroad. We’ll be right there with you
-                from
-                application to enrolment,<br> making sure you get to where you need to go.
-                Representing hundreds of top <br>Universities worldwide, we'll take on all the heavy lifting in your
-                application<br>
-                process. <br><br>Filling in forms, chasing documents and helping you overcome any <br>bumps in the road
-                along
-                the
-                way.
-                Our job is to maximise your chances of <br>getting the best possible education.
-                <br><br>
-
-                How to Apply, Step-By-Step
-                The application process can be daunting for <br>any student. Especially when studying abroad. That’s why
-                at
-                ESS we make<br> the process as streamlined as possible.
-                <strong>Simply send an application and apply<br> for a counsellor meeting, to get to know a step-by-step
-                    guide
-                    today.</strong>
-            </p>
-            <img src="assets/images/application.jpg" id="price-img">
-            <h5>Do you have more questions related to Filling out Application?</h5>
-            <div class="contact-button">
-                <a href="Contact-us.html"><button class="buttonStyle1"><i class="fas fa-phone-alt"
-                            style="margin-top: 1px; margin-left:-3px;font-size: 18px;"></i>Contact Us</button></a>
-            </div>
-        </div>
-
-        <div id="Communication" class="tabcontent">
-            <h3>Communication with university </h3>
-            <p>ESS works with a big network of agents that are carefully chosen to represent our <br>collaborating
-                universities to students all around the world. Together we share a <br>vision for creating the best
-                outcomes
-                for
-                our students and the universities we work <br>with.<br><br>
-
-                We understand that our agents play a big
-                part in
-                a
-                student’s
-                decision-making and <br>application process, so we provide all of the tools and resources needed to
-                help<br>
-                students make the right choice about their education.<br><br>
-
-                <strong> We are ensure fully communication with universities,</strong> especially during Covid-19
-                <br>situation, to keep
-                you
-                updated about different deadlines, updates, fees, with <br>applications and new opportunities to be
-                enrolled
-                in
-                the different university activities,<br> sports teams.
-            </p>
-            <img src="assets/images/communication.jpg" id="price-img">
-            <h5>Do you have more questions related to Universities?</h5>
-
-            <div class="contact-button">
-                <a href="Contact-us.html"><button class="buttonStyle1"><i class="fas fa-phone-alt"
-                            style="margin-top: 1px; margin-left:-3px;font-size: 18px;"></i>Contact Us</button></a>
-            </div>
-        </div>
-
-        <div id="Meetings" class="tabcontent">
-            <h3>Personal Meetings</h3>
-            <p>
-                Do you want to find out about studying for <strong>a degree in France </strong>on the basis of your<br>
-                foreign
-                qualification? To hear about the rules for <strong>admission</strong> to undergraduate <br>programmes
-                and to
-                Master's and
-                adult
-                higher education programmes? Or are you <br>not sure about your program choice, and would like to get
-                <strong> personal
-                    traits test?</strong> Then<br> Personal Meetings with our agency crew its just for you!
-            </p>
-            <img src="assets/images/meetings.jpg" id="price-img4">
-            <h5>Do you have more questions related to Individual Meetings?</h5>
-
-            <div class="contact-button">
-                <a href="Contact-us.html"><button class="buttonStyle1"><i class="fas fa-phone-alt"
-                            style="margin-top: 1px; margin-left:-3px;font-size: 18px;"></i>Contact Us</button></a>
-            </div>
-        </div>
-
-        <div id="Accomodation" class="tabcontent">
-            <h3>Search of Accommodation</h3>
-            <p>Choosing the right place to stay in your new country can be daunting. That’s why<br> it helps to have the
-                best
-                local knowledge. At ESS we place thousands of students <br>annually in accommodation and we know where
-                students
-                feel safest and happiest.<br><br>
-
-                Our extensive selection of accommodation partners means we can help you browse<br> for the right choice
-                based on
-                your needs. Every student has different preferences, <br>some choose to stay in groups, others like to
-                be
-                alone.
-                Whatever the request we can <br>make sure you feel safe in knowing the accommodation provider you’ve
-                chosen
-                has
-                a <br>quality track-record.
-                Students in France have several different accommodation options<br> available to them. ESS can help you
-                find:<br><br>
-
-                <strong> 1. Homestay arrangements<br><br></strong>
-                <strong> 2. Hotel accommodation until you find permanent housing<br><br></strong>
-                <strong> 3. Temporary housing with international student groups<br><br></strong>
-                <strong> 4. On-campus housing in halls of residence or small apartments<br><br></strong>
-
-            </p>
-            <img src="assets/images/accomodation.jpg" id="price-img">
-
-            <h5>Do you have more questions related to Accomodation?</h5>
-            <div class="contact-button">
-                <a href="Contact-us.html"><button class="buttonStyle1"><i class="fas fa-phone-alt"
-                            style="margin-top: 1px; margin-left:-3px;font-size: 18px;"></i>Contact Us</button></a>
-            </div>
-
-
-        </div>
-
-        <div class="main-picture">
-            <img src="assets/images/service-main-pic.png" id="main-picture">
-        </div>
-    </div>
+    </section>
 
     <!----------------------------------Footer -------------------------->
     <footer>
