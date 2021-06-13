@@ -562,10 +562,12 @@ h1, h2, h3 {
 
 .programinfo {
     display: grid;
+    height: 100%;
     margin-left: 2.5vw;
     margin-right: 2.5vw;
-    padding-top: 5vh;
-    padding-bottom: 5vh;
+    margin-top: 2.5vh;
+    margin-bottom: 2.5vh;
+    padding-bottom: 2.5vh;
     border-collapse: collapse;
     grid-row-gap: 25px;
     grid-column-gap: 25px;
@@ -685,7 +687,7 @@ h1, h2, h3 {
 }
 
 .unicontainer h3 {
-    font-size: 1.6vw;
+    font-size: 1.4vw;
 }
 
 /* ----------------------- Student Life -------------------------- */
