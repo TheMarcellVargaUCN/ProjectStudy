@@ -11,6 +11,9 @@ body {
     background-color: #EBF3FA;
     font-family: 'Lato', sans-serif;
 }
+p{
+    color: #434343;
+}
 
 /*   .......................... Contact us btn ..........................  */
 
@@ -577,6 +580,7 @@ body {
 
 
 .faq {
+    margin-top: 50px;
     display: grid;
     height: auto;
     margin-left: 10vw;
@@ -606,19 +610,24 @@ body {
 
 .faqheadline {
     place-self: center;
+    color: #203F7E;
+    font-size: 1vw;
+    margin-bottom: 20px;
 }
 
 .faq h3 {
-    font-size: 1.4vw;
+    font-size: 1.2vw;
     position: relative;
     color: #203F7E;
     font-weight: bold;
     display: inline;
+    margin-right: 2.5vw;
 }
 
 .faq p {
     color: black;
     font-size: 1.1vw;
+    width: 60%;
   }
   
 .faq button {
@@ -632,6 +641,7 @@ body {
     padding-left: 2.5vw;
     text-align: left;
     transition: 0.2s;
+    color: #F1A34F;
 }
 
   
@@ -640,20 +650,14 @@ body {
     font-weight: bold;
     float: right;
     transition: 0.2s;
+    color: #F1A34F;
 
 }
   
-.faq i {
-    font-size: 1.5vw;
-    color: #777;
-    font-weight: bold;
-    float: right;
-    transition: 0.2s;
-
-}
 .active i {
     transform: scaleY(-1);;
     transition: 0.2s;
+    color: #F1A34F;
 }
 
 .panel {
@@ -669,6 +673,7 @@ body {
     float: right;
     margin-right: 2.5vw;
     font-size: 150%;
+    color: #F1A34F;
 }
 
 .question1 {
@@ -745,7 +750,9 @@ footer {
     color: white;
     font-size: 1vw;
 }
-
+footer p {
+    color: white;
+}
 .footer-content {
     display: flex;
     width: 60%;
@@ -774,7 +781,7 @@ footer {
     text-align: center;
 }
 
-a {
+a  {
     color: white;
 }
 
