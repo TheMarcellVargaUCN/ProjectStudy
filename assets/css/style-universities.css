@@ -248,7 +248,6 @@ h1, h2, h3 {
 }
 
 .introtext p {
-  font-size: 1.3vw;
   margin-top: 30px;
 }
 
@@ -344,7 +343,7 @@ h1, h2, h3 {
 }
 
 .unitopcontainer h3 {
-  font-size: 1.6vw;
+  font-size: 1.4vw;
 }
 
 .uniheadline {
@@ -356,6 +355,7 @@ h1, h2, h3 {
 }
 
 .uniheadline {
+  font-size: 1.4vw;
   place-self: center;
   color: #203F7E;
 }
@@ -699,6 +699,10 @@ h1, h2, h3 {
   font-size: 1.4vw;
 }
 
+.unitopcontainer h3 {
+  font-size: 1.4vw;
+}
+
 /* ----------------------- Student Life -------------------------- */
 
 .studentlife {
@@ -854,6 +858,8 @@ a {
 /* ----------------------- Responsiveness - Tablet+ -------------------------- */
 
 @media only screen and (max-width: 870px) {
+
+
   .introgrid {
     margin-top: 8%;
     height: 60%;
@@ -872,6 +878,11 @@ a {
     width: 20px;
     height: 20px;
   }
+
+  .unitopcontainer h3 {
+    font-size: 2vw;
+  }
+
   .universities {
     grid-template-columns: repeat(5, 1fr);
     margin-left: 0;
@@ -917,6 +928,7 @@ a {
     margin-left: 5vw;
     margin-right: 5vw;
   }
+
   .unicontainer h3 {
     font-size: 2vw;
   }
@@ -996,6 +1008,11 @@ a {
 /* ----------------------- Responsiveness - Tablet -------------------------- */
 
 @media only screen and (max-width: 768px) {
+  
+  .unitopcontainer h3 {
+    font-size: 3vw;
+  }
+
   .universities {
     grid-template-columns: repeat(5, 1fr);
     margin-left: 0;
