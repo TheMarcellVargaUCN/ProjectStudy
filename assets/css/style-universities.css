@@ -18,6 +18,10 @@ h1, h2, h3 {
 
 /* ----------------------- Contact us Button -------------------------- */
 
+#button-main {
+  margin-left: 2px;
+}
+
 .buttonStyle1 {
   font-size: 1vw;
   background-color: #F1A34F;
@@ -28,7 +32,7 @@ h1, h2, h3 {
   border-radius: 7px;
   box-shadow: 0 5px rgba(48, 48, 48, 0.23);
   outline: none;
-  margin-left: 20px;
+  margin-left: 17px;
 }
 
 .buttonStyle1 i {
@@ -229,7 +233,6 @@ h1, h2, h3 {
   margin-top: 5%;
   background-image: url("../images/ESS-BG.png");
   background-repeat: no-repeat;
-  ;
   background-size: 95%;
   background-position: top;
   grid-template-rows: 1fr;
@@ -237,10 +240,16 @@ h1, h2, h3 {
 }
 
 .introtext h3 {
-  font-size: 23px;
   color: #203F7E;
-  margin-top: 50px;
-  margin-left: 20px;
+  margin-bottom: 3%;
+  font-size: 23px;
+  margin-top: 1px;
+  margin-left: 1px;
+}
+
+.introtext p {
+  font-size: 1.3vw;
+  margin-top: 30px;
 }
 
 .university-intro-img img {
@@ -747,8 +756,8 @@ h1, h2, h3 {
   height: 15vw;
 }
 
-
 /* --------------footer---------------- */
+
 footer h4 {
   font-size: 18px;
   margin-left: 20px;
@@ -809,34 +818,31 @@ a {
 }
 
 @media only screen and (max-width: 960px) {
-
- footer p {
-      font-size: 15px;
+  footer p {
+    font-size: 15px;
   }
 }
 
 @media only screen and (max-width: 830px) {
   footer h4 {
-      font-size: 16px;
+    font-size: 16px;
   }
- footer p {
+  footer p {
     font-size: 14px;
   }
 }
 
 @media only screen and (max-width: 715px) {
- footer p {
+  footer p {
     font-size: 12px;
   }
 }
 
 @media only screen and (max-width: 460px) {
-   footer h4 {
+  footer h4 {
     font-size: 10px;
+  }
 }
- }
-
-
 
 /* ----------------------- Responsiveness - Larger screen -------------------------- */
 
