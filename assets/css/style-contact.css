@@ -15,6 +15,8 @@ body {
 
 /*   .......................... Contact us btn ..........................  */
 
+/*   .......................... Contact us btn ..........................  */
+
 .buttonStyle1 {
   font-size: 1vw;
   background-color: #F1A34F;
@@ -25,7 +27,7 @@ body {
   border-radius: 7px;
   box-shadow: 0 5px rgba(48, 48, 48, 0.23);
   outline: none;
-  margin-left: 20px;
+  margin-left: 2px;
 }
 
 .buttonStyle1 i {
@@ -184,25 +186,19 @@ body {
     width: 13vw;
     font-size: 2vw;
   }
-  
   .buttonStyle2 i {
     font-size: 2vw;
     padding-right: 0.5vw;
-  } 
-  
+  }
   .buttonStyle1 {
     font-size: 2vw;
   }
-  
   .buttonStyle1 i {
     font-size: 2vw;
   }
-  
-  
   .topnav {
     margin-top: -8%;
   }
-
 }
 
 @media only screen and (max-width: 600px) {
@@ -213,15 +209,12 @@ body {
   .toggle-button {
     top: 1rem;
   }
-     
   .buttonStyle1 {
     font-size: 2vw;
   }
-  
   .buttonStyle1 i {
     font-size: 2vw;
   }
-  
   .topnav {
     margin-top: -13%;
   }
@@ -383,13 +376,13 @@ body {
   display: block;
 }
 
-.card-text p{
+.card-text p {
   text-align: left;
   width: 100%;
   font-size: 1.1vw;
 }
 
-.card-text h4{
+.card-text h4 {
   text-align: center;
   width: 100%;
   font-size: 1.2vw;
@@ -483,7 +476,18 @@ body {
   }
 }
 
-/*   ..........................  Footer ..........................  */
+/* --------------footer---------------- */
+
+footer h4 {
+  font-size: 18px;
+  margin-left: 20px;
+}
+
+footer p {
+  margin-left: 20px;
+  margin-top: 40px;
+  font-size: 16px;
+}
 
 footer {
   margin-top: 5%;
@@ -521,8 +525,43 @@ footer {
   text-align: center;
 }
 
+.service-tab i {
+  position: relative;
+  font-size: 150%;
+  float: left;
+  margin-top: -10%;
+  margin-left: 20px;
+}
+
 a {
   color: white;
+}
+
+@media only screen and (max-width: 960px) {
+  footer p {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 830px) {
+  footer h4 {
+    font-size: 16px;
+  }
+  footer p {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 715px) {
+  footer p {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 460px) {
+  footer h4 {
+    font-size: 10px;
+  }
 }
 
 /*   .......................... RESPONSIVE  ..........................  */
@@ -530,8 +569,6 @@ a {
 /*   ..........................  For tablet ..........................  */
 
 @media only screen and (max-width: 768px) {
-  
-
   .grid-contact-intro {
     margin-top: 8%;
     height: 60%;
@@ -578,23 +615,19 @@ a {
     margin-left: auto;
     margin-right: auto;
   }
-
   .card img {
     width: 20vw;
   }
-
-  .card-text p{
+  .card-text p {
     text-align: left;
     width: 100%;
     font-size: 2vw;
   }
-  
-  .card-text h4{
+  .card-text h4 {
     text-align: center;
     width: 100%;
     font-size: 2vw;
   }
-
   .team h3 {
     margin-top: 0%;
     font-size: 2.5vw;
@@ -602,7 +635,6 @@ a {
     margin-right: auto;
     text-align: center;
   }
-
   .form-page {
     width: 100vw;
     height: 100vh;
@@ -635,8 +667,6 @@ a {
 /*   ..........................   For phone ..........................  */
 
 @media only screen and (max-width: 600px) {
-  
- 
   .grid-contact-intro {
     margin-top: 13%;
     background-image: none;
@@ -697,31 +727,25 @@ a {
   .card img {
     width: 30vw;
   }
-
-  .card-text p{
+  .card-text p {
     font-size: 3vw;
   }
-  
-  .card-text h4{
+  .card-text h4 {
     font-size: 3vw;
   }
- 
   .team h3 {
     margin-top: -40%;
     font-size: 4vw;
   }
-
   .form-page {
     height: 100vh;
     background-size: 100%;
     margin-top: -15%;
   }
-
   .Contact-form-page {
     width: 100vw;
     /* margin-top: -15%; */
   }
-
   .company-info {
     margin-top: 90%;
     font-size: 2.5vw;
@@ -731,7 +755,6 @@ a {
     font-size: 2vw;
     margin-top: 90%;
   }
-
   .contact form button {
     font-size: 2vw;
   }
@@ -749,5 +772,4 @@ a {
     background-image: none;
     margin-bottom: -40%;
   }
-  
 }
