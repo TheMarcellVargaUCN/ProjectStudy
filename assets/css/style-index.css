@@ -920,6 +920,12 @@ a  {
     .landing-img-grid {
         margin-top: 10%;
     }
+    footer p{
+        font-size: 1.2vw;
+    }
+    footer h4 {
+        font-size: 1.2vw;
+    }
 }
 
 @media screen and (max-width: 650px) {
@@ -1069,5 +1075,11 @@ a  {
     }
     .faq_button i {
         font-size: 15px;
+    }
+    footer p {
+        font-size: 1.5vw;
+    }
+    footer h4 {
+        font-size: 1.5vw;
     }
 }
