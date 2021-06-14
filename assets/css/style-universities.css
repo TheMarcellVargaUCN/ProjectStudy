@@ -242,12 +242,12 @@ h1, h2, h3 {
 .introtext h3 {
   color: #203F7E;
   margin-bottom: 3%;
-  font-size: 23px;
   margin-top: 1px;
   margin-left: 1px;
 }
 
 .introtext p {
+  font-size: 1.2vw;
   margin-top: 30px;
 }
 
@@ -417,6 +417,10 @@ h1, h2, h3 {
   font-size: 1.1vw;
 }
 
+.unicontainer li {
+  font-size: 1.1vw;
+}
+
 .programcontainer {
   grid-area: programcontainer;
 }
@@ -466,13 +470,11 @@ h1, h2, h3 {
 }
 
 .programcontainer ul {
-  font-size: 110%;
   margin-left: 2.5vw;
   margin-right: 2.5vw;
 }
 
 .programcontainer li {
-  font-size: 1.1vw;
   margin-bottom: 1.5vh;
 }
 
@@ -699,9 +701,6 @@ h1, h2, h3 {
   font-size: 1.4vw;
 }
 
-.unitopcontainer h3 {
-  font-size: 1.4vw;
-}
 
 /* ----------------------- Student Life -------------------------- */
 
@@ -854,6 +853,12 @@ a {
   }
 }
 
+@media only screen and (max-width: 1000px) {
+  .introtext p {
+    font-size: 1.3vw;
+  }
+  
+}
 
 /* ----------------------- Responsiveness - Tablet+ -------------------------- */
 
@@ -1034,6 +1039,9 @@ a {
   .unicontainer p {
     font-size: 3vw;
   }
+  .unicontainer li {
+    font-size: 3vw;
+  }
   footer {
     margin-top: 0px;
     font-size: 1.5vw;
@@ -1044,6 +1052,11 @@ a {
 }
 
 /* ----------------------- Responsiveness - Mobile -------------------------- */
+
+@media only screen and (max-width: 650px) {
+  .introtext p {
+    font-size: 2vw;
+  }
 
 @media only screen and (max-width: 600px) {
   .introgrid {
