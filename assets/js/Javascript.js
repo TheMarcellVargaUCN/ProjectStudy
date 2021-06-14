@@ -115,3 +115,19 @@ function showAns8() {
 // function showAns1 (){
 //     document.getElementById("answer1").classList.toggle("active");
 // }
+
+
+var acc = document.getElementsByClassName("faq_button");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
