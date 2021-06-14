@@ -851,6 +851,13 @@ a  {
     .headline2 {
         font-size: 1.5vw;
     }
+    .faqheadline {
+        font-size: 2.5vw;
+    }
+    .faq_button i {
+        font-size: 20px;
+        margin: auto;
+    }
     .comparison img {
         grid-row: 3;
         width: 25vw;
@@ -867,23 +874,6 @@ a  {
         font-size: 1.3vw;
     }
     .headline_reviews {
-        font-size: 1.5vw;
-    }
-    .FAQ {
-        grid-template-columns: 1fr;
-    }
-    .questionl {
-        grid-column: 1;
-        justify-self: center;
-    }
-    .questionr {
-        grid-column: 1;
-        justify-self: center;
-    }
-    .questionl p {
-        font-size: 1.5vw;
-    }
-    .questionr p {
         font-size: 1.5vw;
     }
 }
@@ -956,6 +946,9 @@ a  {
         width: 15vw;
         height: 5vw;
         font-size: 2vw;
+    }
+    .buttonStyle2 {
+        width: 50%;
     }
     .chooseus {
         grid-template-columns: 100vw;
@@ -1074,5 +1067,7 @@ a  {
     #school {
         display: none;
     }
-    
+    .faq_button i {
+        font-size: 15px;
+    }
 }
