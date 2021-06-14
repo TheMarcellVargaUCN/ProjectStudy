@@ -721,7 +721,7 @@ h1, h2, h3 {
 }
 
 .studentlife img:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 .studentheadline {
@@ -760,7 +760,7 @@ h1, h2, h3 {
 
 .studentlife img {
   width: 20vw;
-  height: 15vw;
+  height: 12.5vw;
 }
 
 /* --------------footer---------------- */
@@ -968,7 +968,7 @@ a {
   }
   .studentlife img {
     width: 40vw;
-    height: 30vw;
+    height: 25vw;
   }
   .admissionvideo {
     width: 100%;
