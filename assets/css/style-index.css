@@ -1067,6 +1067,9 @@ a  {
     #plane {
         display: none;
     }
+    .scroll {
+        display: none;
+    }
     #airport {
         display: none;
     }
