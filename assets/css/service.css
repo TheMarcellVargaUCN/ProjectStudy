@@ -416,27 +416,27 @@ h5 {
     margin-top: -60px;
 }
 
-#price-img {
+.price-img {
     margin-top: 30px;
     width: 50%;
     border-radius: 5px;
     margin-left: 20px;
 }
 
-#price-img1 {
+.price-img1 {
     margin-top: 30px;
     margin-left: 20px;
     width: 40%;
     border-radius: 5px;
 }
 
-#price-img2 {
+.price-img2 {
     margin-top: -20px;
     width: 100%;
     margin-left: -10px;
 }
 
-#price-img3 {
+.price-img3 {
     margin-top: 40px;
     margin-left: 20px;
     width: 40%;
@@ -444,7 +444,7 @@ h5 {
     margin-left: 20px;
 }
 
-#price-img4 {
+.price-img4 {
     margin-top: 70px;
     margin-left: 20px;
     width: 50%;
