@@ -27,7 +27,7 @@ body {
   border-radius: 7px;
   box-shadow: 0 5px rgba(48, 48, 48, 0.23);
   outline: none;
-  margin-left: 2px;
+  margin-left: 17px;
 }
 
 .buttonStyle1 i {
@@ -732,7 +732,6 @@ a {
   }
   .Contact-form-page {
     width: 100vw;
-    /* margin-top: -15%; */
   }
   .company-info {
     margin-top: 90%;
