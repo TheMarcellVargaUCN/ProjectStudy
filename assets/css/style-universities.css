@@ -769,7 +769,7 @@ h1, h2, h3 {
 /* --------------footer---------------- */
 
 footer h4 {
-  font-size: 18px;
+  font-size: 1vw;
   margin-left: 20px;
 }
 
@@ -1096,4 +1096,5 @@ a {
   .footer-content {
     width: 100%;
   }
+ }
 }
