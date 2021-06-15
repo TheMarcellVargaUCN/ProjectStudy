@@ -11,6 +11,9 @@ body {
     background-color: #EBF3FA;
     font-family: 'Lato', sans-serif;
 }
+p{
+    color: #434343;
+}
 
 /*   .......................... Contact us btn ..........................  */
 
@@ -24,7 +27,6 @@ body {
     border-radius: 7px;
     box-shadow: 0 5px rgba(48, 48, 48, 0.23);
     outline: none;
-    margin-left: 20px;
 }
 
 .buttonStyle1 i {
@@ -577,6 +579,7 @@ body {
 
 
 .faq {
+    margin-top: 50px;
     display: grid;
     height: auto;
     margin-left: 10vw;
@@ -584,6 +587,8 @@ body {
     border-collapse: collapse;
     grid-row-gap: 1.5vh;
     grid-column-gap: 1.5vh;
+    justify-content: center;
+    align-items: start;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     grid-template-areas:
@@ -606,19 +611,24 @@ body {
 
 .faqheadline {
     place-self: center;
+    color: #203F7E;
+    font-size: 1vw;
+    margin-bottom: 20px;
 }
 
 .faq h3 {
-    font-size: 1.4vw;
+    font-size: 1.2vw;
     position: relative;
     color: #203F7E;
     font-weight: bold;
     display: inline;
+    margin-right: 2.5vw;
 }
 
 .faq p {
     color: black;
     font-size: 1.1vw;
+    width: 60%;
   }
   
 .faq button {
@@ -632,6 +642,7 @@ body {
     padding-left: 2.5vw;
     text-align: left;
     transition: 0.2s;
+    color: #F1A34F;
 }
 
   
@@ -640,20 +651,14 @@ body {
     font-weight: bold;
     float: right;
     transition: 0.2s;
+    color: #F1A34F;
 
 }
   
-.faq i {
-    font-size: 1.5vw;
-    color: #777;
-    font-weight: bold;
-    float: right;
-    transition: 0.2s;
-
-}
 .active i {
     transform: scaleY(-1);;
     transition: 0.2s;
+    color: #F1A34F;
 }
 
 .panel {
@@ -669,6 +674,7 @@ body {
     float: right;
     margin-right: 2.5vw;
     font-size: 150%;
+    color: #F1A34F;
 }
 
 .question1 {
@@ -745,7 +751,9 @@ footer {
     color: white;
     font-size: 1vw;
 }
-
+footer p {
+    color: white;
+}
 .footer-content {
     display: flex;
     width: 60%;
@@ -774,7 +782,7 @@ footer {
     text-align: center;
 }
 
-a {
+a  {
     color: white;
 }
 
@@ -843,6 +851,13 @@ a {
     .headline2 {
         font-size: 1.5vw;
     }
+    .faqheadline {
+        font-size: 2.5vw;
+    }
+    .faq_button i {
+        font-size: 20px;
+        margin: auto;
+    }
     .comparison img {
         grid-row: 3;
         width: 25vw;
@@ -861,24 +876,42 @@ a {
     .headline_reviews {
         font-size: 1.5vw;
     }
-    .FAQ {
-        grid-template-columns: 1fr;
-    }
-    .questionl {
-        grid-column: 1;
-        justify-self: center;
-    }
-    .questionr {
-        grid-column: 1;
-        justify-self: center;
-    }
-    .questionl p {
-        font-size: 1.5vw;
-    }
-    .questionr p {
-        font-size: 1.5vw;
-    }
 }
+
+@media screen and (max-width: 870px) {
+
+.faq {
+    display: grid;
+    height: auto;
+    margin-left: 25vw;
+    margin-right: 25vw;
+    border-collapse: collapse;
+    grid-row-gap: 1.5vh;
+    grid-column-gap: 0;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    'faqheadline'
+    'question1'
+    'question2'
+    'question3'
+    'question4'
+    'question5'
+    'question6'
+    'question7'
+    'question8'
+
+}
+
+.faq h3 {
+    font-size: 2vw;
+  }
+
+.faq p {
+    font-size: 2vw;
+  } 
+}
+
 
 @media screen and (max-width: 800px) {
     .review p {
@@ -886,6 +919,12 @@ a {
     }
     .landing-img-grid {
         margin-top: 10%;
+    }
+    footer p{
+        font-size: 1.2vw;
+    }
+    footer h4 {
+        font-size: 1.2vw;
     }
 }
 
@@ -913,6 +952,9 @@ a {
         width: 15vw;
         height: 5vw;
         font-size: 2vw;
+    }
+    .buttonStyle2 {
+        width: 50%;
     }
     .chooseus {
         grid-template-columns: 100vw;
@@ -1031,36 +1073,13 @@ a {
     #school {
         display: none;
     }
-
-    .faq {
-        display: grid;
-        height: auto;
-        margin-left: 25vw;
-        margin-right: 25vw;
-        border-collapse: collapse;
-        grid-row-gap: 1.5vh;
-        grid-column-gap: 0;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-        grid-template-areas:
-        'faqheadline'
-        'question1'
-        'question2'
-        'question3'
-        'question4'
-        'question5'
-        'question6'
-        'question7'
-        'question8'
-
+    .faq_button i {
+        font-size: 15px;
     }
-
-    .faq h3 {
-        font-size: 2vw;
-      }
-  
-    .faq p {
-        font-size: 2vw;
-      } 
-    
+    footer p {
+        font-size: 1.5vw;
+    }
+    footer h4 {
+        font-size: 1.5vw;
+    }
 }

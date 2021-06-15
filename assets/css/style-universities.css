@@ -242,13 +242,12 @@ h1, h2, h3 {
 .introtext h3 {
   color: #203F7E;
   margin-bottom: 3%;
-  font-size: 23px;
   margin-top: 1px;
   margin-left: 1px;
 }
 
 .introtext p {
-  font-size: 1.3vw;
+  font-size: 1.2vw;
   margin-top: 30px;
 }
 
@@ -300,7 +299,7 @@ h1, h2, h3 {
   grid-row-end: 2;
   margin-right: auto;
   margin-left: auto;
-  margin-top: 5%;
+  margin-top: 10%;
   width: 30px;
   height: 30px;
   background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgaGVpZ2h0PSI1MTIiIGlkPSJzdmcyIiB2ZXJzaW9uPSIxLjEiIHdpZHRoPSI1MTIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6Y2M9Imh0dHA6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL25zIyIgeG1sbnM6ZGM9Imh0dHA6Ly9wdXJsLm9yZy9kYy9lbGVtZW50cy8xLjEvIiB4bWxuczppbmtzY2FwZT0iaHR0cDovL3d3dy5pbmtzY2FwZS5vcmcvbmFtZXNwYWNlcy9pbmtzY2FwZSIgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIiB4bWxuczpzb2RpcG9kaT0iaHR0cDovL3NvZGlwb2RpLnNvdXJjZWZvcmdlLm5ldC9EVEQvc29kaXBvZGktMC5kdGQiIHhtbG5zOnN2Zz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxkZWZzIGlkPSJkZWZzNCIvPjxnIGlkPSJsYXllcjEiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAsLTU0MC4zNjIyKSI+PHBhdGggZD0ibSAxMjcuNDA2MjUsNjU3Ljc4MTI1IGMgLTQuOTg1MywwLjA3ODQgLTkuOTEwNzcsMi4xNjMwOCAtMTMuNDM3NSw1LjY4NzUgbCAtNTUsNTUgYyAtMy42MDA1NjUsMy41OTkyNyAtNS42OTY4ODMsOC42NTg5NSAtNS42OTY4ODMsMTMuNzUgMCw1LjA5MTA1IDIuMDk2MzE4LDEwLjE1MDczIDUuNjk2ODgzLDEzLjc1IEwgMjQyLjI1LDkyOS4yNSBjIDMuNTk5MjcsMy42MDA1NiA4LjY1ODk1LDUuNjk2ODggMTMuNzUsNS42OTY4OCA1LjA5MTA1LDAgMTAuMTUwNzMsLTIuMDk2MzIgMTMuNzUsLTUuNjk2ODggTCA0NTMuMDMxMjUsNzQ1Ljk2ODc1IGMgMy42MDA1NiwtMy41OTkyNyA1LjY5Njg4LC04LjY1ODk1IDUuNjk2ODgsLTEzLjc1IDAsLTUuMDkxMDUgLTIuMDk2MzIsLTEwLjE1MDczIC01LjY5Njg4LC0xMy43NSBsIC01NSwtNTUgYyAtMy41OTgxNSwtMy41OTEyNyAtOC42NTA2OCwtNS42ODEyNyAtMTMuNzM0MzgsLTUuNjgxMjcgLTUuMDgzNjksMCAtMTAuMTM2MjIsMi4wOSAtMTMuNzM0MzcsNS42ODEyNyBMIDI1Niw3NzguMDMxMjUgMTQxLjQzNzUsNjYzLjQ2ODc1IGMgLTMuNjY2NzgsLTMuNjY0MjMgLTguODQ4MDEsLTUuNzY0NDIgLTE0LjAzMTI1LC01LjY4NzUgeiIgaWQ9InBhdGgzNzY2LTEiIHN0eWxlPSJmb250LXNpemU6bWVkaXVtO2ZvbnQtc3R5bGU6bm9ybWFsO2ZvbnQtdmFyaWFudDpub3JtYWw7Zm9udC13ZWlnaHQ6bm9ybWFsO2ZvbnQtc3RyZXRjaDpub3JtYWw7dGV4dC1pbmRlbnQ6MDt0ZXh0LWFsaWduOnN0YXJ0O3RleHQtZGVjb3JhdGlvbjpub25lO2xpbmUtaGVpZ2h0Om5vcm1hbDtsZXR0ZXItc3BhY2luZzpub3JtYWw7d29yZC1zcGFjaW5nOm5vcm1hbDt0ZXh0LXRyYW5zZm9ybTpub25lO2RpcmVjdGlvbjpsdHI7YmxvY2stcHJvZ3Jlc3Npb246dGI7d3JpdGluZy1tb2RlOmxyLXRiO3RleHQtYW5jaG9yOnN0YXJ0O2Jhc2VsaW5lLXNoaWZ0OmJhc2VsaW5lO2NvbG9yOiMwMDAwMDA7ZmlsbDojMjIyMjIyO2ZpbGwtb3BhY2l0eToxO2ZpbGwtcnVsZTpub256ZXJvO3N0cm9rZTpub25lO3N0cm9rZS13aWR0aDozOC44ODAwMDEwNzttYXJrZXI6bm9uZTt2aXNpYmlsaXR5OnZpc2libGU7ZGlzcGxheTppbmxpbmU7b3ZlcmZsb3c6dmlzaWJsZTtlbmFibGUtYmFja2dyb3VuZDphY2N1bXVsYXRlO2ZvbnQtZmFtaWx5OlNhbnM7LWlua3NjYXBlLWZvbnQtc3BlY2lmaWNhdGlvbjpTYW5zIi8+PC9nPjwvc3ZnPg==);
@@ -344,7 +343,7 @@ h1, h2, h3 {
 }
 
 .unitopcontainer h3 {
-  font-size: 1.6vw;
+  font-size: 1.4vw;
 }
 
 .uniheadline {
@@ -356,6 +355,7 @@ h1, h2, h3 {
 }
 
 .uniheadline {
+  font-size: 1.4vw;
   place-self: center;
   color: #203F7E;
 }
@@ -417,6 +417,10 @@ h1, h2, h3 {
   font-size: 1.1vw;
 }
 
+.unicontainer li {
+  font-size: 1.1vw;
+}
+
 .programcontainer {
   grid-area: programcontainer;
 }
@@ -466,13 +470,11 @@ h1, h2, h3 {
 }
 
 .programcontainer ul {
-  font-size: 110%;
   margin-left: 2.5vw;
   margin-right: 2.5vw;
 }
 
 .programcontainer li {
-  font-size: 1.1vw;
   margin-bottom: 1.5vh;
 }
 
@@ -699,11 +701,11 @@ h1, h2, h3 {
   font-size: 1.4vw;
 }
 
+
 /* ----------------------- Student Life -------------------------- */
 
 .studentlife {
   display: grid;
-  width: 50%;
   height: auto;
   margin-bottom: 2.5vh;
   border-collapse: collapse;
@@ -715,6 +717,14 @@ h1, h2, h3 {
   align-items: center;
   justify-items: center;
   grid-template-areas: 'studentheadline studentheadline studentheadline' 'image1 image2 image3' 'image4 image5 image6';
+}
+
+.studentlife img{
+  transition: transform .2s;
+}
+
+.studentlife img:hover {
+  transform: scale(1.1);
 }
 
 .studentheadline {
@@ -753,7 +763,7 @@ h1, h2, h3 {
 
 .studentlife img {
   width: 20vw;
-  height: 15vw;
+  height: 12.5vw;
 }
 
 /* --------------footer---------------- */
@@ -765,8 +775,7 @@ footer h4 {
 
 footer p {
   margin-left: 20px;
-  margin-top: 40px;
-  font-size: 16px;
+  font-size: 1vw;
 }
 
 footer {
@@ -817,30 +826,22 @@ a {
   color: white;
 }
 
-@media only screen and (max-width: 960px) {
-  footer p {
-    font-size: 15px;
-  }
-}
-
-@media only screen and (max-width: 830px) {
-  footer h4 {
-    font-size: 16px;
-  }
-  footer p {
-    font-size: 14px;
-  }
-}
 
 @media only screen and (max-width: 715px) {
   footer p {
-    font-size: 12px;
+    font-size: 1.2vw;
+  }
+  footer h4 {
+    font-size: 1.2vw;
   }
 }
 
-@media only screen and (max-width: 460px) {
+@media only screen and (max-width: 600px) {
   footer h4 {
-    font-size: 10px;
+    font-size: 1.5vw;
+  }
+  footer p {
+    font-size: 1.5vw;
   }
 }
 
@@ -852,38 +853,17 @@ a {
   }
 }
 
-@media only screen and (max-width: 1200px) {
-  .programinfo {
-    padding-top: 2.5vh;
-    padding-bottom: 2.5vh;
+@media only screen and (max-width: 1000px) {
+  .introtext p {
+    font-size: 1.3vw;
   }
-  .admissionvideo {
-    width: 100%;
-    height: 80%;
-    position: relative;
-  }
-  .admissionvideo iframe {
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    position: absolute;
-  }
-  .countryimage {
-    width: 100%;
-    height: 80%;
-  }
-  .countryimage img {
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-  }
+  
 }
 
 /* ----------------------- Responsiveness - Tablet+ -------------------------- */
 
 @media only screen and (max-width: 870px) {
+
   .introgrid {
     margin-top: 8%;
     height: 60%;
@@ -898,10 +878,15 @@ a {
     /* background-color: darkgoldenrod; */
   }
   .arrow {
-    margin-top: 3%;
+    margin-top: 6%;
     width: 20px;
     height: 20px;
   }
+
+  .unitopcontainer h3 {
+    font-size: 2vw;
+  }
+
   .universities {
     grid-template-columns: repeat(5, 1fr);
     margin-left: 0;
@@ -947,6 +932,7 @@ a {
     margin-left: 5vw;
     margin-right: 5vw;
   }
+
   .unicontainer h3 {
     font-size: 2vw;
   }
@@ -989,7 +975,7 @@ a {
   }
   .studentlife img {
     width: 40vw;
-    height: 30vw;
+    height: 25vw;
   }
   .admissionvideo {
     width: 100%;
@@ -1017,11 +1003,20 @@ a {
     margin-top: 2.5vh;
     margin-bottom: 2.5vh;
   }
+
+  .studentlife img:hover {
+    transform: none;
+  }  
 }
 
 /* ----------------------- Responsiveness - Tablet -------------------------- */
 
 @media only screen and (max-width: 768px) {
+  
+  .unitopcontainer h3 {
+    font-size: 3vw;
+  }
+
   .universities {
     grid-template-columns: repeat(5, 1fr);
     margin-left: 0;
@@ -1044,6 +1039,9 @@ a {
   .unicontainer p {
     font-size: 3vw;
   }
+  .unicontainer li {
+    font-size: 3vw;
+  }
   footer {
     margin-top: 0px;
     font-size: 1.5vw;
@@ -1054,6 +1052,11 @@ a {
 }
 
 /* ----------------------- Responsiveness - Mobile -------------------------- */
+
+@media only screen and (max-width: 650px) {
+  .introtext p {
+    font-size: 2vw;
+  }
 
 @media only screen and (max-width: 600px) {
   .introgrid {
